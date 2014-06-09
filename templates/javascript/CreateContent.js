@@ -67,6 +67,7 @@ define([
                   var content = "";
                   if(!this.isMobile){
                     content = ""+
+                      "<div id='logo'><img src='" + this.options.logo + "' alt='Logo'/></div>" +
                       "<div id='title'></div>" +
                       "<div id='subtitle'></div>" +
                       "<div id='bookmarks-wrapper'>" +

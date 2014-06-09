@@ -230,3 +230,12 @@
 #bookmarks{
   background-color: white;
 }
+#logo{
+  float: left;
+}
+#logo img{
+  max-height: 80px;
+}
+#title{
+  margin-left: 80px;
+}

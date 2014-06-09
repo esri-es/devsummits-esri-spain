@@ -5,69 +5,56 @@
          "fields":[
             {
                "type":"webmap",
-               "label":"Select a map"
+               "label":"Mapa base"
             }
          ]
       },
       {
-         "category":"<b>Define template options</b>",
+         "category":"<b>Configura la plantilla</b>",
          "fields":[
             {
-               "type":"string",
-               "fieldName":"theme",
-               "tooltip":"Color theme to use",
-               "label":"Color Scheme:",
-               "options":[
-                  {
-                     "label":"Blue",
-                     "value":"blue"
-                  },
-                  {
-                     "label":"Black",
-                     "value":"black"
-                  },
-                  {
-                     "label":"Green",
-                     "value":"green"
-                  }
-               ]
-            },
+            "type": "string",
+            "fieldName": "logo",
+            "label": "Logo URL",
+            "tooltip": "",
+            "stringFieldOption": "textbox",
+            "placeHolder": "Logo URL"
+         },
+            {
+            "type": "color", 
+            "label": "Color de la cabecera",
+            "fieldName": "headerColor"
+         },
             {
                "type":"boolean",
                "fieldName":"displaytoolbar",
-               "label":"Show Toolbar",
-               "tooltip":"True to display toolbar (Desktop only)"
+               "label":"Mostrar barra de herramientas",
+               "tooltip":"Mostrar la barra de herramientas (Sólo en escritorio)"
             }
          ]
       },
       {
-         "category":"<b>Optional Widgets</b>",
+         "category":"<b>Widgets Opcionales</b>",
          "fields":[
             {
                "type":"paragraph",
-               "value":"Add one or more of the following widgets to the application."
-            },
-            {
-               "type":"boolean",
-               "fieldName":"home_button",
-               "label":"Full extent button"
+               "value":"Configura los widgets de la aplicación."
             },
             {
                "type":"boolean",
                "fieldName":"locate_button",
-               "label":"Location button"
+               "label":"Mostrar botón de localización"
             },
             {
                "type":"boolean",
                "fieldName":"geocoder",
-               "label":"Place search"
+               "label":"Geocoder"
             }
          ]
       }
    ],
    "values":{
       "displaytoolbar":false,
-      "home_button":true,
       "locate_button":true,
       "geocoder":true
    }
