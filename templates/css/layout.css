@@ -217,3 +217,16 @@
     -moz-animation-name: pulse;
 
 }
+#bookmarks-wrapper{
+  right: 20px;
+  position: absolute;
+  top: 20px;
+  
+}
+#bookmarks-wrapper .dijitButtonNode{
+  border: 0;
+}
+.dijitTooltipContainer,
+#bookmarks{
+  background-color: white;
+}

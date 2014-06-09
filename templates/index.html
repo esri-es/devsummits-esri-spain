@@ -62,7 +62,8 @@
         "esri/symbols/SimpleLineSymbol",
         "esri/dijit/Legend",
         "esri/graphic",
-        "esri/lang"
+        "esri/lang",
+        "esri/dijit/Bookmarks"
         ],
         function(
             parser, 
@@ -179,8 +180,6 @@
 
             function initUI(response){
  
-               debugger;
-               
                var supportsOrientationChange = "onorientationchange" in this,
                 orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
                 //IE8 doesn't support addEventListener so check before calling
@@ -214,7 +213,10 @@
                     }
                  }
 
-
+                  bookmarks = new esri.dijit.Bookmarks({
+                    map: map, 
+                    bookmarks: this.options.itemInfo.itemData.bookmarks
+                  }, dojo.byId('bookmarks')); 
 
 
    				 var content = domConstruct.create("div",{id:"editorDiv"});

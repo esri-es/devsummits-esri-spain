@@ -66,7 +66,17 @@ define([
                   //add header pane if its a smart phone add a button and omit the subtitle 
                   var content = "";
                   if(!this.isMobile){
-                    content = "<div id='title'></div><div id='subtitle'></div>";
+                    content = ""+
+                      "<div id='title'></div>" +
+                      "<div id='subtitle'></div>" +
+                      "<div id='bookmarks-wrapper'>" +
+                        "<div data-dojo-type='dijit.form.DropDownButton'>" +
+                          "<span>Bookmarks</span>" +
+                          "<div data-dojo-type='dijit.TooltipDialog'>" +
+                            "<div id='bookmarks'></div>" +
+                          "</div>" +
+                        "</div>" +
+                      "</div>";
                   }else{
                     var h = domConstruct.create("div",{id:"headerBar"});
                     //add a button to the header 
