@@ -22,7 +22,7 @@
    <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.9/js/esri/css/esri.css" />
     <link rel="stylesheet"  href="css/layout.css"/>
     <script type="text/javascript">
-      var path_location = location.pathname.replace(/\/[^/]+$/, '');
+      var path_location = location.origin + location.pathname.replace(/\/[^/]+$/, '');
       var dojoConfig = {
         parseOnLoad: true,
         packages: [ {
