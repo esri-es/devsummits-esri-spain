@@ -1,28 +1,31 @@
 <!-- .slide: data-background="reveal.js/img/bg-4.png" -->
-## What is Web AppBuilder?
+## ¿Qué es Web AppBuilder?
 
 
 ---
 
-## Builder Experience
+## Experiencia de un constructor
 
-Note: Brings "builder" experience from Flex/Silverlight to JavaScript
-
----
-
-## When to use Web AppBuilder
-
-- Good for:
-  - Multi-purpose apps that need to run on multiple devices
-  - Creating a suite of custom apps with consistent style/behavior
-  - Empowering non-devlopers to create apps
-- Other frameworks/templates might be better for:
-  - Specific, custom web apps, with specialized workflows
-  - When there is a template that does almost all of app functionality
+Trasladamos la experiencia de los contructores tipo Flex/Silverlight a JavaScript
 
 ---
 
-## What's new in WAB 2.0 Beta
+## Cuando usar Web AppBuilder
+
+- Bueno para:
+	- Aplicaciones Multipropósito tradicionales en el GIS
+		- Multiples widgets/herramientas(Viene con un abanico de widgets por defecto, podemos desarrollar los pnuestros propios)
+		- Funciona en todos los dispositivos
+	- Crear un abanico de apps con un comportamiento/estilo coherentes (pero ligeramente diferentes para uso en una compañia en diferentes dept. etc...)
+  - Posibilidad de crear aplicaciones para los no desarrolladores
+  *Ninguna herramienta es perfecta para cualquier situación, so:*
+- Otros frameworks/plantillas pueden ser mejor para:
+	- Trabajos más específicos, apps personalizadas, flujos de trbajo muy concretos( API...etc)
+  - Cuando tenemos alguna plantilla que practicamente cubre toda la funcionalidad necesaria
+
+---
+
+## What's new in WAB 2.0
 
 [![3D Preview](img/3d-preview.png)](http://webappbuilderdemos.s3-website-us-east-1.amazonaws.com/waterfront/)
 

@@ -1,19 +1,20 @@
-<h3>Tom Wayson and Gavin Rehkemper</h3>
+<h3>Carlos Herrera & Carlos Pérez</h3>
 <div style="width:50%; float: left;">
     <p>
-        <a href="mailto:twayson@esri.com">twayson@esri.com</a>
+        <a href="mailto:carlosherrer151@gmail.com">carlosherrer151@gmail.com</a>
     </p>
     <p>
-        <a href="https://github.com/tomwayson"><i class="fa fa-github" title="GitHub"></i>/tomwayson</a><br />
-        <a href="https://twitter.com/tomwayson"><i class="fa fa-twitter" title="Twitter"></i>/tomwayson</a>
+        <a href="https://github.com/mundogister"><i class="fa fa-github" title="GitHub"></i>/mundogister</a><br />
+        <a href="https://twitter.com/mundogister"><i class="fa fa-twitter" title="Twitter"></i>/mundogister</a>
+        
     </p>
 </div>
 <div style="width:50%; float: left;">
     <p>
-        <a href="mailto:grehkemper@esri.com">grehkemper@esri.com</a>
+        <a href="mailto:carlospj@icloud.com">carlospj@icloud.com</a>
     </p>
     <p>
-        <a href="https://github.com/gavinr"><i class="fa fa-github" title="GitHub"></i>/gavinr</a><br />
-        <a href="https://twitter.com/gavinrehkemper"><i class="fa fa-twitter" title="Twitter"></i>/gavinrehkemper</a>
+        <a href="https://github.com/jimeno0"><i class="fa fa-github" title="GitHub"></i>/jimeno0</a><br />
+        <a href="https://twitter.com/jimeno0"><i class="fa fa-twitter" title="Twitter"></i>/jimeno0</a>
     </p>
 </div>
