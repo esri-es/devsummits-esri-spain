@@ -1,21 +1,21 @@
 <!-- .slide: data-background="reveal.js/img/bg-4.png" -->
-### Pattern:
-# Source Code
+### Patrón:
+# Código Fuente
 
 ---
 
-## Web AppBuilder Folder Structure
+## Estructura de Carpetas de Web AppBuilder
 
 Note: jump into quick demo of folder structure
 
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-6.png" -->
-## Only Keep YOUR Code in Source Control
+## Sólo mantenga SU código en el Código Fuente
 
 ![MY source control](img/mine.gif)
 
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-6.png" -->
-## Demo: App Generator
+## Demo: Generador de App's
