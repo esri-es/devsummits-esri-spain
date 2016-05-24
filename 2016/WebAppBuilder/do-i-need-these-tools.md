@@ -8,12 +8,6 @@
 
 ---
 
-<!-- .slide: data-background="img/wab-builder.png" -->
-#### WSIWG builder adds complexity
-
-
----
-
 <!-- .slide: data-background="img/problem-7658225516_00cf277f83_z.jpg" -->
 #### Fácil de configurar = Difícil de desarrollar 
 
