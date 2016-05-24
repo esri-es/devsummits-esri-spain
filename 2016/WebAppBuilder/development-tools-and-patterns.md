@@ -23,5 +23,5 @@
 
 ---
 
-<!-- .slide: data-background="img/yo-grunt-babel.png" data-background-size="920px" data-background-color="#fff" -->
+<!-- .slide: data-background="img/grunt-yeoman.jpg" data-background-size="920px" data-background-color="#fff" -->
 #### Tools: [Yeoman](http://yeoman.io/) - [Grunt](http://gruntjs.com/) - [Babel](https://babeljs.io/)
