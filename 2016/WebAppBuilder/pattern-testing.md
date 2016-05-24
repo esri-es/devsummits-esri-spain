@@ -1,8 +1,8 @@
 <!-- .slide: data-background="reveal.js/img/bg-4.png" -->
-### Pattern:
-# Testing Outside Web AppBuilder
+### Patrón:
+# Testeo Fuera De Web AppBuilder
 
 ---
 
 <!-- .slide: data-background="img/test-page-screenshot.png" -->
-#### Develop in the test page
+#### Desarrollo en la página de prueba
