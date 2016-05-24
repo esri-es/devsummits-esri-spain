@@ -5,7 +5,7 @@
     </p>
     <p>
         <a href="https://github.com/mundogister"><i class="fa fa-github" title="GitHub"></i>/mundogister</a><br />
-        <a href="https://twitter.com/mundogister"><i class="fa fa-twitter" title="Twitter"></i>/mundogister</a>
+        <a href="https://twitter.com/mundogister"><i class="fa fa-twitter" title="Twitter"></i>/@mundogister</a>
         
     </p>
 </div>
@@ -15,6 +15,6 @@
     </p>
     <p>
         <a href="https://github.com/jimeno0"><i class="fa fa-github" title="GitHub"></i>/jimeno0</a><br />
-        <a href="https://twitter.com/jimeno0"><i class="fa fa-twitter" title="Twitter"></i>/jimeno0</a>
+        <a href="https://twitter.com/jimeno0"><i class="fa fa-twitter" title="Twitter"></i>/@jimeno0</a>
     </p>
 </div>
