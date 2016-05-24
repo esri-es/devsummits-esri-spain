@@ -1,11 +1,12 @@
 <!-- .slide: data-background="reveal.js/img/bg-4.png" -->
-### Pattern:
-# Wrapping Widgets
+### Patrón:
+# Contenedores de Widgets
 
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
 ### Become a wrap star
+### ¿QUÉ PONGO AQUÍ?
 
 <img src="img/lego-rapper-7302642156_268095d4f2_o.jpg" />
 
@@ -14,21 +15,21 @@
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
 <img src="img/nasa-screenshot.png" />
 
-`BaseWidget`: is the <em>interface</em> between your widget(s) and the WAB
+`BaseWidget`: es la <em>interfaz</em> entre tu widget(s) y WAB
 
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
 <img src="img/nasa-screenshot.png" />
 
-Create sub widget(s) for your business logic / workflows
+Crear sub widget(s) para tu modelo de negocio / flujo de trabajo
 
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
 <img src="img/drs-tabs-screenshot.png" />
 
-Sub widgets go *inside* container widgets (tabs, etc) 
+Sub widgets van *dentro* de los widgets contenedores(tabs, etc) 
 
 ---
 
@@ -38,16 +39,16 @@ Sub widgets go *inside* container widgets (tabs, etc)
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
-### Advantages of Wrap Star Lifestyle
+### Ventajas de Wrap Star Lifestyle
 
 <ul>
-	<li class="fragment">Decoupled widgets are:
+	<li class="fragment">Widgets están separados:
 	  <ul>
-	    <li>Faster to develop</li>
-	    <li>Easier to test</li>
+	    <li>Desarrollo rápido</li>
+	    <li>Fácil de testearEasier to test</li>
 	  </ul>
 	</li>
-	<li class="fragment">Widgets can be used
-	<br/> outside the Web AppBuilder</li>
+	<li class="fragment">Widgets pueden ser usados
+	<br/> fuera de Web AppBuilder</li>
 </ul>
 
