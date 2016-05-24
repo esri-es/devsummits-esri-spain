@@ -1,10 +1,10 @@
 <!-- .slide: data-background="reveal.js/img/bg-4.png" -->
-# Do I Really Need These Tools?
+# Realmente Necesito Estas Herramientas?
 
 ---
 
 <!-- .slide: data-background="img/wab-builder.png" -->
-#### Builder experience is powerful
+#### Constructor ofrece una experiencia potente
 
 ---
 
@@ -15,63 +15,58 @@
 ---
 
 <!-- .slide: data-background="img/problem-7658225516_00cf277f83_z.jpg" -->
-#### Easy for configurators = harder for developers 
+#### Fácil de configurar = Difícil de desarrollar 
 
 ---
 
 <!-- .slide: data-background="img/scaffold-2520054449_b8d243d857_z.jpg" -->
-#### Generators automate this extra work for us
+#### Los generadores automatizan ese trabajo extra por nosotros
 
 ---
 
 <!-- .slide: data-background="img/scaffold-2520054449_b8d243d857_z.jpg" -->
-#### Scaffold out boilerplate code
+#### Construcción automática de código repetitivo
 
 ---
 
 <!-- .slide: data-background="img/scaffold-2520054449_b8d243d857_z.jpg" -->
-#### Install / configure tools to automate tasks
-
----
-
-<!-- .slide: data-background="img/emberjs-logo.png" data-background-size="500px" data-background-color="#fff" -->
-#### Particularly useful for opinionated frameworks
+#### Installar / configurar herramientas para automatizar tareas
 
 ---
 
 <!-- .slide: data-background="img/wab-exploded.png" data-background-size="800px" data-background-color="#fff" -->
-#### WAB is an opinionated frameowrk on top of JSAPI
+#### WAB es un framework que está por encima de la API de JavaScript
 
 ---
 
 <!-- .slide: data-background="img/wab-widget-conventions.png" -->
-#### Heavy use of convetion - influenced by Rails
+#### Tiene un fuerte uso de convenciones - influenciado por Rails
 
 ---
 
 <!-- .slide: data-background="img/wab-generator-sceenshot.png" data-background-size="634px" data-background-color="#000" -->
-#### Ideal for a generator: [yo esri-appbuilder-js](https://www.npmjs.com/package/generator-esri-appbuilder-js)
+#### Lo ideal es un generador: [yo esri-appbuilder-js](https://www.npmjs.com/package/generator-esri-appbuilder-js)
 
 ---
 
 <!-- .slide: data-background="img/wab-generator-sceenshot.png" data-background-size="634px" data-background-color="#000" -->
-#### v2 Supports 3D widgets and ES2015
+#### v2 soporta widgets 3D y ES2015
 
 ---
 
 <!-- .slide: data-background="img/wab-generator-sceenshot.png" data-background-size="634px" data-background-color="#000" -->
-#### Installs tools to transpile and copy to WAB folder
+#### Instalar herramientas para copiar a la carpeta de WAB
 
 ---
 
 <!-- .slide: data-background="img/wab-generator-sceenshot.png" data-background-size="634px" data-background-color="#000" -->
-#### Subgenerator to scaffold out widget files
+#### Subgenerador para construir automáticamente los archivos de los widgets (esqueleto)
 
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-3.png" -->
-### Still not sold on generators?
+### Todavía no se ofrecen los generadores?
 
 <img src="img/issue-screenshot.png" />
 
-[Leave your feedback](https://github.com/Esri/generator-esri-appbuilder-js/issues/63)
+[Deja tus comentarios](https://github.com/Esri/generator-esri-appbuilder-js/issues/63)
