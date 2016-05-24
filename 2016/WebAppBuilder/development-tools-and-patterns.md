@@ -1,23 +1,23 @@
 <!-- .slide: data-background="reveal.js/img/bg-4.png" -->
-# Development Patterns and Tools
+# Desarrollando Patrones y Herramientas
 
 ---
 
-## Patterns are the same
+## Patrones son los mismos
 
 ---
 
-## Tools have improved
+## Las herramientas han mejorado
 
 ---
 
-## Patterns
+## Patrones
 
 <ol>
-	<li class="fragment">Keep your source code outside of the WAB folders</li>
-	<li class="fragment">Don't write WAB widgets from scratch</li>
-	<li class="fragment">WAB widgets wrap your own widgets</li>
-	<li class="fragment">Run and test your code outside the WAB</li>
+	<li class="fragment">Guarda tu código fuera de la carpeta de WAB</li>
+	<li class="fragment">No realices widgets de WAB desde cero</li>
+	<li class="fragment">Los widgets de WAB envuelven tus propios widgets</li>
+	<li class="fragment">Testea tu código fuera de WAB</li>
 
 </ol>
 
