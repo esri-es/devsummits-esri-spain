@@ -14,14 +14,14 @@ Trasladamos la experiencia de los contructores tipo Flex/Silverlight a JavaScrip
 
 - Bueno para:
 	- Aplicaciones Multipropósito tradicionales en el GIS
-		- Multiples widgets/herramientas(Viene con un abanico de widgets por defecto, podemos desarrollar los pnuestros propios)
+		- Multiples widgets/herramientas(Varios widgets por defecto y posibilidad de desarrollar los nuestros)
 		- Funciona en todos los dispositivos
-	- Crear un abanico de apps con un comportamiento/estilo coherentes (pero ligeramente diferentes para uso en una compañia en diferentes dept. etc...)
+	- Crear un abanico de apps con un comportamiento/estilo coherentes (pero ligeramente diferentes para uso en una compañia en diferentes dept. etc.)
   - Posibilidad de crear aplicaciones para los no desarrolladores
-  *Ninguna herramienta es perfecta para cualquier situación, so:*
+  
 - Otros frameworks/plantillas pueden ser mejor para:
-	- Trabajos más específicos, apps personalizadas, flujos de trbajo muy concretos( API...etc)
-  - Cuando tenemos alguna plantilla que practicamente cubre toda la funcionalidad necesaria
+	- Trabajos más específicos, apps personalizadas, flujos de trabajo concretos( API, etc.)
+  - Cuando tenemos alguna plantilla que prácticamente cubre toda la funcionalidad necesaria
 
 ---
 
