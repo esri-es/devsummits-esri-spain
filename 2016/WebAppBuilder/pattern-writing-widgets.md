@@ -1,7 +1,7 @@
 <!-- .slide: data-background="reveal.js/img/bg-4.png" -->
-### Pattern:
-# Do Not Write Widgets from Scratch
+### Patrón:
+# No Realices Widgets Desde Cero
 
 ---
 
-## Demo: Widget Sub Generator
+## Demo: Sub Generador de Widgets
