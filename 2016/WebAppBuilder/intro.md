@@ -1,7 +1,7 @@
 # Web AppBuilder for ArcGIS
 ## Herramientas y técnicas de desarrollo
 
-Carlos Herrera & Carlos Pérez
+Carlos Herrera & Carlos Pérez Jimeno
 
 Presentación original: Tom Wayson and Gavin Rehkemper
 

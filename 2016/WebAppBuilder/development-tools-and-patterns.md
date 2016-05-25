@@ -3,11 +3,9 @@
 
 ---
 
-## Existen nuevos patrones
+## Nuevos patrones y herramientas
 
----
-
-## Las herramientas han mejorado
+*Mejorando el flujo de trabajo*
 
 ---
 
@@ -23,5 +21,6 @@
 
 ---
 
-<!-- .slide: data-background="img/grunt-yeoman.jpg" data-background-size="920px" data-background-color="#fff" -->
-#### Tools: [Yeoman](http://yeoman.io/) - [Grunt](http://gruntjs.com/) - [Babel](https://babeljs.io/)
+<img src="img/grunt-yeoman.jpg" alt="yeoman" style="width: 1000px;"/>
+
+#### Herramientas: [Yeoman](http://yeoman.io/) - [Grunt](http://gruntjs.com/)

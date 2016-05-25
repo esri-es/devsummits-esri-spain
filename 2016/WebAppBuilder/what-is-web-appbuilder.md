@@ -4,7 +4,7 @@
 
 ---
 
-## Experiencia de un constructor
+## Experiencia de constructor
 
 Trasladamos la experiencia de los contructores tipo Flex/Silverlight a JavaScript
 
@@ -14,18 +14,16 @@ Trasladamos la experiencia de los contructores tipo Flex/Silverlight a JavaScrip
 
 - Bueno para:
 	- Aplicaciones Multipropósito tradicionales en el GIS
-		- Multiples widgets/herramientas(Varios widgets por defecto y posibilidad de desarrollar los nuestros)
-		- Funciona en todos los dispositivos
-	- Crear un abanico de apps con un comportamiento/estilo coherentes (pero ligeramente diferentes para uso en una compañia en diferentes dept. etc.)
-  - Posibilidad de crear aplicaciones para los no desarrolladores
+	- Crear un abanico de apps con un comportamiento/estilo coherentes
+	- Posibilidad de crear aplicaciones sin conocimientos de desarrollo
   
 - Otros frameworks/plantillas pueden ser mejor para:
-	- Trabajos más específicos, apps personalizadas, flujos de trabajo concretos( API, etc.)
-  - Cuando tenemos alguna plantilla que prácticamente cubre toda la funcionalidad necesaria
+	- Trabajos más específicos, apps personalizadas, flujos de trabajo concretos
+	- Cuando tenemos alguna plantilla que prácticamente cubre toda la funcionalidad necesaria
 
 ---
 
-## What's new in WAB 2.0
+## Novedades en WAB 2.0
 
 [![3D Preview](img/3d-preview.png)](http://webappbuilderdemos.s3-website-us-east-1.amazonaws.com/waterfront/)
 

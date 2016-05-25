@@ -1,4 +1,4 @@
-<h3>Carlos Herrera & Carlos Pérez</h3>
+<h3>Carlos Herrera & Carlos Pérez Jimeno</h3>
 <div style="width:50%; float: left;">
     <p>
         <a href="mailto:carlosherrer151@gmail.com">carlosherrer151@gmail.com</a>
