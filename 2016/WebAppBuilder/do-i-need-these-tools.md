@@ -19,7 +19,7 @@
 ---
 
 <!-- .slide: data-background="img/scaffold-2520054449_b8d243d857_z.jpg" -->
-#### Automatización de la construcción de esqueletos
+#### Generación automática del boilerplate code
 
 ---
 
@@ -54,7 +54,7 @@
 ---
 
 <!-- .slide: data-background="img/wab-generator-sceenshot.png" data-background-size="634px" data-background-color="#000" -->
-#### Subgenerador para construir automáticamente los archivos de los widgets (esqueleto)
+#### Subgenerador para construir automáticamente los archivos de los widgets
 
 ---
 

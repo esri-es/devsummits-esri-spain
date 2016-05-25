@@ -6,7 +6,7 @@
 
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
 ### Become a wrap star
-### ¿QUÉ PONGO AQUÍ?
+
 
 <img src="img/lego-rapper-7302642156_268095d4f2_o.jpg" />
 
@@ -22,14 +22,14 @@
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
 <img src="img/nasa-screenshot.png" />
 
-Crear sub widget(s) para tu modelo de negocio / flujo de trabajo
+Crea sub widget(s) para tu business logic/workflows
 
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
 <img src="img/drs-tabs-screenshot.png" />
 
-Sub widgets van *dentro* de los widgets contenedores(tabs, etc) 
+Sub widgets *dentro* de los widgets contenedores(tabs, etc) 
 
 ---
 
@@ -39,13 +39,13 @@ Sub widgets van *dentro* de los widgets contenedores(tabs, etc)
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
-### Ventajas de Wrap Star Lifestyle
+### Ventajas de der un Wrap Star
 
 <ul>
-	<li class="fragment">Widgets están separados:
+	<li class="fragment">Widgets independientes:
 	  <ul>
 	    <li>Desarrollo rápido</li>
-	    <li>Fácil de testearEasier to test</li>
+	    <li>Fácil de testear</li>
 	  </ul>
 	</li>
 	<li class="fragment">Widgets pueden ser usados
