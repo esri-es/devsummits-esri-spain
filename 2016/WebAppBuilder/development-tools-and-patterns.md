@@ -3,7 +3,7 @@
 
 ---
 
-## Patrones son los mismos
+## Existen nuevos patrones
 
 ---
 
