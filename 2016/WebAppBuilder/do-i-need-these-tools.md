@@ -4,7 +4,7 @@
 ---
 
 <!-- .slide: data-background="img/wab-builder.png" -->
-#### Constructor ofrece una experiencia potente
+#### Constructores: Potente experiencia de usuario
 
 ---
 
@@ -19,27 +19,27 @@
 ---
 
 <!-- .slide: data-background="img/scaffold-2520054449_b8d243d857_z.jpg" -->
-#### Construcción automática de código repetitivo
+#### Automatización de la construcción de esqueletos
 
 ---
 
 <!-- .slide: data-background="img/scaffold-2520054449_b8d243d857_z.jpg" -->
-#### Installar / configurar herramientas para automatizar tareas
+#### Instala / configura las herramientas para automatizar tareas
 
 ---
 
 <!-- .slide: data-background="img/wab-exploded.png" data-background-size="800px" data-background-color="#fff" -->
-#### WAB es un framework que está por encima de la API de JavaScript
+#### WAB: opinionated framework montado sobre la API de JavaScript
 
 ---
 
 <!-- .slide: data-background="img/wab-widget-conventions.png" -->
-#### Tiene un fuerte uso de convenciones - influenciado por Rails
+#### Fuerte uso de convenciones - influenciado por Rails
 
 ---
 
 <!-- .slide: data-background="img/wab-generator-sceenshot.png" data-background-size="634px" data-background-color="#000" -->
-#### Lo ideal es un generador: [yo esri-appbuilder-js](https://www.npmjs.com/package/generator-esri-appbuilder-js)
+#### Ideal para generadores: [yo esri-appbuilder-js](https://www.npmjs.com/package/generator-esri-appbuilder-js)
 
 ---
 
@@ -49,7 +49,7 @@
 ---
 
 <!-- .slide: data-background="img/wab-generator-sceenshot.png" data-background-size="634px" data-background-color="#000" -->
-#### Instalar herramientas para copiar a la carpeta de WAB
+#### Instala las herramientas para copiar a la carpeta de WAB
 
 ---
 
@@ -59,7 +59,7 @@
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-3.png" -->
-### Todavía no se ofrecen los generadores?
+### Todavía no te convencen los generadores?
 
 <img src="img/issue-screenshot.png" />
 
