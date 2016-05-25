@@ -1,5 +1,12 @@
 # Resources
 
+| WAB | Geonet | Herramientas |
+| --- | ------ | ------------ |
+| [WAB. Documentación, descargas y soporte](https://developers.arcgis.com/web-appbuilder/) | [Grupos GeoNet](https://geonet.esri.com/places?query=appbuilder) | [Generador Yeoman para ayudar a personalizar Web AppBuilder](https://github.com/Esri/generator-esri-appbuilder-js) |
+| [Directorio de Widgets Personalizados](http://esri-es.github.io/Web-AppBuilder-Custom-Widgets/) | [Grupo de Widgets Personalizados](https://geonet.esri.com/groups/web-app-builder-custom-widgets) | [Videotutorial Yeoman (desarrolladores.esri.es)](http://desarrolladores.esri.es/nuevas-metodologias-para-wab/) |
+| [Proyectos relacionados con Web AppBuilder en el GitHub de Esri España](https://github.com/esri?utf8=%E2%9C%93&query=appbuilder) | [Grupo de Temas Personalizados](https://geonet.esri.com/groups/web-appbuilder-custom-themes) |  |
+| [WAB Widget Search](http://gavinr.github.io/wab-widget-search) |  |  |
+
 - [WAB. Documentación, descargas y soporte](https://developers.arcgis.com/web-appbuilder/)
 - [Videos en: **video.esri.com**](http://video.esri.com/search/web-appbuilder)
 - [Grupos GeoNet](https://geonet.esri.com/places?query=appbuilder)
