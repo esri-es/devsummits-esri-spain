@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Scale feature sizes based on real world sizes (2D) - 4.0</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.0/"></script>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    
+    #infoDiv {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 300px;
+      background-color: lightgray;
+      padding: 8px;
+      border-top-right-radius: 5px;
+      color: black;
+      opacity: 0.9;
+    }
+  </style>
+
+  <script>
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/layers/FeatureLayer",
+      "esri/renderers/SimpleRenderer",
+      "esri/symbols/SimpleMarkerSymbol",
+      "esri/widgets/Legend",
+      "dojo/domReady!"
+    ], function(
+      Map, MapView,
+      FeatureLayer,
+      SimpleRenderer,
+      SimpleMarkerSymbol,
+      Legend
+    ) {
+
+      /******************************************************************
+       *
+       * Create a simple renderer, assign a default symbol. The visual
+       * variables will take over and generate a color for each tree based
+       * on the amount of carbon storage and it will size each point based
+       * on the actual canopy size of the tree.
+       *
+       * In this case the data has a "Width_EW" field that contains the diameter
+       * of the canopy from EW. The diameter there will be used to scale
+       * each symbol size as it exists in the real world.
+       *
+       ******************************************************************/
+
+      var renderer = new SimpleRenderer({
+        symbol: new SimpleMarkerSymbol({
+          outline: {
+            color: "lightgray",
+            width: 0.5
+          }
+        })
+,
+        visualVariables: [{
+          type: "size",
+          field: "PrecioGaso",
+          normalizationField: "minDataValue",
+          valueRepresentation: "diameter"
+        }],
+      
+
+      });
+
+      // Assign the renderer to the layer
+      var treesLyr = new FeatureLayer({
+        url: "http://services3.arcgis.com/gzPLi0vbk0c1QVGb/arcgis/rest/services/Gasolinerasshape/FeatureServer/0",
+        renderer: renderer
+      });
+
+      var map = new Map({
+        basemap: "dark-gray",
+        layers: [treesLyr]
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-3.627027, 40.432548],
+        zoom: 15
+      });
+
+      /******************************************************************
+       *
+       * Add layers to layerInfos on the legend
+       *
+       ******************************************************************/
+
+      var legend = new Legend({
+        view: view,
+        layerInfos: [
+        {
+          layer: treesLyr,
+          title: "Carbon storage of trees"
+        }]
+      }, "infoDiv");
+
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+  <div id="infoDiv"></div>
+</body>
+
+</html>
