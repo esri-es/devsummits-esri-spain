@@ -79,12 +79,29 @@ Trabajar con información espacial -> niveles de abstracción
 ---
 
 <!-- .slide: class="section" -->
-## Productos
+## Novedades en las Runtime SDKs
+
 
 ---
 
 <!-- .slide: class="section" -->
-## Formas de desarrollar
+
+<iframe class="stretch" width="100%" height="100%" src="http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/1-fundamentals/multiple-views.html" frameborder="0" allowfullscreen></iframe>
+
+
+---
+
+<!-- .slide: class="section" -->
+## Novedades en las Runtime SDKs
+
+<iframe class="stretch" width="100%" height="100%" src="https://www.youtube.com/embed/1s647rCxjBk" frameborder="0" allowfullscreen></iframe>
+
+---
+
+<!-- .slide: class="section" -->
+## Xamarin
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/PxuQAlyEg1Q" frameborder="0" allowfullscreen></iframe>
 
 ---
 
