@@ -66,7 +66,9 @@
         basemap: 'satellite'
       });
       
-      var featureLayer = new FeatureLayer(serviceUrl);
+      var featureLayer = new FeatureLayer(serviceUrl, {
+        opacity: .5
+      });
 
       map.add(featureLayer);
 
@@ -118,7 +120,9 @@
     basemap: 'satellite'
   });
 
-  var featureLayer = new FeatureLayer(serviceUrl);
+  var featureLayer = new FeatureLayer(serviceUrl, {
+    opacity: .5
+  });
       
   map.add(featureLayer);
 
@@ -153,7 +157,7 @@
           <span class="label">4.0</span>
         </div>
         <div class="main">
-          <span class="title">Multiples Vistas de mapa</span>
+          <span class="title">Multiple map views</span>
         </div>
         <div class="actionBar">
           <div class="button showcode">
