@@ -1,9 +1,22 @@
 <!-- .slide: class="title" -->
-
 ## Developers: What's new?
-Raúl Jiménez - Head of developers and startups program
+[Raúl Jiménez](http://www.rauljimenez.info) - Head of developers and startups program
+
+[![hhkaos icon](images/rounded_120x120.png)](http://www.twitter.com/hhkaos)
 
 [bit.ly/devsummit1](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/)
+
+---
+
+<!-- .slide: class="agenda" -->
+
+## Our goals for today
+
+>1. Give you an update on developers technologies
+2. Give you tons os resources
+3. Help you better understand:
+  1. How the platform works
+  2. Our developers products strategy
 
 
 ---
@@ -30,9 +43,9 @@ Raúl Jiménez - Head of developers and startups program
 
 <!-- .slide: class="background" -->
 
-**[Developer Summit](http://www.esri.com/events/devsummit)**, California 08-11 Marzo 16
+**[Developer Summit](http://www.esri.com/events/devsummit)**, California 08-11 March '16
 
-<iframe src="https://docs.google.com/presentation/d/1D0aDPjETAdD76r8NgZe5WgmcNGxqLnYtHw1pHEiSg1E/embed?start=true&loop=false&delayms=3000" frameborder="0" width="960" height="680" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/1D0aDPjETAdD76r8NgZe5WgmcNGxqLnYtHw1pHEiSg1E/embed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="680" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ---
 
@@ -68,8 +81,8 @@ Raúl Jiménez - Head of developers and startups program
 ---
 
 <!-- .slide: class="background" -->
-
-<iframe id="iframe_container" class="stretch" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""  height="100%" width="100%"  src="https://prezi.com/embed/plj9jjmhl4bv/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0cnRuNnNrUkpkbmpiWW1xczFpWE1PSmRnPT0&amp;landing_sign=MvZ0vZ239j4GpJe1ht2D8Fy8hqm18eUHaORvUmUv_BU"></iframe>
+Prezi
+<!--<iframe id="iframe_container" class="stretch" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""  height="100%" width="100%"  src="https://prezi.com/embed/plj9jjmhl4bv/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0cnRuNnNrUkpkbmpiWW1xczFpWE1PSmRnPT0&amp;landing_sign=MvZ0vZ239j4GpJe1ht2D8Fy8hqm18eUHaORvUmUv_BU"></iframe>-->
 
 ---
 
