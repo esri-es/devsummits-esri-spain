@@ -7,13 +7,13 @@
 
   <title>4.0 - Navigation</title>
 
-  <link rel="stylesheet" href="//jsdev.arcgis.com/4.0/esri/css/main.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
   <link rel="stylesheet" href="../commons/css/style.css">
   <link rel="stylesheet" href="../commons/libs/codemirror/codemirror.css">
   <link rel="stylesheet" href="../commons/libs/codemirror/monokai.css">
 
   <script src="../commons/dojo-config.js"></script>
-  <script src="//jsdev.arcgis.com/4.0/"></script>
+  <script src="https://js.arcgis.com/4.0/"></script>
 
   <style>
     #indicatorButton {
@@ -47,18 +47,21 @@
       Map, SceneView, Scheduler,
       dom, on
     ) {
+       // Create the Map
       map = new Map({
-        basemap: "hybrid"
+        basemap: "hybrid",
+        ground: "world-elevation"
       });
 
+      // Create the SceneView
       view = new SceneView({
-        map: map,
         container: "viewDiv",
+        map: map,
         camera: {
-          position: [7.654, 45.919, 5183],
+          position: [7.654, 45.919, 5184],
           tilt: 80
         },
-        padding: {
+        padding:{
           top: 85
         }
       });
@@ -187,14 +190,16 @@
       <div id="code" class="code manual top right shadowed" style="bottom: 36px;">
         <textarea id="codemirror">
 var map = new Map({
-  basemap: "hybrid"
+  basemap: "hybrid",
+  ground: "world-elevation"
 });
 
+// Create the SceneView
 var view = new SceneView({
-  map: map,
   container: "viewDiv",
+  map: map,
   camera: {
-    position: [7.654, 45.919, 5183],
+    position: [7.654, 45.919, 5184],
     tilt: 80
   }
 });
