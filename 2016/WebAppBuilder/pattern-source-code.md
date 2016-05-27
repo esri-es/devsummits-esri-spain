@@ -1,6 +1,6 @@
 <!-- .slide: data-background="reveal.js/img/bg-4.png" -->
 ### Patrón:
-# Código Fuente
+# Código Fuente fuera de WAB
 
 ---
 
@@ -11,7 +11,7 @@ Note: jump into quick demo of folder structure
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-6.png" -->
-## Sólo mantenga SU código en el Código Fuente
+## Sólo TU código en el espacio de trabajo
 
 ![MY source control](img/mine.gif)
 

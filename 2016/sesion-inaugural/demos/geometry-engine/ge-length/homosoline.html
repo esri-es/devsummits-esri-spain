@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    
+<title>Goode's Homosoline</title>
+
+<link rel="stylesheet" href="http://js.arcgis.com/3.15/esri/css/esri.css">
+
+<style>
+  html, body, #map {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+#results{
+  top: 120px;
+  right: 20px;
+}
+    
+#gsResult, #geResult, #difference{
+  font-weight: 900;
+}
+        
+#title{
+  top: 20px;
+  width: 50%; 
+  height: 50px;;
+  padding-top: 5px;
+  text-align: center;
+  margin: 0 0 0 25%;
+}
+.mainStyle{
+  position: absolute;
+  z-index: 99;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border-width: medium;
+  padding: 15px;
+  opacity: 0.75;
+}    
+
+</style>
+
+<script src="http://js.arcgis.com/3.15/"></script>  
+<script>
+var map, geoGraphic, homosolineSR, homosolineLyr;
+
+require(["esri/map",
+       "esri/graphic",
+       "esri/Color",
+       "esri/layers/GraphicsLayer",
+       "esri/layers/ArcGISDynamicMapServiceLayer",
+       "esri/symbols/SimpleLineSymbol",
+       "esri/geometry/geometryEngine",
+       "esri/geometry/Polyline",         
+       "esri/tasks/LengthsParameters",
+       "esri/tasks/GeometryService",     
+       "dojo/dom",
+       "dojo/on",
+       "dojo/domReady!"], function(Map, Graphic, Color, GraphicsLayer, ArcGISDynamicMapServiceLayer, SimpleLineSymbol, geometryEngine, Line, LengthsParameters, GeometryService, dom, on) {
+    
+    var gs = new GeometryService("http://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/Geometry/GeometryServer");
+    var loading = dom.byId("loadingImg");
+    homosolineLyr = new ArcGISDynamicMapServiceLayer("http://maps.esri.com/apl4/rest/services/UC2012/UC2012_ServerCartogram/MapServer");
+    
+    map = new Map("map");    
+    map.addLayer(homosolineLyr);
+    
+    on(homosolineLyr, "load", function(evt){
+      map.setExtent(homosolineLyr.fullExtent);
+    });
+    
+    var defaultLineSym = new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color("black"), 4);
+    var lineLayer = new GraphicsLayer();
+    map.addLayers([lineLayer]);
+
+        //Function for creating drawing line
+    function drawLine(pt1, pt2){
+      var pt1Cor = [pt1.x, pt1.y];
+      var pt2Cor = [pt2.x, pt2.y];
+      var lineJSON = {
+          paths: [[pt1Cor, pt2Cor]],
+          spatialReference: pt1.spatialReference
+      };
+      var polyLine = new Line(lineJSON);
+      return polyLine;
+    }
+
+    var clicks = 0;  
+    var newLine = null;
+    on(map, "click", function(evt){
+        clicks++;  //increment map clicking var for line construction purposes
+        if(clicks === 1){
+            lineLayer.clear();
+            dom.byId("instructions").innerHTML = "Double-click to finish the line.";
+            map.disableMapNavigation();
+
+            var lineGeom = drawLine(evt.mapPoint, evt.mapPoint);
+            newLine = new Graphic(lineGeom, defaultLineSym);
+            lineLayer.add(newLine);
+        }
+        if(clicks > 1){
+          //Add additional line paths for each click (can be "buggy" at times) don't click too fast
+          newLine.geometry.addPath([newLine.geometry.paths[newLine.geometry.paths.length-1][1], evt.mapPoint]);
+          lineLayer.redraw();
+        }
+        return;
+    });
+
+    on(map, "mouse-move", function(evt){
+      if(newLine){
+        newLine.geometry.setPoint(newLine.geometry.paths.length-1, 1, evt.mapPoint);
+        lineLayer.redraw();
+      }
+    });
+
+    on(map, "dbl-click", function(evt){
+      dom.byId("instructions").innerHTML = "Click the map to begin drawing a line.";    
+      if(newLine){
+          newLine.geometry.setPoint(newLine.geometry.paths.length-1, 1, evt.mapPoint);
+          gsMeasure(newLine.geometry);
+          geMeasure(newLine.geometry);
+          lineLayer.redraw();
+          
+          newLine = null;    
+          clicks = 0;
+          map.enableMapNavigation();
+      }
+    });
+    
+    
+    function gsMeasure(geom){
+      var params = new LengthsParameters();
+      params.geodesic = true;
+      params.calculationType = "geodesic";
+      params.lengthUnit = GeometryService.UNIT_STATUTE_MILE;
+      params.polylines = [geom];
+        
+      gs.lengths(params, function(response){
+         dom.byId("gsResult").innerHTML = numberWithCommas(Math.round(response.lengths[0] * 100) / 100);
+         dom.byId("difference").innerHTML = numberWithCommas((Math.round((response.lengths[0] - geMeasure(geom)) * 100)/100)); 
+      });
+    }
+    
+    function geMeasure(geom){
+       var result = geometryEngine.planarLength(geom, "miles");
+       dom.byId("geResult").innerHTML = numberWithCommas(Math.round(result * 100) / 100);
+       return result;
+    }
+    
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    
+    on(map, "update-start", showLoading);
+    on(map, "update-end", hideLoading);
+    
+    function showLoading() {
+      esri.show(loading);
+      map.disableMapNavigation();
+    }
+
+    function hideLoading(error) {
+      esri.hide(loading);
+      map.enableMapNavigation();
+    } 
+
+});
+</script>
+</head>
+
+<body>
+<div id="map">
+<img id="loadingImg" src="http://developers.arcgis.com/javascript/samples/map_showloading/images/loading.gif" style="position:absolute; right:49%; top:49%; z-index:100;" />    
+<div class="mainStyle" id="title"><h2>Length in Goode's Homosoline</h2></div>
+<div class="mainStyle" id="results"><span id="instructions">Click the map to begin drawing a line.</span><br><br>
+GE Planar Length: <span id="geResult"></span> mi
+<br>GS Length (geodesic): <span id="gsResult"></span> mi  
+<br>Difference: <span id="difference"></span> mi     
+</div>  
+</div>
+</body>
+</html>
