@@ -12,10 +12,12 @@
 
 ## Our goals for today
 
->1. Give you an update on developers technologies
-2. Give you tons os resources
+>1. Give you:
+  1. An update on developers technologies
+  2. Tons of resources
+  3. Some tricks, good practices and tools
 3. Help you better understand:
-  1. How the platform works
+  1. How the platform works 
   2. Our developers products strategy
 
 
@@ -51,13 +53,17 @@
 
 <!-- .slide: class="agenda" -->
 
-## In this session
+## Content for this session
 
 * Esri's vision for developers
 * Product development strategy
-* What's new in API for JavaScript 4.0
-* What's new in Runtime SDKs
-* What's new in Configurables Apps & Builders
+* Demos showing what's new in:
+  * API for JavaScript 4.0
+  * Runtime SDKs
+* What's new in:
+  * Web AppBuilder Developer Edition
+  * AppStudio & Survey123
+  * Web Configurable Apps
 
 
 ---
@@ -80,8 +86,11 @@
 
 ---
 
-<!-- .slide: class="background" -->
-Prezi
+<!-- .slide: class="section" -->
+
+### Developers: Technologies & Resources
+
+[![prezi image](images/arcgis-developers.jpg)](https://prezi.com/plj9jjmhl4bv/arcgis-developers-tecnologies-resources/)
 <!--<iframe id="iframe_container" class="stretch" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""  height="100%" width="100%"  src="https://prezi.com/embed/plj9jjmhl4bv/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0cnRuNnNrUkpkbmpiWW1xczFpWE1PSmRnPT0&amp;landing_sign=MvZ0vZ239j4GpJe1ht2D8Fy8hqm18eUHaORvUmUv_BU"></iframe>-->
 
 ---
@@ -122,6 +131,7 @@ Prezi
 * Visualization:
   * [2D Properties](demos/4-visualization/trees-2d.html)
   * [3D Properties](demos/4-visualization/trees-3d.html)
+  * [3D Realistic trees](demos/4-visualization/realistic-trees-3d.html)
 
 * Create app from WebScenes:
   * [Web Scenes](demos/5-platform/webscene.html)
@@ -136,9 +146,9 @@ Prezi
   * [Custom actions](demos/7-widgets/popup/custom-actions.html)
 
 * Widgets (redesign, use and UI containers):
-  * [Something](demos/7-widgets/all-widgets.html)
-  * [CSS](demos/8-css/)
-  * [Vector tiles](demos/9-css-vectortiles/)
+  * [Comprehensive CSS classes](demos/7-widgets/all-widgets.html)
+  * [Style UI to match Map](demos/8-css/)
+  * [Style UI to match custom vector tiles](demos/9-css-vectortiles/)<br><small>*Angeles Lakers Style*</small>
 
 --
 
@@ -150,10 +160,10 @@ Prezi
 
 --
 
-#### Demos 
+#### Demos
 
-* [React](demos/7-widgets/frankenwidget/)
-* [React 2](demos/7-widgets/framework/)
+* [Custom components using React](demos/7-widgets/frankenwidget/)
+* [Mobile friendly components with React](demos/7-widgets/framework/)
 
 --
 
@@ -173,13 +183,9 @@ Now you can use:
 
 --
 
-<iframe class="stretch" width="100%" height="100%" src="https://www.youtube.com/embed/1s647rCxjBk" frameborder="0" allowfullscreen></iframe>
+## Plennary demos
 
---
-
-### ArcGIS Runtime SDK for Xamarin
-
-<iframe class="stretch" width="100%" height="100%" src="https://www.youtube.com/embed/PxuQAlyEg1Q" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/h2IeCJLfXNE" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -245,13 +251,13 @@ Now you can use:
 
 ### 3D support + new widgets 
 
-![wab](images/wab.jpg)
+[![wab](images/wab.jpg)](http://desarrolladores.esri.es/web-appbuilder-2-0-news/)
 
 --
 
 ### New tools & Workflows
 
-![wab](images/yeoman-grunt.png)
+[![wab](images/0-yeoman.jpg)](http://desarrolladores.esri.es/nuevas-metodologias-para-wab/)
 
 ---
 

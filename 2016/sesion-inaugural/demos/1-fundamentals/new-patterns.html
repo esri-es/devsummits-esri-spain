@@ -81,7 +81,7 @@
 </head>
 
 <body class="light">
-  <div id="code" class="code visible" style="top: 0; bottom: 0px; right: 0; width: 45%;">
+  <div id="code" class="code manual right shadowed" style="top: 100px; bottom: 36px;">
     <textarea id="codemirror">
 require([
   "esri/Map",
@@ -139,7 +139,7 @@ require([
 
     </textarea>
   </div>
-  <div class="application" style="position: relative; left: 0; top: 0; bottom: 0; width: 55%;">
+  <div class="application" style="position: relative; left: 0; top: 0; bottom: 0;">
     <div id="viewDiv">
     </div>
     <div class="applicationBar bluesky" style="">
@@ -149,6 +149,14 @@ require([
         </div>
         <div class="main">
           <span class="title">New patterns</span>
+        </div>
+        <div class="actionBar">
+          <div class="button showcode">
+            <span>code</span>
+          </div>
+          <div class="button showsourcecode">
+            <span>full code</span>
+          </div>
         </div>
       </div>
     </div>

@@ -18,6 +18,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal .slide-background.geoinformation-model {
   background-image: url(geoinformation-model.jpg);
 }
+.reveal .slide-background.arcgis-developers {
+  background-image: url(arcgis-developers.jpg);
+}
 .reveal .slide-background.appstudio {
   background-image: url(appstudio.jpg);
 }

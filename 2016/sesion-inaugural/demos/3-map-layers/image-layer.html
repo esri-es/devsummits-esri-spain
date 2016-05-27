@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="//jsdev.arcgis.com/4.0/dojox/form/resources/RangeSlider.css">
 
   <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
-
+  <script src="../commons/dojo-config.js"></script>
   <script src="https://js.arcgis.com/4.0/"></script>
 
   <style>
@@ -55,7 +55,7 @@
       "dijit/form/HorizontalRule", 
       
       
-
+      "commons/init",
       "dojo/domReady!"
     ],
     function(
@@ -254,6 +254,11 @@
         </div>
         <div class="main">
           <span class="title">Image Layer</span>
+        </div>
+        <div class="actionBar">
+          <div class="button showsourcecode">
+            <span>full code</span>
+          </div>
         </div>
       </div>
     </div>

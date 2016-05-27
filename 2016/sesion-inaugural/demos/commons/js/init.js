@@ -57,4 +57,11 @@ define([
     query(".code.manual").toggleClass("visible");
   });
 
+  query(".button.showsourcecode").on("click", function(event) {
+    location.href="https://github.com/esri-es/devsummits-esri-spain/tree/gh-pages"+location.pathname;
+  });
+  query(".ui-button.showsourcecode").on("click", function(event) {
+    location.href="https://github.com/esri-es/devsummits-esri-spain/tree/gh-pages"+location.pathname;
+  });
+
 });

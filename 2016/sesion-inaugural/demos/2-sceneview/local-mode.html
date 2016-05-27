@@ -210,6 +210,34 @@
 <body class="light calcite">
   <div class="application">
     <div id="viewDiv">
+    <div id="code" class="code manual top right shadowed" style="bottom: 36px;">
+        <textarea id="codemirror">
+  view = new SceneView({
+    container: 'viewDiv',
+    map: scene,
+    viewingMode: 'local',          
+    clippingArea: {
+      xmin: 344556.17949990794,
+      ymin: 3786680.957522931,
+      xmax: 368905.9689491527,
+      ymax: 3801033.594521225,
+      spatialReference: {
+        wkid: 26711
+      }
+    },
+    camera: {
+      position: {
+        x: 356379,
+        y: 3793482,
+        z: 60000,
+        spatialReference: 26711
+      },
+      heading: 0,
+      tilt: 0
+    }
+  });
+        </textarea>
+    </div>
     </div>
     <div class="applicationBar bluesky">
       <div class="content">
@@ -218,6 +246,14 @@
         </div>
         <div class="main">
           <span class="title">Local WebScene</span>
+        </div>
+        <div class="actionBar">
+          <div class="button showcode">
+            <span>code</span>
+          </div>
+          <div class="button showsourcecode">
+            <span>full code</span>
+          </div>
         </div>
       </div>
     </div>
