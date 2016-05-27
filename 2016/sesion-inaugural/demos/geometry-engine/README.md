@@ -20,7 +20,7 @@ You can explore the following samples here:
 
 [Geomery Engine demo, Apple orchards](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-demo/)
 
-[Geomery Engine demo, Apple orchards](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-demo/requests.html)
+[Geomery Engine demo, Apple Orchards counting saved requests](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-demo/requests.html)
 
 
 ## Geodesic Length vs Planar Lenght
@@ -49,7 +49,6 @@ APP ROTA, REVISAR
 ---
 
 APP ROTA, REVISAR
-
 [Overlaps, All-land¿?¿?](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-overlay/all-land.html)
 
 
