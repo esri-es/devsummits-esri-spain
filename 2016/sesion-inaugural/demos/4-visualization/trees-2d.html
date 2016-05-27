@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>4.0 - Trees</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+  <link rel="stylesheet" href="../commons/css/style.css">
+  <link rel="stylesheet" href="../commons/libs/codemirror/codemirror.css">
+  <link rel="stylesheet" href="../commons/libs/codemirror/monokai.css">
+   
+<script src="../commons/dojo-config.js"></script>
+  <script src="https://js.arcgis.com/4.0/"></script>
+
+ <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    
+    #infoDiv {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 300px;
+      background-color: lightgray;
+      padding: 8px;
+      border-top-right-radius: 5px;
+      color: black;
+      opacity: 0.9;
+    }
+  </style>
+
+  <script>
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/layers/FeatureLayer",
+      "esri/renderers/SimpleRenderer",
+      "esri/symbols/SimpleMarkerSymbol",
+      "esri/widgets/Legend",
+      'commons/init',
+      "dojo/domReady!"
+    ], function(
+      Map, MapView,
+      FeatureLayer,
+      SimpleRenderer,
+      SimpleMarkerSymbol,
+      Legend
+    ) {
+
+      /******************************************************************
+       *
+       * Create a simple renderer, assign a default symbol. The visual
+       * variables will take over and generate a color for each tree based
+       * on the amount of carbon storage and it will size each point based
+       * on the actual canopy size of the tree.
+       *
+       * In this case the data has a "Width_EW" field that contains the diameter
+       * of the canopy from EW. The diameter there will be used to scale
+       * each symbol size as it exists in the real world.
+       *
+       ******************************************************************/
+
+      var renderer = new SimpleRenderer({
+        symbol: new SimpleMarkerSymbol({
+          outline: {
+            color: "lightgray",
+            width: 0.5
+          }
+        }),
+        visualVariables: [{
+          type: "size",
+          field: "Width_EW",
+          valueUnit: "feet", // values of Width_EW are expressed in feet
+          valueRepresentation: "diameter"
+        }, {
+          type: "color",
+          field: "C_Storage", // Carbon storage
+          stops: [
+              {
+                value: 0,
+                color: "#f7fcb9"
+              }, // features with zero carbon
+              {
+                value: 8000,
+                color: "#31a354"
+              } // features with 8000 carbon
+            ]
+            // Values between 0-8000 will be assigned a color proportionally along the ramp
+        }]
+      });
+
+      // Assign the renderer to the layer
+      var treesLyr = new FeatureLayer({
+        url: "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/Landscape_Trees/FeatureServer/0",
+        renderer: renderer
+      });
+
+      var map = new Map({
+        basemap: "osm",
+        layers: [treesLyr]
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-82.441933, 35.611474],
+        zoom: 18
+      });
+
+      /******************************************************************
+       *
+       * Add layers to layerInfos on the legend
+       *
+       ******************************************************************/
+
+      var legend = new Legend({
+        view: view,
+        layerInfos: [
+        {
+          layer: treesLyr,
+          title: "Carbon storage of trees"
+        }]
+      }, "infoDiv");
+
+    });
+  </script>
+</head>
+<body class="light">
+  <div class="application">
+    <div id="viewDiv" class="view">
+      <div class="code manual right top bottom shadowed">
+<textarea class="codemirror">
+var symbol = new SimpleMarkerSymbol();
+
+var sizeInfo = {
+type: "sizeInfo",
+  field: "Width_EW",
+  valueUnit: "feet",
+  valueRepresentation: "diameter"
+};
+
+//color based on carbon storage
+var colorInfo = {
+  type: "colorInfo",
+  field: "C_Storage",
+  minDataValue: 0,
+  maxDataValue: 8000,
+  colors: ["#f7fcb9", "#31a354"]
+};
+
+var renderer = new SimpleRenderer({  
+  symbol: symbol,
+  visualVariables: [
+    sizeInfo, colorInfo
+  ]  
+});</textarea>
+        </div>
+      </div
+    </div>
+    <div class="applicationBar orange">
+      <div class="content">
+        <div class="cartouche">
+          <span class="label">4.0</span>
+        </div>
+        <div class="main">
+          <span class="title">Data Layer in 2D</span>
+        </div>
+        <div class="actionBar">
+          <div class="button showcode">
+            <span>code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

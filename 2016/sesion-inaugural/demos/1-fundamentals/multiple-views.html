@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>4.0 - Multiple Views</title>
+
+  <link rel="stylesheet" href="//jsdev.arcgis.com/4.0/esri/css/main.css">
+  <link rel="stylesheet" href="../commons/css/style.css">
+  <link rel="stylesheet" href="../commons/libs/codemirror/codemirror.css">
+  <link rel="stylesheet" href="../commons/libs/codemirror/monokai.css">
+  <link href="../commons/widgets/LayerWidget/css/LayerWidget.css" rel="stylesheet" type="text/css">
+
+  <script src="../commons/dojo-config.js"></script>
+  <script src="//jsdev.arcgis.com/4.0/"></script>
+
+  <style>
+      #peninsulaViewDiv {
+        width: 100%;
+        height: 100%;
+      }
+      #canariasDiv {
+        position: absolute;
+        width: 350px;
+        height: 200px;
+        bottom: 16px;
+        border-top: 5px solid rgba(255, 255, 255, 0.65);
+        border-right: 5px solid rgba(255, 255, 255, 0.65);
+        transition: all 250ms ease;
+      }
+      
+      #canariasDiv.hide {
+        transform: translate(-416px);
+      }
+
+  </style>
+
+  <script type="text/javascript">
+
+    require([
+      'esri/Map',
+      
+      'esri/layers/FeatureLayer',
+
+      'esri/renderers/SimpleRenderer',
+      
+      'esri/symbols/SimpleFillSymbol',
+
+      'esri/views/MapView',
+
+      'commons/init',
+
+      'dojo/domReady!'
+    ], function(
+      Map,
+      FeatureLayer,
+      SimpleRenderer,
+      SimpleFillSymbol,
+      MapView
+    ) {
+
+      var serviceUrl = "http://services1.arcgis.com/nCKYwcSONQTkPA4K/arcgis/rest/services/ComunidadesAutonomas/FeatureServer/0";
+      
+      var map = new Map({
+        basemap: 'satellite'
+      });
+      
+      var featureLayer = new FeatureLayer(serviceUrl, {
+        opacity: .5
+      });
+
+      map.add(featureLayer);
+
+      peninsulaView = new MapView({
+        map: map,
+        container: 'peninsulaViewDiv',
+        ui: {
+          padding: {
+            top: 95
+          },
+          components: ["zoom", "attribution"]
+        },
+        center: [-3.627027, 40.432548],
+        zoom: 6,
+      });
+      
+
+      canarias = new MapView({
+        map: map,
+        container: 'canariasDiv',
+        ui: {
+          components: []
+        },
+        center: [-16.074882 , 28.314658],
+        rotation: 0,
+        zoom: 6,
+      });
+      
+
+      peninsulaView.watch("zoom", function(value, oldValue) {
+        if(value <= 5){
+          canarias.container.classList.add("hide");
+        }else{
+          canarias.container.classList.remove("hide");
+        }
+      });
+
+    });
+  </script>
+</head>
+<body class="dark">
+  <div class="application" style="overflow: hidden;">
+    <div id="peninsulaViewDiv" class="view">
+      <div id="canariasDiv" class="view"></div>
+      <div id="hawaiiViewDiv" class="view"></div>
+      <div class="code manual right shadowed" style="top: 100px; bottom: 36px;">
+<textarea class="codemirror">
+  var map = new Map({
+    basemap: 'satellite'
+  });
+
+  var featureLayer = new FeatureLayer(serviceUrl, {
+    opacity: .5
+  });
+      
+  map.add(featureLayer);
+
+  peninsulaView = new MapView({
+    map: map,
+    container: 'peninsulaViewDiv',
+    ui: {
+      padding: {
+        top: 95
+      },
+      components: ["zoom", "attribution"]
+    },
+    center: [-3.627027, 40.432548],
+    zoom: 6,
+  });
+  
+
+  canarias = new MapView({
+    map: map,
+    container: 'canariasDiv',
+    ui: {components: []},
+    center: [-16.074882 , 28.314658],
+    rotation: 0,
+    zoom: 6,
+  });
+</textarea>
+        </div>
+    </div>
+    <div class="applicationBar">
+      <div class="content">
+        <div class="cartouche">
+          <span class="label">4.0</span>
+        </div>
+        <div class="main">
+          <span class="title">Multiple map views</span>
+        </div>
+        <div class="actionBar">
+          <div class="button showcode">
+            <span>code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
