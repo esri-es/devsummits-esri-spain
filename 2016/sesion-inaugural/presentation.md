@@ -170,7 +170,7 @@
 
   * [Overlay](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-overlay/)
 
-  * [Geomery Engine demo, Apple orchards](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-demo/)
+  * [Geomery realtionships and tools](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-demo/)
 
 --
 
