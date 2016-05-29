@@ -1,8 +1,6 @@
 <!-- .slide: class="title" -->
-## Developers: What's new?
-[Raúl Jiménez](http://www.rauljimenez.info) - Head of developers and startups program
-
-[![hhkaos icon](images/rounded_120x120.png)](http://www.twitter.com/hhkaos)
+## What's new
+### ArcGIS Developers
 
 [bit.ly/devsummit1](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/)
 
@@ -10,11 +8,19 @@
 
 <!-- .slide: class="background" -->
 
-## Agradecimiento
+## Representantes
+![Vosotros](https://docs.google.com/drawings/d/1VFcuhNxiZ9l6qIdnGgltPd6cKxBCbo5lDwRQkimA9K4/pub?w=1031&h=632)
+
+---
 
 <!-- .slide: class="background" -->
 
-## Quieres vamos a a estar hoy
+## Attendees profiles
+
+* Developers
+* Product/Project managers
+* DevOps
+* Users who create apps
 
 ---
 
@@ -23,12 +29,14 @@
 ## Our goals for today
 
 >1. Give you:
-  1. An update on developers technologies
-  2. Tons of resources
-  3. Some tricks, good practices and tools
-3. Help you better understand:
-  1. How the platform works
-  2. Our developers products strategy
+  * An update on developers technologies
+  * Tons of resources
+  * Good practices
+  * Tools
+  * Tricks
+2. Help you better understand:
+  * How the platform works
+  * Our developers products strategy
 
 
 ---
@@ -169,7 +177,7 @@
 * Geometry Engine VS Geometry Service:
 
   * [Buffers, time saved](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-gs/)
-  
+
   * [Geometry relationships, requests saved](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-demo/requests.html)
 
 * Simplify
@@ -189,21 +197,14 @@
 ###Geometry Engine:
 
 * Geodesic buffer VS Planar buffer:
-
   * [2D dynamic](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-buffer/)
-
   * [2D vs 3D static](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-geodesic-planar-buffer/map-scene.html)
-
   * [2D static](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-geodesic-planar-buffer/)
 
-* Geodesic Length VS Planar Lenght
-
+* Geodesic Length VS Planar Length
   * [Web Mercator](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-length/)
-
   * [Azimutal Projections](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-length/azimuthal.html)
-
   * [Homosolite sphere](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-length/homosoline.html)
-
   * [UTM32](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-length/utm.html)
 
 --
@@ -212,13 +213,13 @@
 
 ###Geometry Engine:
 
-* Building Analysis Apps: Bus & Coffe Shops
+* Building Analysis Apps: Bus & Coffee Shops
 
-  * [How many coffe shops are on my way?](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-viz/coffee-color.html)
+  * [How many coffee shops are on my way?](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-viz/coffee-color.html)
 
-  * [How many coffe shops are on my way? (Size Symbology)](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-viz/coffee-size.html)
+  * [How many coffee shops are on my way? (Size Symbology)](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-viz/coffee-size.html)
 
-  * [How many busses cross my coffe shop?](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-viz/coffee-stores.html)
+  * [How many busses cross my coffes shop?](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-viz/coffee-stores.html)
 
 --
 
@@ -226,7 +227,7 @@
 
 * Contains business logic
 * Easiest to combine with other JS frameworks
-* Source code available. Ex. [Zoom widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html)
+* Source code available: [Zoom widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html) sample
 
 --
 
@@ -237,13 +238,12 @@
 
 --
 
-### Create your own custom builds
+### Improve page load performance
 
-Now you can use:
-
-* [Bower](https://developers.arcgis.com/javascript/3/jshelp/inside_bower_custom_builds.html)
-* [Content Delivery Network - CDN](https://developers.arcgis.com/javascript/3/jshelp/intro_accessapi.html#cdn)
-* [Web Optimizer](https://developers.arcgis.com/javascript/3/jshelp/inside_web_optimizer.html)
+* Tools:
+  * **New**: [Bower](https://developers.arcgis.com/javascript/3/jshelp/inside_bower_custom_builds.html) - create your own custom builds
+  * [Content Delivery Network - CDN](https://developers.arcgis.com/javascript/3/jshelp/intro_accessapi.html#cdn)
+  * [Web Optimizer](https://developers.arcgis.com/javascript/3/jshelp/inside_web_optimizer.html)
 
 ---
 
@@ -335,7 +335,8 @@ Now you can use:
 
 ## Questions?
 
-Slides: [bit.ly/devsummit1](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/)
+* Slides: [bit.ly/devsummit1](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/)
+* Give us some feedback filling the survey
 
 ---
 
