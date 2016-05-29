@@ -6,14 +6,14 @@
 
   <title>4.0 - Basemap</title>
 
-  <link rel="stylesheet" href="//jsdev.arcgis.com/4.0/esri/css/main.css">
+  <link rel="stylesheet" href="//js.arcgis.com/4.0/esri/css/main.css">
   <link rel="stylesheet" href="../commons/css/style.css">
   <link rel="stylesheet" href="../commons/libs/codemirror/codemirror.css">
   <link rel="stylesheet" href="../commons/libs/codemirror/monokai.css">
   <link href="../commons/widgets/LayerWidget/css/LayerWidget.css" rel="stylesheet" type="text/css">
 
   <script src="../commons/dojo-config.js"></script>
-  <script src="//jsdev.arcgis.com/4.0/"></script>
+  <script src="//js.arcgis.com/4.0/"></script>
 
   <script type="text/javascript">
 
@@ -22,7 +22,7 @@
 
       'esri/Basemap',
 
-      'esri/layers/ArcGISTiledLayer',
+      'esri/layers/TileLayer',
 
       'esri/views/SceneView',
 
@@ -34,7 +34,7 @@
     ], function(
       Map,
       Basemap,
-      ArcGISTiledLayer,
+      TileLayer,
       SceneView,
       BasemapToggle
     ) {
@@ -44,13 +44,13 @@
         basemap: {
           thumbnailUrl: "./arctic-ocean-thumbnail.png",
           baseLayers: [
-            new ArcGISTiledLayer({
+            new TileLayer({
               id: "arctic-base",
               url: "//services.arcgisonline.com/arcgis/rest/services/Polar/Arctic_Ocean_Base/MapServer"
             })
           ],
           referenceLayers: [
-            new ArcGISTiledLayer({
+            new TileLayer({
               id: "arctic-reference",
               url: "//services.arcgisonline.com/arcgis/rest/services/Polar/Arctic_Ocean_Reference/MapServer"
             })
@@ -84,13 +84,13 @@
           secondaryBasemap: new Basemap({
             thumbnailUrl: "./arctic-imagery-thumbnail.png",
             baseLayers: [
-              new ArcGISTiledLayer({
+              new TileLayer({
                 id: "arctic-imagery",
                 url: "//services.arcgisonline.com/arcgis/rest/services/Polar/Arctic_Imagery/MapServer"
               })
             ],
             referenceLayers: [
-              new ArcGISTiledLayer({
+              new TileLayer({
                 id: "arctic-reference",
                 url: "//services.arcgisonline.com/arcgis/rest/services/Polar/Arctic_Ocean_Reference/MapServer"
               })
@@ -110,16 +110,16 @@ var baseURL = "...";
 var referenceURL = "...";
 
 var basemap = new Basemap({
-  thumbnailUrl: "./arctic-ocean-thumbnail.png", 
+  thumbnailUrl: "./arctic-ocean-thumbnail.png",
 
   baseLayers: [
-    new ArcGISTiledLayer({
+    new TileLayer({
       id: "arctic-base",
       url: baseURL
     })
   ],
   referenceLayers: [
-    new ArcGISTiledLayer({
+    new TileLayer({
       id: "arctic-reference",
       url: referenceURL
     })
