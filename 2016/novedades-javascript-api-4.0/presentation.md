@@ -671,7 +671,7 @@ var legend = new Legend({
 view.ui.add(legend, "top-left");
 ```
 
-- [plenary demo](demos/widgets/all-widgets.html)
+- [All widgets](demos/widgets/all-widgets.html)
 
 
 ---
