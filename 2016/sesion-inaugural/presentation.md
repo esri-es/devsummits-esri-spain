@@ -8,6 +8,16 @@
 
 ---
 
+<!-- .slide: class="background" -->
+
+## Agradecimiento
+
+<!-- .slide: class="background" -->
+
+## Quieres vamos a a estar hoy
+
+---
+
 <!-- .slide: class="agenda" -->
 
 ## Our goals for today
@@ -17,7 +27,7 @@
   2. Tons of resources
   3. Some tricks, good practices and tools
 3. Help you better understand:
-  1. How the platform works 
+  1. How the platform works
   2. Our developers products strategy
 
 
@@ -171,8 +181,8 @@
 
 Now you can use:
 
-* [Bower](https://developers.arcgis.com/javascript/3/jshelp/inside_bower_custom_builds.html) 
-* [Content Delivery Network - CDN](https://developers.arcgis.com/javascript/3/jshelp/intro_accessapi.html#cdn) 
+* [Bower](https://developers.arcgis.com/javascript/3/jshelp/inside_bower_custom_builds.html)
+* [Content Delivery Network - CDN](https://developers.arcgis.com/javascript/3/jshelp/intro_accessapi.html#cdn)
 * [Web Optimizer](https://developers.arcgis.com/javascript/3/jshelp/inside_web_optimizer.html)
 
 ---
@@ -191,7 +201,7 @@ Now you can use:
 
 <!-- .slide: class="section" -->
 
-## What's new: 
+## What's new:
 ###Configurable Apps & Builders
 
 --
@@ -249,7 +259,7 @@ Now you can use:
 
 --
 
-### 3D support + new widgets 
+### 3D support + new widgets
 
 [![wab](images/wab.jpg)](http://desarrolladores.esri.es/web-appbuilder-2-0-news/)
 
@@ -265,7 +275,7 @@ Now you can use:
 
 ## Questions?
 
-Contact info
+Slides: [bit.ly/devsummit1](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/)
 
 ---
 

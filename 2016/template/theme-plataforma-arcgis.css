@@ -30,6 +30,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal .slide-background.world-is-changing {
   background-image: url(world-is-changing.jpg);
 }
+.reveal .slide-background.white-background {
+  background: white;
+}
+
 .reveal .slide-background.title {
   background-image: url(title.png);
 }
