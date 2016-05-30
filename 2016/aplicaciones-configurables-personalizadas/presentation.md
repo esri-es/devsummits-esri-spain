@@ -184,12 +184,9 @@ https://doc.arcgis.com/en/arcgis-online/share-maps/add-items.htm#ESRI_SECTION1_0
 
 <!-- .slide: class="questions centered" -->
 
-### Preguntas
+### ¿Preguntas?
 
-* @hhkaos
-* raul.jimenez@esri.es
-* [bit.ly/devsummit8](http://esri-es.github.io/devsummits-esri-spain/2016/aplicaciones-configurables-personalizadas)
-* Ayúdame a mejorar rellenando la encuesta
+PPT: [bit.ly/devsummit8](http://bit.ly/devsummit8/) | Encuesta: [bit.ly/esrisurvey](http://bit.ly/esrisurvey)
 
 ---
 

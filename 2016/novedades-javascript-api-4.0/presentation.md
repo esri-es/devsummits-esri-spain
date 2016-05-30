@@ -762,14 +762,7 @@ view.ui.add(legend, "top-left");
 
 ## Questions
 
-@hhkaos  
-raul.jimenez@esri.es
-
-@jimen0
-
-carlospj@icloud.com
-
-[bit.ly/devsummit4](http://bit.ly/devsummit4)
+PPT: [bit.ly/devsummit4](http://bit.ly/devsummit4/) | Encuesta: [bit.ly/esrisurvey](http://bit.ly/esrisurvey)
 
 ---
 

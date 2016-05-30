@@ -340,8 +340,9 @@
 
 ## Questions?
 
-* Slides: [bit.ly/devsummit1](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/)
-* Give us some feedback filling the survey
+Slides: [bit.ly/devsummit1](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/) | Survey: [bit.ly/esrisurvey](http://bit.ly/esrisurvey)
+
+[![Survey](https://docs.google.com/drawings/d/1kreMlM7VSM11gsBmViZjwq76lLvuORdfyjzo0gkaILU/pub?h=600)](http://bit.ly/esrisurvey)
 
 ---
 
