@@ -1,0 +1,13 @@
+{
+	"configurationSettings": [{
+		"category": "Settings",
+		"fields": [{
+			"type": "string",
+			"fieldName": "title",
+			"label": "Título",
+			"tooltip": "",
+			"stringFieldOption": "textbox",
+			"placeHolder": "Introduce un título"
+		}]
+	}]
+}

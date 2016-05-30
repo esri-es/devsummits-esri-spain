@@ -24,6 +24,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal .slide-background.appstudio {
   background-image: url(appstudio.jpg);
 }
+.reveal .slide-background.speakers {
+  background-image: url(speakers.jpg);
+}
+
 .reveal .slide-background.registry-to-engagement {
   background-image: url(registry-to-engagement.jpg);
 }

@@ -1,7 +1,7 @@
 <!-- .slide: class="title" -->
 
 ## ArcGIS API for JavaScript
-## Discover 4.0 - the Next Generation
+## Discover 4.0 - The Next Generation
 [Carlos Pérez](http://geodevelopers.org/members/200045805) & [Raúl Jiménez](http://geodevelopers.org/members/139909072)
 
 [bit.ly/devsummit4](http://bit.ly/devsummit4)

@@ -8,19 +8,24 @@
 
 <!-- .slide: class="background" -->
 
-## Representantes
+## Thanks for attending
 ![Vosotros](https://docs.google.com/drawings/d/1VFcuhNxiZ9l6qIdnGgltPd6cKxBCbo5lDwRQkimA9K4/pub?w=1031&h=632)
 
 ---
 
 <!-- .slide: class="background" -->
 
-## Attendees profiles
+## Profiles
 
 * Developers
 * Product/Project managers
 * DevOps
 * Users who create apps
+
+---
+
+<!-- .slide: class="speakers" -->
+
 
 ---
 

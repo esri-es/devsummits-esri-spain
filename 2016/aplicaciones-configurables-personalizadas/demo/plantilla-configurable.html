@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+  Hola mundo
+</body>
+</html>
+
+
+<!--
+Recuperamos los datos
+
+var start = window.location.search.indexOf("=") + 1;
+var appid = window.location.search.substr(start);
+$.getJSON("https://www.arcgis.com/sharing/rest/content/items/"+appid+"/data",function(data){
+  console.log("data =", data);
+});
+-->
+
+
+<!--
+Cargamos el webmap
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.0/"></script>
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    #title{
+      position: absolute;
+      padding: 1em;
+      z-index: 2;
+      left: 70px;
+      right: 20px;
+      top: 15px;
+      background-color: rgba(255,255,255,.5);
+    }
+    #viewDiv {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+  </style>
+  <script>
+    require([
+      "esri/views/MapView",
+      "esri/WebMap",
+      "dojo/domReady!"
+    ], function(
+      MapView, WebMap
+    ) {
+        var start = window.location.search.indexOf("=") + 1;
+        var appid = window.location.search.substr(start);
+
+        $.getJSON("https://www.arcgis.com/sharing/rest/content/items/"+appid+"/data",function(data){
+          $("#title").text(data.values.title);
+
+          var map = new WebMap({
+            portalItem: {
+              id: data.values.webmap
+            }
+          });
+
+          var view = new MapView({
+            map: map,
+            container: "viewDiv"
+          });
+        });
+      });
+  </script>
+</head>
+<body>
+  <div id="title">Hola mundo</div>
+  <div id="viewDiv"></div>
+</body>
+</html>
+-->
