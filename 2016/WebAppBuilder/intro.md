@@ -3,7 +3,7 @@
 
 Carlos Herrera & Carlos Pérez Jimeno
 
-Presentación original: Tom Wayson and Gavin Rehkemper
+Slides: [bit.ly/WabDevSum](http://bit.ly/WabDevSum)
 
-[esriurl.com/wabtools2016](http://esriurl.com/wabtools2016)
+Original: [esriurl.com/wabtools2016](http://esriurl.com/wabtools2016)
 	
