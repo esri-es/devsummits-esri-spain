@@ -612,6 +612,80 @@ var promise = Layer.fromPortalItem({
 
 <!-- .slide: class="section" -->
 
+# Geometry Engine
+
+--
+
+## User Experience: Interactivity
+Geometry Service REST Call
+
+
+<IMG SRC="https://docs.google.com/drawings/d/1molS2sbnRnNz6epOn6iW3GMT9SeuMfvUbXe5WV57iSc/pub?w=959&h=328"  ALT="Geometry Service REST Call"  >
+
+--
+
+## Geometry Engine: What is it?
+* Geometry relationships
+
+<IMG SRC="https://docs.google.com/drawings/d/1sFs53h1Xi6cbYvySVIcT9cyyjWkbmOrsFhO8JYjT1MQ/pub?w=960&h=720"  ALT="Geometry relationships">
+
+
+--
+
+## Geometry Engine: What is it?
+* Geometry Algebra/Overlay operations
+
+<IMG SRC="https://docs.google.com/drawings/d/1DkJK_8snUWI9y1dLzppZX31TV5XTWNe20L0eH0pldwY/pub?w=960&h=720"  ALT="Geometry Algebra">
+
+--
+
+## Geometry Engine: What is it?
+* Topological correctness: SImplify, isSimple
+
+<IMG SRC="https://docs.google.com/drawings/d/1E2haQnnRO94EGbDi2BqzwqISH2uNhiM2-Pok5GzInaE/pub?w=960&h=720"  ALT="Topological correctness">
+
+--
+
+## Geometry Engine: What is it?
+* Nearest Vertices, Nearest Coordinates
+
+<IMG SRC="https://docs.google.com/drawings/d/18E2nTDO43GISm3TwETd3JhT1g_-sYUOrnsnLAQ929t8/pub?w=960&h=720"  ALT="Nearest Coordinates">
+
+--
+
+## Geometry Engine: What is it?
+Distances and Measurements
+* geodesicLength
+* planarLength
+* geodesicArea
+* planarArea
+
+<IMG SRC="https://docs.google.com/drawings/d/1uijF0oOocbIOvVG9uXE6bdjpBNv567acV29HtaqIlD0/pub?w=857&h=441"  ALT="Distances and Measurements"  align="right">
+
+--
+
+## Geometry Engine: What is it?
+Buffering and Geodesic Buffering
+
+<IMG SRC="https://docs.google.com/drawings/d/1jO0mzlPDaVNfvh_aJdv6P2AeRaSmXrLBGaFip5vxOMk/pub?w=826&h=319"  ALT="Buffering and Geodesic Buffering"  >
+
+--
+
+## Geometry Engine: What is it?
+Other operations
+* Generalize
+* Densify
+* ConvexHull
+* Rotate
+* Flip
+
+<IMG SRC="https://docs.google.com/drawings/d/1tQSnBnpU7ocnn4jgzrAFZShuO8eiY--Fb-U6kBGTtPQ/pub?w=959&h=382"  ALT="Other operations"  align="right">
+
+
+---
+
+<!-- .slide: class="section" -->
+
 # Widgets and UI
 
 ---
