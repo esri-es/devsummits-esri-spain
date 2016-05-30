@@ -49,12 +49,12 @@
 ---
 
 <!-- .slide: data-background="img/wab-generator-sceenshot.png" data-background-size="634px" data-background-color="#000" -->
-#### Instala las herramientas para copiar a la carpeta de WAB
+#### Grunt: herramienta para copiar a la carpeta de WAB
 
 ---
 
 <!-- .slide: data-background="img/wab-generator-sceenshot.png" data-background-size="634px" data-background-color="#000" -->
-#### Subgenerador para construir automáticamente los archivos de los widgets
+#### Yeoman para construir automáticamente los archivos de los widgets
 
 ---
 
