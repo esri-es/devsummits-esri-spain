@@ -15,7 +15,3 @@ Note: jump into quick demo of folder structure
 
 ![MY source control](img/mine.gif)
 
----
-
-<!-- .slide: data-background="reveal.js/img/bg-6.png" -->
-## Demo: Generador de App's
