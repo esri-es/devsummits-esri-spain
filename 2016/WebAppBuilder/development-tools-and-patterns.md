@@ -21,6 +21,7 @@
 
 ---
 
-<img src="img/grunt-yeoman.jpg" alt="yeoman" style="width: 1000px;"/>
-
 #### Herramientas: [Yeoman](http://yeoman.io/) - [Grunt](http://gruntjs.com/)
+
+
+<img src="img/grunt-yeoman.jpg" alt="yeoman" style="width: 1000px;" style="position:absolute;z-index:4;" />

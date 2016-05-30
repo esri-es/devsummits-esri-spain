@@ -39,7 +39,7 @@ Sub widgets *dentro* de los widgets contenedores(tabs, etc)
 ---
 
 <!-- .slide: data-background="reveal.js/img/bg-5.png" -->
-### Ventajas de der un Wrap Star
+### Ventajas de ser una Estrella del Wrapping
 
 <ul>
 	<li class="fragment">Widgets independientes:
