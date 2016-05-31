@@ -57,7 +57,7 @@
 
 ---
 
-<!-- .slide: class="section" -->
+<!-- .slide: class="background" -->
 
 ## Ahora veremos...
 
@@ -65,9 +65,8 @@ Qué|Usando|Inspeccionando
 ---|---|---
 Cómo se crea un servicio|[developers.arcgis.com](http://developers.arcgis.com)|[Chrome DevTools](https://developer.chrome.com/devtools)
 Cómo se crea un webmap|[Webmap editor](http://www.arcgis.com/home/webmap/viewer.html)|[Chrome DevTools](https://developer.chrome.com/devtools)
-Consumir el webmap|[ArcGIS API for JS](http://esri-es.github.io/JavascriptAPI/#/7)| ---
-Registrar una app|[Mi contenido](http://www.arcgis.com/home/content.html)|[Chrome DevTools](https://developer.chrome.com/devtools)
-Añadir un comentario|[Postman Collection](https://github.com/esri-es/ArcGIS-REST-API)|[Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop/related?hl=en)
+Consumir el webmap|[Ejemplos API JS](http://esri-es.github.io/JavascriptAPI/#/7)| [JSONLint.com](http://jsonlint.com/)
+Añadir item tipo documento|[Mi contenido](http://www.arcgis.com/home/content.html)|[Chrome DevTools](https://developer.chrome.com/devtools)
 
 <!-- 1. Añadir qué peticiones buscar al guión , campos, etc-->
 <!-- 2. meter marcadores-->
@@ -75,16 +74,16 @@ Añadir un comentario|[Postman Collection](https://github.com/esri-es/ArcGIS-RES
 
 ---
 
-<!-- .slide: class="section" -->
+<!-- .slide: class="background" -->
 
 ## Poner en producción
 
 Qué|Usando|Inspeccionando
 ---|---|---
-Inspeccionar item del webmap|---|[Item-info](http://esri-es.github.io/ItemInfo/)
-Añadir vector tile personalizado|[Vector tile editor](http://esri.github.io/arcgis-vectortile-style-editor/) <br>[Vector Basemap Editor](http://maps.esri.com/AGSJS_Demos/templates/VectorBasemapStyleEditor/)|---
-Poner la app en producción|[Github Pages](https://help.github.com/articles/what-are-github-pages/)|---
-Actualizar la URL del item de la app|---|[Ago-asistant](https://ago-assistant.esri.com/)
+Añadir un comentario|[Postman Collection](https://github.com/esri-es/ArcGIS-REST-API)|[Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop/related?hl=en)
+Inspeccionar item del webmap|[/home/item.html?id=](http://www.arcgis.com/home/item.html?id=)|[Ago-asistant](https://ago-assistant.esri.com/)
+Añadir vector tile personalizado|[Vector tile editor](http://esri.github.io/arcgis-vectortile-style-editor/) <br>[Vector Basemap Editor](http://maps.esri.com/AGSJS_Demos/templates/VectorBasemapStyleEditor/)|[Ago-asistant](https://ago-assistant.esri.com/)
+Actualizar JSON de un item|[Ago-asistant](https://ago-assistant.esri.com/)|[Ago-asistant](https://ago-assistant.esri.com/)
 
 ---
 
@@ -94,25 +93,28 @@ Actualizar la URL del item de la app|---|[Ago-asistant](https://ago-assistant.es
 
 ---
 
-<!-- .slide: class="section" -->
+<!-- .slide: class="background" -->
 
 ## Los límites los pone tu imaginación
 
-* Crear bibliotecas: [ArcNode](https://github.com/esri-es/ArcNode)
-* Sistemas de notificaciones: [ArcNotifier](https://github.com/esri-es/ArcNotifier)
-* StaticMap [Class](https://github.com/esri-es/Static-Maps-API-ArcGIS) & [Service](https://github.com/esri-es/Static-Map-Service-ArcGIS)
-* Automatizar tareas de backup
+* Crear bibliotecas: Node ([ArcNode](https://github.com/esri-es/ArcNode)), PHP, ...
+* Extender funcionalidad:
+  * Sistemas de notificaciones: [ArcNotifier](https://github.com/esri-es/ArcNotifier)
+  * StaticMap -> [Class](https://github.com/esri-es/Static-Maps-API-ArcGIS) & [Service](https://github.com/esri-es/Static-Map-Service-ArcGIS)
+* Sincronizar o conectar servicios con:
+  * Herramientas de terceros: [Libelium](https://www.the-iot-marketplace.com/libelium-arcgis-development-kit), [Fiware](https://github.com/esri-es/Fiware-ArcGIS), <br>
+  Google Drive/Dropbox, ...
+  * BBDDs locales
 * Extender el modelo de usuarios o híbridos
-* Sincronizar servicios:
-  * Con BBDDs locales
-  * Con herramientas de terceros:
-    * [Libelium](https://www.the-iot-marketplace.com/libelium-arcgis-development-kit)
-    * [Fiware](https://github.com/esri-es/Fiware-ArcGIS)
+* Automatizar tareas de backup
+* Integrar contenidos de una organización en<br>
+  los sistemas de un cliente.
+* Consumir contenidos de OpenData es apps propias
 
 
 ---
 
-<!-- .slide: class="section" -->
+<!-- .slide: class="background" -->
 
 ## Recursos
 * MOOC: Plataforma ArcGIS para desarrolladores web
@@ -124,6 +126,8 @@ Actualizar la URL del item de la app|---|[Ago-asistant](https://ago-assistant.es
   * [Custom ArcGIS Vector Tiles Video](https://www.youtube.com/watch?v=hqWYtVJRqZc)
   * [Aprende a personalizar un mapa base con ArcGIS Online](https://www.youtube.com/watch?v=syzAHxSfhzc)
   * Proyecto: [Vector Basemap Style Editor](https://github.com/jgrayson-apl/VectorBasemapStyleEditor)
+* Otros:
+  * [Fiddler](http://www.telerik.com/fiddler)
 
 ---
 
