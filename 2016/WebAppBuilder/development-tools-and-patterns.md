@@ -25,3 +25,5 @@
 
 
 <img src="img/grunt-yeoman.jpg" alt="yeoman" style="width: 1000px;" style="position:absolute;z-index:4;" />
+
+[Esquema de flujo de trabajo con Yeoman y Grunt](https://slides.com/carlosherrera4/deck-2/live#/)
