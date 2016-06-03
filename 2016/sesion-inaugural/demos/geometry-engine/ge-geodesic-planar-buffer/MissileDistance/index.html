@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="author" content="Carlos Pérez">
+<title>Missile Range</title>
+
+<style>
+  html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  #viewDiv{
+    width: 100%;
+    height: 100%;
+  }
+  #legend{
+    position: absolute;
+    background-color: white;
+    bottom:0px;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    padding: 20px;
+    opacity: 0.75;  
+    width: 214px;
+  }
+
+</style>
+
+<link rel="stylesheet" href="https://js.arcgis.com/4.0beta1/esri/css/esri.css">
+<script src="https://js.arcgis.com/4.0beta1/"></script>
+
+<!-- *************************
+    NO ME FUNCIONAN LOS ENLACES DE LA 4.0 // COMPROBAR TODAS LAS DEPENDENCIAS!
+    ****************************
+ -->
+
+<!-- <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css"> -->
+<!-- <script src="https://js.arcgis.com/4.0/"></script> -->
+
+<script>
+var map, view2d, geodesicBuffer, planarBuffer, sceneViewWatch, mapViewWatch,buffTipe;
+
+require([
+  "esri/Map",
+  "esri/views/MapView",
+  "esri/layers/GraphicsLayer",
+  "esri/Graphic",
+  "esri/symbols/PictureMarkerSymbol",
+  "esri/symbols/SimpleFillSymbol",
+  "esri/geometry/geometryEngine",
+  "dojo/on",
+  "dojo/dom",
+  "dojo/domReady!"
+],
+function(
+  Map,
+  MapView,
+  GraphicsLayer,
+  Graphic,
+  PictureMarkerSymbol,
+  SimpleFillSymbol,
+  geometryEngine,
+  on,
+  dom
+) {
+
+  map = new Map({
+    basemap: "gray"
+  });
+
+  view2d = new MapView({
+    container: "viewDiv",
+    map: map,
+    zoom: 2,
+    center: [-45,20],
+    ui: {
+      components: ["zoom", "compass"],
+      padding: {
+        left: 250
+      }
+    }
+  });
+
+
+  var bufferLayer = new GraphicsLayer();
+  var pointLayer = new GraphicsLayer();
+
+  map.add([bufferLayer, pointLayer]);
+
+  var pointSym = new PictureMarkerSymbol({
+    url: "http://desarrolladores.esri.es/wp-content/uploads/images/ArcGIS%20PIN%20ICON.png",
+    width: 15,
+    height: 30,
+    yoffset: 15
+  });
+
+  var geoSym = SimpleFillSymbol({
+    color: [0, 129, 45, 0.5],
+    outline: {
+      color: [0, 129, 45],
+      width: "2px"
+    }
+  });
+
+    var planarSym = SimpleFillSymbol({
+    color: [255, 158, 0, 0.5],
+    outline: {
+      color: [255, 158, 0],
+      width: "2px"
+    }
+  });   
+
+
+  on(view2d, "click", mapClick);   
+
+    function mapClick(evt){
+      pointLayer.clear();
+      bufferLayer.clear();
+
+      var center = evt.mapPoint;
+
+      pointLayer.add(new Graphic({
+        geometry: center,
+        symbol: pointSym
+      }));
+
+      var missileTipe = document.getElementsByName("missileTipe");
+      var missileTipe_value;
+      for(var i = 0; i < missileTipe.length; i++){
+        if(missileTipe[i].checked){
+          missileTipe_value = missileTipe[i].value;
+        }
+      }
+
+      var buffTipe = document.getElementsByName("buffTipe");
+      var buttType_values;
+      for(var n = 0; n < buffTipe.length; n++){
+        if(buffTipe[n].checked){
+          buttType_values = buffTipe[n].value;
+          if (buttType_values === "geodesicBuff") {
+              geodesicBuffer = geometryEngine.geodesicBuffer(center, missileTipe_value, "kilometers");
+              bufferLayer.add(new Graphic({
+                geometry: geodesicBuffer,
+                symbol: geoSym
+                
+              }));
+
+          } else if (buttType_values === "planeBuff") {
+              planarBuffer = geometryEngine.buffer(center, missileTipe_value, "kilometers");
+              bufferLayer.add(new Graphic({
+                geometry: planarBuffer,
+                symbol: planarSym
+              }));    
+
+          }
+
+        }
+      } 
+
+  }
+
+});
+</script>
+</head>
+
+<body>
+<div id="viewDiv">
+  <div id="legend">
+    <b>Select missile:</b><br><br>
+      <form id = "MissileTipeForm">
+        <input type="radio" name="missileTipe" value=300 checked = "true" > Scud-B <br>
+        <input type="radio" name="missileTipe" value=500 > Scud-C <br>
+        <input type="radio" name="missileTipe" value=800 > Scud-D <br>
+        <input type="radio" name="missileTipe" value=1300 > Shehab-3 <br>
+        <input type="radio" name="missileTipe" value=5000 > Agni V <br>
+        <input type="radio" name="missileTipe" value=1500 > Jericho-2 <br>
+        <input type="radio" name="missileTipe" value=10000 > M-51 <br> 
+        <input type="radio" name="missileTipe" value=13000 > Dongfeng 5A <br> 
+        <input type="radio" name="missileTipe" value=11200 > Dongfeng 31A <br> 
+        <input type="radio" name="missileTipe" value=10000 > Minuteman-III <br> 
+        <input type="radio" name="missileTipe" value=11300 > Trident D5 <br> 
+        <input type="radio" name="missileTipe" value=10500 > RS-24 <br> 
+        <input type="radio" name="missileTipe" value=16000 > R-36M <br> 
+        
+        
+        <br>
+      </form>
+    <b>Select measure mode:</b><br><br>
+      <form id = "buffTipeForm">
+        <input type="radio" name="buffTipe" value="geodesicBuff"  > Geodesic <br>
+        <input type="radio" name="buffTipe" value="planeBuff" checked = "true" > Plane <br> <br>
+      </form>
+
+    <b>Click on the map to select launch place</b><br><br>
+  </div>    
+</div>
+</body>
+
+</html>

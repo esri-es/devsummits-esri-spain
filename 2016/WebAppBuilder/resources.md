@@ -17,6 +17,7 @@
 - Generadores:
   - [Generador Yeoman para ayudar a personalizar Web AppBuilder](https://github.com/Esri/generator-esri-appbuilder-js)
   - [Videotutorial Yeoman (desarrolladores.esri.es)](http://desarrolladores.esri.es/nuevas-metodologias-para-wab/)
+  - [Esquema de flujo de trabajo con Yeoman y Grunt](https://slides.com/carlosherrera4/deck-2/live#/)
 - Dónde encontrar Widgets
   - [WAB Widget Search](http://gavinr.github.io/wab-widget-search) 
 
