@@ -22,5 +22,4 @@ Hora|Charla
 ## Valoración del evento
 
 Los resultados detallados de las encuestas se pueden ver aquí: [resultados](https://docs.google.com/spreadsheets/d/1rP5IeAUUXqliQm3VO8WQFo7UrVC6PGdSmg0BVaGP1V4/pubchart?oid=1037325525&format=interactive)
-
 ![gráfica](https://docs.google.com/spreadsheets/d/1rP5IeAUUXqliQm3VO8WQFo7UrVC6PGdSmg0BVaGP1V4/pubchart?oid=1037325525&format=image)
