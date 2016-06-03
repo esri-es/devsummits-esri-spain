@@ -17,7 +17,7 @@ Hora|Charla
 15:00-16:00|[Crear apps nativas con: AppStudio & Survey123](http://esri-es.github.io/devsummits-esri-spain/2016/AppStudio-Survey123/#/)
 16:00-17:00|[Consejos y herramientas para desarrollar en Web AppBuilder](http://esri-es.github.io/devsummits-esri-spain/2016/WebAppBuilder)
 17:00-17:30|[Aplicaciones Configurables Personalizadas](http://esri-es.github.io/devsummits-esri-spain/2016/aplicaciones-configurables-personalizadas)
-17:30-18:00|ArcGIS una Plataforma abierta
+17:30-18:00|[ArcGIS una Plataforma abierta](https://prezi.com/plj9jjmhl4bv/arcgis-developers-tecnologies-resources/)
 
 ## Valoración del evento
 
