@@ -2,7 +2,7 @@
 Detalles del evento:
 * **Fecha**: Martes 31 de Mayo 2016
 * **Lugar**: Auditorio de Esri España
-* **Fotografías**: *Pendiente*
+* **Fotografías**: [Ver Álbum en Flickr](https://www.flickr.com/photos/64629708@N04/albums/72157669269747895)
 * **Página del evento**: [desarrolladores.esri.es/devsummit](http://desarrolladores.esri.es/devsummit/)
 
 ## Programa y materiales
