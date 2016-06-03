@@ -4,6 +4,7 @@ Detalles del evento:
 * **Lugar**: Auditorio de Esri España
 * **Fotografías**: [Álbum en Flickr](https://www.flickr.com/photos/64629708@N04/albums/72157669269747895) | [Foto 360º](https://theta360.com/s/aZwNcJuDgoPQqjEhlX9JDbNi4)
 * **Página del evento**: [desarrolladores.esri.es/devsummit](http://desarrolladores.esri.es/devsummit/)
+* **Crónica**: [desarrolladores.esri.es/cronica-devsummit-16](http://desarrolladores.esri.es/cronica-devsummit-16/)
 * **Storify**: [cómo fue el #DevSummitES](https://storify.com/jimeno0/devsummites-timeline) (vía twitter)
 
 ## Programa y materiales
