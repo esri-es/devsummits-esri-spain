@@ -13,7 +13,7 @@ Hora|Charla
 11:45-12:00|Presentación del Programa Experto Esri España
 12:00-12:30|[Vector Tiles](http://esri-es.github.io/devsummits-esri-spain/2016/vector-tiles/esri-vector-tiles.pdf)
 12:30-13:00|[Novedades de la JavaScript API 4.0](http://esri-es.github.io/devsummits-esri-spain/2016/novedades-javascript-api-4.0)
-13:00-13:30|Novedades en las Runtimes SDKs
+13:00-13:30|[Novedades en las Runtimes SDKs](https://esri-es.github.io/devsummits-esri-spain/2016/novedades-runtime-sdks/novedades-runtime-sdks.pdf)
 15:00-16:00|[Crear apps nativas con: AppStudio & Survey123](http://esri-es.github.io/devsummits-esri-spain/2016/AppStudio-Survey123/#/)
 16:00-17:00|[Consejos y herramientas para desarrollar en Web AppBuilder](http://esri-es.github.io/devsummits-esri-spain/2016/WebAppBuilder)
 17:00-17:30|[Aplicaciones Configurables Personalizadas](http://esri-es.github.io/devsummits-esri-spain/2016/aplicaciones-configurables-personalizadas)
