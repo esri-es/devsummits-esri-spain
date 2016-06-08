@@ -217,13 +217,12 @@
 ### Demos
 
 ###Geometry Engine:
+* Importance of known the measurement mode
+  * [Rocket laungh app](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-geodesic-planar-buffer/MissileDistance/)
 
 * Building Analysis Apps: Bus & Coffee Shops
-
   * [How many coffee shops are on my way?](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-viz/coffee-color.html)
-
   * [How many coffee shops are on my way? (Size Symbology)](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-viz/coffee-size.html)
-
   * [How many busses cross my coffes shop?](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/demos/geometry-engine/ge-viz/coffee-stores.html)
 
 --
