@@ -1,8 +1,29 @@
 <!-- .slide: class="title" -->
+
+
+## ¡Bienvenidos!
+
+![](images/forest-gump.gif)
+
+> A lo largo del día de hoy se tomarán fotos, si alguien tiene inconveniente
+en salir en ellas por favor que nos lo haga saber
+
+---
+
+<!-- .slide: class="title" -->
 ## What's new
 ### ArcGIS Developers
 
 [bit.ly/devsummit1](http://esri-es.github.io/devsummits-esri-spain/2016/sesion-inaugural/)
+
+---
+
+<!-- .slide: class="background" -->
+
+## Wifi:
+
+### Ep-auditorio
+### ept1$@07
 
 ---
 
