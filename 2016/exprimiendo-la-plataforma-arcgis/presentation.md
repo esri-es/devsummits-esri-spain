@@ -12,7 +12,7 @@
 
 ## Algunas preguntas...
 
-* ¿Cómo podría enviar un email cuando se modificase un servicio?
+* ¿Cómo podría enviar un email cuando se modifique un servicio?
 * ¿Qué son exáctamente los items?
 * ¿Qué ventajas ofrece usar los webmaps?
 * ¿Con qué lenguajes puedo crear aplicaciones?
@@ -33,7 +33,7 @@
   * Que vosotros mismos seáis capaces de responder a<br>
     estas preguntas
   * Enseñaros herramientas nuevas para vuestro día a día
-  * Daros ideas y romper posibles limitaciones
+  * Daros ideas y eliminar posibles limitaciones
 
 * Cómo:
   * Explicando la arquitectura de ArcGIS Online
