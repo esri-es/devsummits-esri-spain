@@ -27,8 +27,6 @@
   <!-- REVOLUTION STYLE SHEETS -->
   <link rel="stylesheet" type="text/css" href="js/plugins/revolution/css/settings.css">
 
-
-
   <!-- REVOLUTION JS FILES -->
   <script type="text/javascript" src="js/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
   <script type="text/javascript" src="js/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -47,6 +45,9 @@
   <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
   <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
   <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -109,10 +110,8 @@
                   <li> <a class="scroll-to" href="#ponentes">Ponentes</a>
 
                   </li>
-                  <li> <a href="#">Contacto</a>
-
-                  </li>
-                  <li> <a href="#modalShop" data-lightbox="inline">Inscribirse</a>
+                  <li> <a class="scroll-to" href="#ubicacion">Ubicación</a></li>
+                  <li> <a class="scroll-to" href="#modalShop" data-lightbox="inline">Inscribirse</a>
 
                   </li>
                 </ul>
@@ -397,10 +396,10 @@
             <!-- LAYERS -->
 
             <!-- LAYER NR. 5 -->
-            <div class="tp-caption  " id="slide-11-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full-proportional" data-height="full-proportional"
+            <!--<div class="tp-caption  " id="slide-11-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full-proportional" data-height="full-proportional"
             data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="off" data-wrapper_class="tp-nopointer" data-responsive="off" data-frames='[{"delay":600,"speed":1500,"frame":"0","from":"sX:1;sY:1;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-blendmode="screen" style="z-index: 5;"><img src="js/plugins/revolution/assets/images/imagegallery7.jpg" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
-            width="1920" height="1280" data-no-retina> </div>
+            width="1920" height="1280" data-no-retina> </div>-->
 
             <!-- LAYER NR. 6 -->
             <div class="tp-caption   tp-resizeme" id="slide-11-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-100','-100','-100']" data-width="none" data-height="none"
@@ -797,8 +796,8 @@
 
       </div>
     </div>
-  </div>
 </div>
+</section>
 </section>
 
 
@@ -990,8 +989,25 @@
 </div>
 
 </section>
-
-
+<section id="ubicacion" style="background: url(images/bg-btn.png)">
+    <div class="col-md-9 center text-center">
+      <h1 style="margin-bottom:3rem">UBICACIÓN</h1>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-5 col-sm-offset-1">
+          <h3>MEDIALAB PRADO</h3>Calle de la Alameda, 15. 28014 Madrid<br>
+          <a target="_blank" href="http://medialab-prado.es/">media-lab-prado.es</a><br><br>
+          <h4><i class="fa fa-bus"></i> Transporte
+          </h4><b>Metro: </b>  Línea 1 - Atocha<br><b>Bus: </b> Líneas 6, 10, 14, 19, 26, 27, 32, 34, 37 y 45<br>
+          <br><img class="img-responsive" src="images/medialab.jpg" width="460" height="300" alt="MEDIALAB PRADO">
+        </div>
+        <div class="col-sm-5">
+          <iframe src="map.html" style="width:100%" height="539" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+</section>
 
 
 <!-- Footer -->
@@ -999,7 +1015,8 @@
 
   <div class="copyright-content">
     <div class="container">
-      <div class="copyright-text text-center">&copy; 2017 - Developer Summit Esri España</a>
+      <div class="copyright-text text-center">
+        &copy; 2017 - Developer Summit Esri España
       </div>
     </div>
   </div>
@@ -1010,6 +1027,8 @@
 <!-- end: Wrapper -->
 
 <!-- Go to top button -->
+
+
 <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
 <!--Plugins-->
 <!--<script src="
