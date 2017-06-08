@@ -3,9 +3,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
-  <title>VectorTileLayer sample</title>
+  <title>DevSummit 2017</title>
   <link rel="stylesheet" href="https://js.arcgis.com/3.20/esri/css/esri.css">
 
+  <link rel="stylesheet" href="//js.arcgis.com/3.20/esri/themes/calcite/esri/esri.css">
   <!-- LOAD JQUERY LIBRARY -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   <style>
@@ -26,6 +27,7 @@
   <script src="https://js.arcgis.com/3.20/"></script>
   <script>
     require([
+
       "esri/map",
       "esri/layers/VectorTileLayer",
       "esri/geometry/Point",
@@ -34,19 +36,18 @@
       "esri/Color",
       "esri/graphic",
       "esri/InfoTemplate",
+      "esri/dijit/InfoWindow",
       "dojo/domReady!"
-    ], function(Map, VectorTileLayer, Point, SpatialReference, PictureMarkerSymbol, Color, Graphic, InfoTemplate) {
+    ], function( Map, VectorTileLayer, Point, SpatialReference, PictureMarkerSymbol, Color, Graphic, InfoWindow, InfoTemplate) {
 
-
-
+      var infoWindow = new  InfoWindow();
 
       var map = new Map("map", {
-        center: [-3.693585399999961,40.4105204], // longitude, latitude
-        zoom: 16
+        center: [-3.693585399999961,40.4105204],
+        zoom: 16,
+        infoWindow: infoTemplate
       });
 
-      //The URL referenced in the constructor may point to a style url JSON (as in this sample)
-      //or directly to a vector tile service
       var vtlayer = new VectorTileLayer("https://www.arcgis.com/sharing/rest/content/items/95d4d6b61c0b4690adaf8cbdabb28196/resources/styles/root.json");
       map.addLayer(vtlayer);
 
@@ -60,12 +61,24 @@
 
       map.on('load', function() {
         map.graphics.add(new Graphic(point, marker, attr, infoTemplate));
+        map.infoWindow.setTitle("MEDIALAB PRADO");
+        map.infoWindow.setContent("<b>Dirección:</b><br> Calle de la Alameda, 15<br> 28014 Madrid <br><br> <img src='images/medialab3.jpg' width='200' height='200'/>");
+        map.infoWindow.resize(250, 250);
+        map.infoWindow.show(point);
+
+      });
+
+      map.on('click', function() {
+        map.infoWindow.setTitle("MEDIALAB PRADO");
+        map.infoWindow.setContent("<b>Dirección:</b><br> Calle de la Alameda, 15<br> 28014 Madrid <br><br> <img src='images/medialab2.jpg' width='200' height='200'/>");
+        map.infoWindow.resize(250, 250);
+        map.infoWindow.show(point);
       });
 
     });
   </script>
 </head>
-<body>
+<body class="calcite">
   <div id="map"></div>
 </body>
 
