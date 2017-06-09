@@ -3,12 +3,12 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
-  <title>DevSummit 2017</title>
-  <link rel="stylesheet" href="https://js.arcgis.com/3.20/esri/css/esri.css">
+  <title>VectorTileLayer sample</title>
+  <link rel="stylesheet" href="//js.arcgis.com/3.20/esri/css/esri.css">
 
   <link rel="stylesheet" href="//js.arcgis.com/3.20/esri/themes/calcite/esri/esri.css">
   <!-- LOAD JQUERY LIBRARY -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   <style>
     html,
     body,
@@ -23,11 +23,19 @@
       left: 0px;
       top: 0px;
     }
+    .calcite .esriPopup .titlePane .title{
+      font-size: 1rem;
+    }
+    .calcite .esriPopup .pointer.bottom{
+      /*bottom: -6px;*/
+    }
+    .esriPopupWrapper{
+      /*bottom:37px !important;*/
+    }
   </style>
   <script src="https://js.arcgis.com/3.20/"></script>
   <script>
     require([
-
       "esri/map",
       "esri/layers/VectorTileLayer",
       "esri/geometry/Point",
@@ -36,43 +44,39 @@
       "esri/Color",
       "esri/graphic",
       "esri/InfoTemplate",
-      "esri/dijit/InfoWindow",
       "dojo/domReady!"
-    ], function( Map, VectorTileLayer, Point, SpatialReference, PictureMarkerSymbol, Color, Graphic, InfoWindow, InfoTemplate) {
+    ], function(Map, VectorTileLayer, Point, SpatialReference, PictureMarkerSymbol, Color, Graphic, InfoTemplate) {
 
-      var infoWindow = new  InfoWindow();
 
-      var map = new Map("map", {
-        center: [-3.693585399999961,40.4105204],
-        zoom: 16,
-        infoWindow: infoTemplate
+
+
+      map = new Map("map", {
+        center: [-3.692061905279565,40.411566042145424], // longitude, latitude
+        zoom: 16
       });
 
+      //The URL referenced in the constructor may point to a style url JSON (as in this sample)
+      //or directly to a vector tile service
       var vtlayer = new VectorTileLayer("https://www.arcgis.com/sharing/rest/content/items/95d4d6b61c0b4690adaf8cbdabb28196/resources/styles/root.json");
       map.addLayer(vtlayer);
 
-      var point = new Point(-3.693585399999961, 40.4105204, map.spatialReference);
+      point = new Point(-3.693585399999961, 40.4105204, map.spatialReference);
       var marker = new PictureMarkerSymbol();
           marker.setHeight(50);
           marker.setWidth(30);
           marker.setUrl("images/marker.png");
-      var attr = {"Xcoord":-3.693585399999961,"Ycoord":40.4105204,"Plant":"Mesa Mint"};
-      var infoTemplate = new InfoTemplate("MEDIALAB PRADO","<b>Dirección:</b><br> Calle de la Alameda, 15<br> 28014 Madrid <br><br> <img src='images/medialab2.jpg' width='200' height='200'/>");
+
+      var infoTemplate = new InfoTemplate(
+        "MEDIALAB PRADO",
+        "<b>Dirección:</b><br>"+
+        "Calle de la Alameda, 15,  28014 Madrid <br><br>"+
+        "<div style='text-align:center'><img src='images/medialab2.jpg' height='140'/></div>"
+      );
 
       map.on('load', function() {
-        map.graphics.add(new Graphic(point, marker, attr, infoTemplate));
-        map.infoWindow.setTitle("MEDIALAB PRADO");
-        map.infoWindow.setContent("<b>Dirección:</b><br> Calle de la Alameda, 15<br> 28014 Madrid <br><br> <img src='images/medialab3.jpg' width='200' height='200'/>");
-        map.infoWindow.resize(250, 250);
-        map.infoWindow.show(point);
+        m = new Graphic(point, marker, {id: "marker"}, infoTemplate);
+        map.graphics.add(m);
 
-      });
-
-      map.on('click', function() {
-        map.infoWindow.setTitle("MEDIALAB PRADO");
-        map.infoWindow.setContent("<b>Dirección:</b><br> Calle de la Alameda, 15<br> 28014 Madrid <br><br> <img src='images/medialab2.jpg' width='200' height='200'/>");
-        map.infoWindow.resize(250, 250);
-        map.infoWindow.show(point);
       });
 
     });
