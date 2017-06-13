@@ -18,4 +18,4 @@ Hora|Charla
 12:45-13:15|[GeoInformation model](#)
 13:15-13:45|[Licenciamiento para desarrolladores](#)
 13:45-15:00|Descanso
-15:00-17:30|Talleres: [ArcGIS REST API](#), [KoopJS](#), [Aplicaciones configurables](#), [Web Performance](#)
+15:00-17:30|Talleres: [ArcGIS REST API](#) | [KoopJS](#) | [Aplicaciones configurables](#) | [Web Performance](#)
