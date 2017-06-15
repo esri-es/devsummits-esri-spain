@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="js/koliseo-agenda.css">
+  <style>
+  /*
+
+  These are just for the demo page. You should be fine with kagenda-styles.css and your own styles
+
+  */
+  body {
+    font-size: 12px;
+    font-family: "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  *, *::after, *::before  {
+    box-sizing: border-box;
+  }
+  a {
+    color: #008CBA;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 2.64286rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+    font-family: 'Open Sans',"Helvetica Neue",'Liberation Sans',Roboto,Trebuchet MS,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #8c8c8c;
+    text-rendering: optimizeLegibility;
+    margin: .2rem 0 .5rem;
+    line-height: 1.4;
+  }
+  .lead {
+    font-size: 14px;
+    color: #222;
+  }
+  </style>
+</head>
+<body>
+
+
+  <div class="ka"></div>
+  <script>
+
+  // Feel free to replace with your own way to load polyfill code.
+
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  function loadJS( src, cb ){
+    "use strict";
+    var ref = window.document.getElementsByTagName( "script" )[ 0 ];
+    var script = window.document.createElement( "script" );
+    script.src = src;
+    script.async = true;
+    ref.parentNode.insertBefore( script, ref );
+    if (cb && typeof(cb) === "function") {
+      script.onload = cb;
+    }
+    return script;
+  }
+
+  function onLoad() {
+    if (typeof Koliseo !== 'undefined' && Koliseo.agenda && typeof fetch !== 'undefined') {
+      Koliseo.agenda.render({
+        c4pUrl: 'https://www.koliseo.com/rauljimenezortega/developer-summit-esri-espana/r4p/5679068724854784',
+        element: document.querySelector('.ka'),
+        oauthClientId: 5643051665981440
+      })
+    }
+  }
+
+  (typeof fetch === 'undefined') && loadJS('js/polyfill.js', onLoad)
+  loadJS('js/koliseo-agenda.min.js', onLoad)
+
+  </script>
+</body>
+</html>
