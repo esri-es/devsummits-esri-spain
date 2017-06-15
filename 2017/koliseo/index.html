@@ -16,6 +16,7 @@
     font-family: "Helvetica Neue", sans-serif;
     line-height: 1.5;
     padding: 20px;
+        padding-top: 5rem;
   }
   *, *::after, *::before  {
     box-sizing: border-box;
@@ -41,12 +42,75 @@
     font-size: 14px;
     color: #222;
   }
+  h1{
+    position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+text-align: center;
+border-bottom: 1px solid #999;
+padding: 1rem;
+background-color: #fafafa;
+box-shadow: 0px 1px 3px #ddd;
+color: #333;
+  }
   </style>
 </head>
 <body>
-
+  <h1>DevSummit Feedback</h1>
 
   <div class="ka"></div>
+  <style type="text/css">
+    .kday-title,
+    .ka-filter-total{
+        display: none;
+    }
+    .ka-tabs{
+      border: none;
+    }
+    .ka-hint-p.small{
+      font-size: 12px;
+    }
+    .ka-hint-p.small a{
+      color: #519548;
+    }
+    .ka-filter-input{
+      max-width: 87%;
+      border: 0;
+      border-radius: 0;
+    }
+    .ka-filter-form .ka-button.primary{
+      max-width: 13%;
+      border-radius: 0;
+    }
+    .ka-table{
+      width: 98.5%;
+    }
+    .ka-login-btn{
+      background-color: #0fa24f;
+      color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 0;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+
+    }
+    .ka-filter-form{
+      display:none;
+    }
+    h2.ka-dialog-title {
+      margin: 1rem;
+      font-size: 1.8rem;
+    }
+    @media only screen and (min-width: 980px){
+      .ka-dialog {
+        top: 90px;
+      }
+    }
+
+  </style>
   <script>
 
   // Feel free to replace with your own way to load polyfill code.
