@@ -5,8 +5,6 @@
 #### Mapping 2D
 
 
-Slides : [https://github.com/Geo-Developers/talks/tree/master/slides](https://goo.gl/BzIZ9k)
-
 --
 
 <!-- .slide: class="section" -->
@@ -154,7 +152,8 @@ Slides : [https://github.com/Geo-Developers/talks/tree/master/slides](https://go
 ## Vector Tiles | Basemaps y la plataforma ArcGIS
 
 * [**Repositorio Git ESRI España**](https://github.com/esri-es/arcgis-vector-tiles)
-[![Vector Tiles | Basemaps](images/RepoVectorTiles.PNG)](https://esri-es.github.io/arcgis-vector-tiles/)
+
+[![Vector Tiles | Basemaps](https://github.com/esri-es/arcgis-vector-tiles/raw/master/images/Vector%20Tile%20Showcase.gif?raw=true)](https://esri-es.github.io/arcgis-vector-tiles/)
 
 --
 
@@ -176,14 +175,16 @@ Slides : [https://github.com/Geo-Developers/talks/tree/master/slides](https://go
 
 ## ¿Cómo se crean los Vector Tiles?
 
-* Creación de las teselas en ArcGIS Pro 1.2+
-* Publicar las tile layers (capas de teselas) en ArcGIS Online y ArcGIS Server/Portal 10.4+
+* Creación de los vector tiles en ArcGIS Pro 1.2+
+* Publicar los vector tiles en ArcGIS Online y ArcGIS Server/Portal 10.4+
 * En ArcGis Pro 1.4
   - Permite publicar los vector tiles como Web Layer
   - Crear, editar, y publicar en un solo paso
 * Herramientas relacionadas:
   - [Crear índice de teselas vectoriales](http://pro.arcgis.com/es/pro-app/tool-reference/data-management/create-vector-tile-index.htm)
   - [Crear paquete de teselas vectoriales](http://pro.arcgis.com/es/pro-app/tool-reference/data-management/create-vector-tile-package.htm)
+  - [Compartir paquete de teselas](http://pro.arcgis.com/es/pro-app/tool-reference/data-management/share-package.htm)
+  - [Exportar paquete de teselas ](http://pro.arcgis.com/es/pro-app/tool-reference/data-management/extract-package.htm)
 
 --
 
@@ -315,7 +316,7 @@ Sonar
 
 [![Sonar](https://img.youtube.com/vi/H_cdn2kVB-E/0.jpg)](https://youtu.be/H_cdn2kVB-E?t=5m17s)
 
-* Git Repository: [Sonar Repo](https://github.com/Esri/sonar)
+* Git Repository: [sonar Repo](https://github.com/Esri/sonar)
 
 --
 
@@ -326,6 +327,18 @@ Sonar
 Kuwait Finder App
 
 [![Traffic problem](images/TrafficProblem.PNG)](https://youtu.be/H_cdn2kVB-E?t=9m57s)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Demo:
+
+Kuwait Finder App
+
+[![Kuwait](images/KuwaitCity.PNG)](https://dl.dropboxusercontent.com/u/2193160/app/index.html)
+
+* Git Repository: [space-time-ripple](https://github.com/mraad/space-time-ripple)
 
 
 ---
