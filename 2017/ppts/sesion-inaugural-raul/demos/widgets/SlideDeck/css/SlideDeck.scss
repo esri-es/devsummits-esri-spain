@@ -1,0 +1,493 @@
+$defaultThumbWidth: 114px;
+$defaultThumbHeight: 62px;
+$defaultThumbWidthSmall: 114px;
+$defaultThumbHeightSmall: 62px;
+$buttonBorderColor: #bbb;
+$light_gray: #ebebeb;
+$text_width: 180px;
+$color-transition-length: 0.15s;
+
+@keyframes opacityAnim
+{
+  from {  opacity: 0;  }
+  to {  opacity: 1;  }
+}
+
+@keyframes flash
+{
+  0% {  background-color: rgba(255,255,255, 0);  }
+  40% {  background-color: rgba(255,255,255, 0.7);  }
+  100% {  background-color: rgba(255,255,255, 0);  }
+}
+
+
+.textNotSelectable{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.textSelectable{
+  -webkit-touch-callout: initial;
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+
+
+$slideTransitionS: 0.2s;
+$slideTransitionM: 0.1s;
+$slideTransitionL: 0.08s;
+$delayS: $slideTransitionS/2;
+$delayM: $slideTransitionM/2;
+$delayL: $slideTransitionL/2;
+
+#slideDeckContainer .Slidebar {
+  @extend .textNotSelectable;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  height:$defaultThumbHeightSmall + 6px;
+  display: block;
+  padding: 4px 50px 0 0px;
+
+
+  &.borderAnimationL ul.slideDeckInner.horizontalBar{
+    @for $i from 1 through 45 {
+      > :nth-child(#{$i}) {
+        margin: 0 4px 1px 4px;
+        padding-top: 1px;
+        opacity: 0;
+        animation: opacityAnim $slideTransitionL ($delayL * $i), flash $slideTransitionL*2 ($delayL * $i);
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  &.borderAnimationS ul.slideDeckInner.horizontalBar{
+    @for $i from 1 through 8 {
+      > :nth-child(#{$i}) {
+        margin: 0 4px 1px 4px;
+        padding-top: 1px;
+        opacity: 0;
+        animation: opacityAnim $slideTransitionS ($delayS * $i), flash $slideTransitionS*2 ($delayS * $i);
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+
+  &.borderAnimationM ul.slideDeckInner.horizontalBar{
+    @for $i from 1 through 15 {
+      > :nth-child(#{$i}) {
+        margin: 0 4px 1px 4px;
+        padding-top: 1px;
+        opacity: 0;
+        animation: opacityAnim $slideTransitionM ($delayM * $i), flash $slideTransitionM*2 ($delayM * $i);
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  &.noBorderAnimation {
+    @for $i from 1 through 6 {
+      :nth-child(#{$i}) {
+        opacity: 0;
+      }
+    }
+  }
+
+
+  &.usePlayButton{
+    padding: 4px 50px 0 50px;
+  }
+  ul.slideDeckInner {
+    padding: 0;
+    margin:0;
+    pointer-events: all;
+    height: $defaultThumbHeightSmall + 2px;
+
+    &.horizontalBar {
+      white-space: nowrap;
+      overflow: hidden;
+
+      .slide {
+        height:$defaultThumbHeightSmall + 2px;
+        width: $defaultThumbWidthSmall + 2px;
+        display: inline-block;
+        margin: 1px 4px 0 4px;
+        .slideButton{
+          background-color: black;
+          @extend .slideButton;
+          display: inline-block;
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+          opacity: 0.9;
+          height:$defaultThumbHeightSmall;
+          width: $defaultThumbWidthSmall;
+          &:hover {
+            box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: background $color-transition-length ease-out;
+            opacity: 1;
+            outline:1px solid white;
+            .smallTitle {
+              display:block;
+              z-index:5;
+              @extend .ellipsis;
+              width: $defaultThumbWidthSmall - 3px;
+            }
+          }
+          &.highlight{
+            outline:1px solid white;
+          }
+          img{
+            height:$defaultThumbHeightSmall;
+          }
+        }
+      }
+    }
+  }
+  .playButton {
+    position: absolute;
+    bottom: 17px;
+    left: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 32px;
+    height: 32px;
+    padding-left: 2px;
+    padding-top: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+    }
+    &.playing .playIcon {
+      background: url(../images/play_pause.png) 15px 16px;
+    }
+    .playIcon {
+      outline: none;
+      background: url(../images/play_pause.png) 32px 16px;
+      width: 16px;
+      height: 16px;
+      margin: 6px;
+    }
+  }
+}
+
+.slideDeck {
+  button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  ul.slideDeckInner {
+    list-style: none;
+    padding: 0;
+    margin:0;
+    .slide {
+      .smallTitle {
+        position: absolute;
+        bottom: 1px;
+        margin: 0 3px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 140px;
+        text-align: left;
+        color: white;
+        text-shadow: 0px 0px 1px black, 0px 0px 2px black, 0px 0px 3px black;
+        display: none;
+      }
+    }
+  }
+}
+
+
+.slideDeck .slide .slideButton,.dndCover .slide .slideButton {
+  position: relative;
+  width: $defaultThumbWidth;
+  height: $defaultThumbHeight - 1px;
+  cursor: pointer;
+}
+
+
+
+.slideDeck .slide img, .dndCover .slide img {
+  height: $defaultThumbHeight - 1px;
+  opacity: 1;
+
+  &.hidden{
+    opacity: 0;
+  }
+
+
+border-style: none;
+  pointer-events: none;
+}
+
+
+#webscene-main #slideThumbnailAnimation{
+  width: $defaultThumbWidth;
+  height: $defaultThumbHeight;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  left: 300px;
+  top: 0px;
+  background-color: red;
+  z-index:100;
+  &.outside{
+    left:300px;
+  }
+}
+
+/* Editor */
+.slideDeckEditable{
+  .addSlide {
+    transition: background $color-transition-length ease-out;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    .addChar {
+      margin: 0;
+    }
+    .slideButton {
+      width: 100%;
+      height: 35px;
+      -moz-user-select: none;
+      background: none repeat scroll 0 0 #5daddd;
+      transition: background $color-transition-length ease-out;
+      border: medium none;
+      border-radius: 3px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
+      box-sizing: border-box;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      letter-spacing: 1px;
+      line-height: 1.71429em;
+      padding: 0.3em 1.25em;
+      position: relative;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.125);
+      text-transform: uppercase;
+      transition: all 0.05s linear 0s;
+
+      &:hover, &:active {
+        background: none repeat scroll 0 0 #4997d2;
+        transition: background $color-transition-length ease-out;
+      }
+    }
+  }
+}
+
+
+.dijitInlineEditBoxDisplayModeHover{
+  background-color: white;
+  border: 1px solid $light_gray;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.slideDeckEditable .Slidebar .slide, .dndCover .slide {
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
+  box-sizing: border-box;
+  list-style: none;
+  margin: 10px 0;
+  display: table;
+  background-color: white;
+  .smallTitle{
+    display: none;
+  }
+
+  .slideDetails {
+    display: table-cell;
+    width: 100%;
+    position: relative;
+    .editTitle {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: $text_width;
+      height: 20px;
+      @extend .ellipsis
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 6px #b3b3b3;
+    .OptionsMenu {
+      display: block;
+    }
+  }
+
+  .iconButtonContainer {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width:16px;
+    height: 16px;
+    padding: 3px;
+    &:hover .deleteSlide, &:hover .updateSlide{
+      background-position: 0px -16px;
+    }
+    .deleteSlide {
+      width: 16px;
+      height: 16px;
+      background-image: url("../images/delete.png");
+      background-size: 16px 32px;
+      padding: 0;
+      float: right;
+    }
+
+    .updateSlide {
+      width: 16px;
+      height: 16px;
+      background: url("../images/refresh.png") 0 0;
+      display: block;
+    }
+  }
+
+  .iconButtonContainer2{
+    @extend .iconButtonContainer;
+    top: auto;
+    right: auto;
+    position: inherit;
+    padding: 8px;
+  }
+
+  .editSlide{
+    position: absolute;
+    bottom: 0px;
+    right: -3px;
+  }
+
+  img{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px
+  }
+  .slideButton {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+  .dijitInputField{
+    border: dashed $light_gray 1px;
+    padding-top: 2px;
+    height: 20px;
+    width:$text_width;
+  }
+
+  .dijitTextBox{
+    width:$text_width;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+  }
+}
+
+.esriRtl{
+  #slideDeckContainer .Slidebar{
+    padding-right: 0px;
+    padding-left: 50px;
+    &.usePlayButton{
+      padding: 4px 50px 0 50px;
+    }
+  }
+
+  .slideDeckEditable .Slidebar .slide .iconButtonContainer, .dndCover .slide .iconButtonContainer {
+    display: block;
+    top: 5px;
+    position: absolute;
+    right: auto;
+    left: 5px;
+  }
+
+  .slideDeckEditable .Slidebar .slide .iconButtonContainer2, .dndCover .slide .iconButtonContainer2 {
+    right: 5px;
+    left: auto;
+    top: 28px;
+  }
+
+  .slideDeckEditable .Slidebar .slide .editTitle, .dndCover .editTitle{
+    left: auto;
+    right: 5px;
+  }
+  .slideDeckEditable .Slidebar .slide .editSlide, .dndCover .editSlide{
+    right: auto;
+    left: -2px;
+  }
+  .slideDeckEditable .slideButton{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    img{
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+  }
+
+  #slideDeckContainer .slide .slideButton:hover .smallTitle{
+    right: 0px;
+    left: auto;
+    text-align: right;
+  }
+}
+
+
+/* ---------------------- DND ---------------------------------------- */
+.dndCover {
+  background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1000px;
+  z-index: 9999;
+  cursor: move;
+}
+
+.dragNode {
+  z-index: 10000;
+  cursor: move;
+}
+.dragHandle {
+  cursor: move;
+}
+.dropIndicator {
+  box-sizing: border-box;
+  position: relative;
+  height: 60px;
+  border: 2px dashed #CCCCCC;
+  border-radius: 3px;
+  margin: 8px 0;
+}
+.dropIndicator > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.dndCover {
+
+}
+.orange .dndCover2 {
+  z-index: 10001;
+}
