@@ -10,7 +10,7 @@ Detalles del evento:
 ## Programa y materiales
 Hora|Charla
 ---|---|
-09:15-09:45|[Iniciativas para desarrolladores](#)
+09:15-09:45|[Iniciativas para desarrolladores](http://esri-es.github.io/devsummits-esri-spain/2017/ppts/iniciativas-para-desarrolladores)
 09:45-11:15|[Sesión inaugural](#)
 11:15-11:45|Descanso
 11:45-12:00|[Programa Experto de Esri España](#)
