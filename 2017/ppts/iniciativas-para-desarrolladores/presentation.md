@@ -163,9 +163,9 @@ Newsletter segmentada ("mensual")
 
 <!-- .slide: class="section centered" -->
 
-## Questions?
+## ¿Preguntas?
 
-* Raúl Jiménez Ortega: raul.jimenez@esri.es
+Raúl Jiménez Ortega: raul.jimenez@esri.es
 
 Slides: [bit.ly/DevSummit17-1](http://bit.ly/DevSummit17-1)
 
