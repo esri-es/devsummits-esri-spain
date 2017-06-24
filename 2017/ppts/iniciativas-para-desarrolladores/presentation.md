@@ -3,7 +3,7 @@
 ## Iniciativas para desarrolladores
 Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
-[bit.ly/xxxxxx](http://bit.ly/xxxxxx)
+[bit.ly/DevSummit17-1](http://bit.ly/DevSummit17-1)
 
 ---
 
@@ -167,7 +167,7 @@ Newsletter segmentada ("mensual")
 
 * Raúl Jiménez Ortega: raul.jimenez@esri.es
 
-Slides: [bit.ly/xxxxxx](http://bit.ly/xxxxxx)
+Slides: [bit.ly/DevSummit17-1](http://bit.ly/DevSummit17-1)
 
 ---
 
