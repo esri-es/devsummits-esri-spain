@@ -257,14 +257,19 @@ body {
   /* border: 4px solid #fff; */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); */ }
 
+.reveal a{
+  color: #c99044;
+}
 .reveal a img {
   -webkit-transition: all 0.15s linear;
   -moz-transition: all 0.15s linear;
-  transition: all 0.15s linear; }
+  transition: all 0.15s linear;
+  border: 6px solid #c99044;
+}
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #42affa;
+  border-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
