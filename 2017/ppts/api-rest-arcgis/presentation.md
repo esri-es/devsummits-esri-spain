@@ -3,12 +3,38 @@
 ## API REST de ArcGIS
 
 
+--
+
+<!-- .slide: class="section" -->
+
+## ¿Por qué aprender a usar la API?
+
+- Entender mejor el funcionamiento de las APIs
+- Saber cómo crear tus propias librerías (Ruby, PHP, Python, etc...)
+- Aprender a extender las librerías actuales (Ejemplo: Static-Maps-JS-API-ArcGIS )
+- Aprender a depurar mejor tus aplicaciones
 
 --
 
 <!-- .slide: class="section" -->
 
-## Documentation
+## Plataforma ArcGIS
+
+* [Arquitectura de ArcGIS Online](https://prezi.com/y6cisa2fbhht/arcgis-online-architecture/)
+
+![ArcGIS Platform](images/ArcGISPlatform.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Plataforma ArcGIS
+
+![Functionalities](images/Functionalities.PNG)
+
+---
+
+## Documentación
 
  [![API REST ArcGIS](images/APIREST.PNG)](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/The_ArcGIS_REST_API/02r300000054000000/)
 
@@ -95,7 +121,26 @@ To successfully develop with the ArcGIS REST API, you’ll need to know:
 
 * Postman:  [getpostman.com](https://www.getpostman.com/)
 
+* API REST ArcGIS Collection  [![ArcGIS-REST-API in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/721fa2b07a27f3f18f16)
+
+* API Open Data ArcGIS Collection [![ArcGIS-OpenData-API in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/21805c4f14ce50776c1f)
+
  [![Postman Chrome](images/Postman.PNG)](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop/related?hl=en)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Postman Environments
+
+![Postman Environments](images/Environments.png)
+
+---
+
+## Ejercicios
+### Ejercicio 1. Generar Token ArcGIS Online
+
+[![Token ArcGIS Online](images/TokenAGOL.PNG)](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r3000000ts000000)
 
 ---
 
