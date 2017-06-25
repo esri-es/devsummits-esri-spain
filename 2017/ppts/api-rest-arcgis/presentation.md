@@ -42,10 +42,10 @@
 
 <!-- .slide: class="section" -->
 
-## Using the ArcGIS REST API
+## Utilizando la API REST de ArcGIS
 
-- Consume ready-to-use ArcGIS Online services hosted by Esri
-- Consume services published by you or by other organizations
+- Consumir Servicios Ready-to-Use alojados en ArcGIS Online y publicados por ESRI
+- Consumir servicios publicados por ti alojados en tu organización
 - Publish your own web services
 - Create and share items on ArcGIS Online or your own portal
 - Configure and automate parts of the ArcGIS system, such as ArcGIS Server and Portal for ArcGIS
@@ -141,6 +141,17 @@ To successfully develop with the ArcGIS REST API, you’ll need to know:
 ### Ejercicio 1. Generar Token ArcGIS Online
 
 [![Token ArcGIS Online](images/TokenAGOL.PNG)](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r3000000ts000000)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 2. Servicio de Rutas
+
+* En la descripción podéis encontrar una [Demo](http://developers.arcgis.com/javascript/samples/widget_directions_basic/) utilizando la API de JavaScript que utiliza esa funcionalidad de la API REST.
+
+[![Route Service](images/RouteService.PNG)](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r3000000ts000000)
 
 ---
 
