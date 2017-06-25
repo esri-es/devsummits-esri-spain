@@ -139,19 +139,84 @@ To successfully develop with the ArcGIS REST API, you’ll need to know:
 
 ## Ejercicios
 ### Ejercicio 1. Generar Token ArcGIS Online
+Documentación: [Generar Token](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r3000000ts000000)
 
-[![Token ArcGIS Online](images/TokenAGOL.PNG)](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r3000000ts000000)
+![Token ArcGIS Online](images/TokenAGOL.PNG)
 
 --
 
 <!-- .slide: class="section" -->
 
 ## Ejercicios
-### Ejercicio 2. Servicio de Rutas
+### Ejercicio 1. Generar Token ArcGIS Online
+
+**Para que se nos guarde el id token como variable**
+
+* Accedemos al Test y creamos la variable de entorno llamada "token" guardando el id del token obtenido en la petición anteriormente realizada.
+
+![Token ArcGIS Online](images/TokenTest.png)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 1. Generar Token ArcGIS Online
+
+* Además le establecemos que nos devuelva el mensaje "Token is present" en caso de que identifique que la respuesta obtenida contiene el token
+
+![Token ArcGIS Online](images/TokenTest1.png)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 1. Generar Token ArcGIS Online
+
+* Obtenemos el id del token que observamos en el Body.
+
+![Token ArcGIS Online](images/Token.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 1. Generar Token ArcGIS Online
+
+* Comprobamos que efectivamente nos ha guardado el id del token en el entorno "Demo"
+
+![Token ArcGIS Online](images/TokenId.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 2. Generar Token con Oauth
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 3. Servicio de Rutas
 
 * En la descripción podéis encontrar una [Demo](http://developers.arcgis.com/javascript/samples/widget_directions_basic/) utilizando la API de JavaScript que utiliza esa funcionalidad de la API REST.
 
 [![Route Service](images/RouteService.PNG)](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r3000000ts000000)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 4. Crear un nuevo ítem en ArcGIS Online
+
+- Documentación: [Añadir ítem](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r30000008q000000)
+
+![Add Item](images/ItemAdd.PNG)
 
 ---
 
