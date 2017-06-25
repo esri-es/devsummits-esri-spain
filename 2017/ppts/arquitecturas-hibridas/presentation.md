@@ -162,7 +162,7 @@ hacen análisis espacial (ArcGIS Online), guardan favoritos, etc.
   y demás info geolocalizada (por ej: dpto. operaciones)
 
 * Usuarios org. (L1): Si necesitan acceso sólo lectura <br>
-  info privada (por ej: dpto. financiero)
+  info privada, pisos que están alquilados (por ej: dpto. financiero)
 
 * Usuarios propios: No trabajan con info geogr. privada<br>
   pero pueden requerir de hacer análisis espacial o acceder<br>
