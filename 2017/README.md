@@ -14,7 +14,7 @@ Hora|Charla
 09:45-11:15|[Sesión inaugural](#)
 11:15-11:45|Descanso
 11:45-12:00|[Programa Experto de Esri España](#)
-12:00-12:45|[Arquitecturas híbridas](#)
+12:00-12:45|[Arquitecturas híbridas](http://esri-es.github.io/devsummits-esri-spain/2017/ppts/arquitecturas-hibridas/#/)
 12:45-13:15|[GeoInformation model](#)
 13:15-13:45|[Licenciamiento para desarrolladores](#)
 13:45-15:00|Descanso
