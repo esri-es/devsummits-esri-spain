@@ -15,6 +15,7 @@ Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 * Tirando un mito
 * Tipos de cuenta
 * Qué se puede y qué no
+* oAuth & refresh_token
 * Casos prácticos
 
 ---
@@ -87,29 +88,53 @@ a producción <- salvo si no tiene ánimo de lucro.
 
 ### Se puede
 
-* Combinar cuentas públicas y de organización
+* Usar cuentas públicas y de organización en una misma app
 * Seguir un enfoque híbrido (usuarios ArcGIS y propios)
-* Extender con oAuth ([Ipsilum](https://docs.google.com/presentation/d/1-jg8KKDmBRqk7ziVRIxZ68O-Z7DS-cXsEENt5Qw85O8/edit?usp=sharing))
-* Usar un proxy + oauth/credenciales para crear una app <br>
-  que acceda a contenidos premium o permita hacer análisis espacial
+* Usar la conexión con ArcGIS para ampliar funcionalidad ([Ipsilum](https://docs.google.com/presentation/d/1-jg8KKDmBRqk7ziVRIxZ68O-Z7DS-cXsEENt5Qw85O8/edit?usp=sharing))
+* Usar un proxy + oAuth (o credenciales) para crear una app que usuarios<br>
+sin cuenta de ArcGIS puedan:
+  * Visualizar contenidos Premium<br>
+  * Consumir servicios de ArcGIS Online con coste en créditos
+  * Limitar el acesso público de un servicio a una serie de dominios
 
 --
 
-### No se puede
+### No se puede (por TOS)
 
-* Utilizar un sistema de usuarios y control de acceso a los datos geográficos
-* Intentar ArcGIS como gestor de contenidos geo
-* Embeber credenciales de un usuario en una app o proxy para acceder a los datos y posteriormente añadir encima un control de acceso personalizado.
+* Crear un sistema propio de control de acceso a los <br>
+  datos geográficos que permita `utilizar/compartir un` <br>
+  `solo usuario nominal entre varios usuarios`.
+
+* `Embeber credenciales de un usuario nominal`<br>
+  `en una app o proxy` para darle privilegios a varios usuarios<br>
+  ("puentear" los usuarios nominales) para por ejemplo: crear<br>
+  servicios o items, permitir el acceso a datos privados a ciertos<br>
+  usuarios, compartir items con grupos, etc.
 
 --
 
-### Regla a aplicar
+### En definitiva
 
-> Solo necesitaremos un usuario de organización (de pago) cuando queramos que este
-**pueda trabajar con información no pública, formar parte de grupos o queramos que
-pueda crear servicios** (entidades, imágenes, etc).
+Necesitaremos un usuario de organización (de pago) cuando necesitemos:
+* Limitar (por usuario) el acceso a información no pública (alojada en ArcGIS).
+* Que el usuario pueda formar parte de grupos (de ArcGIS)
+* Cuando necesitemos hacer uso de las apps (Collector, etc)
+* O queramos que este pueda crear servicios de: entidades, imágenes, etc.
 
-> Si este no es el caso podemos plantear la opción de una cuenta pública o un usuario propio
+> Si el usuario no requiere de ninguna de estas funcionalidades podremos Usar
+cuentas públicas de ArcGIS o un sistema de usuarios propio
+
+---
+
+<!-- .slide: class="section" -->
+
+### oAuth y refresh_token
+
+\- diagrama -
+
+--
+
+[![oAuth diagram](https://docs.google.com/drawings/d/1LxJy0p988F6Bhjrz-rE1WWpso-f-HCdumCUE9UfG-dI/pub?w=700)](https://docs.google.com/drawings/d/1LxJy0p988F6Bhjrz-rE1WWpso-f-HCdumCUE9UfG-dI/edit?usp=sharing)
 
 ---
 
@@ -117,38 +142,68 @@ pueda crear servicios** (entidades, imágenes, etc).
 
 ### Casos prácticos
 
-\- Aplicaciones de modelos híbridos -
+\- de apps con modelos híbridos -
 
---
+---
+
+<!-- .slide: class="section" -->
 
 ## Caso: Portal Inmobiliario (B2C)
 
-> Los empleados registran nuevos apartamentos, los usuarios buscan pisos,
-hacen análisis espacial, guardan favoritos, etc. Para el análisis usan un proxy.
-
-* Empleados:
-  * Gestionan la info geográfica: Usuarios nominales (L2)
-  * Necesitan acceso sólo lectura a info privada geoloc: Usuarios nom. (L1)
-  * No trabajan con info geogr. privada (financiero, etc) pero pueden requerir<br>
-  de hacer análisis espacial o contenido premium: usuarios propios
-* Clientes:
-  * Guardan pisos como favoritos, comentan los pisos, etc: usuarios propios
+> * Empleados gestionan los apartamentos, pedidos, etc.
+* los usuarios buscan pisos,
+hacen análisis espacial (ArcGIS Online), guardan favoritos, etc.
 
 --
+
+### Empleados
+
+* Usuarios org. (L2): Crear y gestionan la BD de pisos, <br>
+  y demás info geolocalizada (por ej: dpto. operaciones)
+
+* Usuarios org. (L1): Si necesitan acceso sólo lectura <br>
+  info privada (por ej: dpto. financiero)
+
+* Usuarios propios: No trabajan con info geogr. privada<br>
+  pero pueden requerir de hacer análisis espacial o acceder<br>
+  a contenido premium (por ej: dpto. marketing)
+
+--
+
+### Clientes:
+
+* Usuarios propios: Guardan pisos como favoritos, <br>
+  comentan los pisos, etc.
+
+* Cuentas públicas: si queremos que puedan crear <br>
+  web maps, storymaps, etc.
+
+* Proxy: si queremos que puedan hacer análisis <br>
+  usando servicios de ArcGIS Online.
+
+---
+
+<!-- .slide: class="section" -->
 
 ## Caso: Ipsilum (B2B)
 
 > Herramienta para la planificación de vuelos de drones dirigida a pilotos de
 drones, cartógrafos, etc
 
+--
+
 * Usuarios con registro propio (o social login)
 * Pobilidad de conectar tu usuario nominal (si dispones de él)
 
---
+---
+
+<!-- .slide: class="section" -->
 
 ## Caso: Ayto de Liliput (B2G)
 
 > Aplicación de participación ciudadana <- GeoHub?
+
+--
 
 * Empleados: usuarios nominales
 * Ciudadanos: usuarios propios
