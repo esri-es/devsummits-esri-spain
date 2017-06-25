@@ -158,27 +158,33 @@ hacen análisis espacial (ArcGIS Online), guardan favoritos, etc.
 
 ### Empleados
 
-* Usuarios org. (L2): Crear y gestionan la BD de pisos, <br>
+* **Usuarios org. (L2)**: Crear y gestionan la BD de pisos, <br>
   y demás info geolocalizada (por ej: dpto. operaciones)
 
-* Usuarios org. (L1): Si necesitan acceso sólo lectura <br>
-  info privada, pisos que están alquilados (por ej: dpto. financiero)
+* **Usuarios org. (L1)**: Si necesitan acceso sólo lectura <br>
+  a info privada (como pisos que estén alquilados)<br>
+  (por ej: dpto. financiero)
 
-* Usuarios propios: No trabajan con info geogr. privada<br>
-  pero pueden requerir de hacer análisis espacial o acceder<br>
-  a contenido premium (por ej: dpto. marketing)
+* **Usuarios propios**: No trabajan con info geogr. privada<br>
+  pero pueden requerir de hacer análisis espacial, acceder<br>
+  a contenido premium o crear storymaps (por ej: dpto. <br>
+  marketing)
 
 --
 
 ### Clientes:
 
-* Usuarios propios: Guardan pisos como favoritos, <br>
+* **Usuarios org. (L2)**: Si queremos que los propietarios<br>
+  de pisos puedan publicar directamente sus pisos en <br>
+  ArcGIS y acceder a información geolocalizada restringida.
+
+* **Usuarios propios**: Guardan pisos como favoritos, <br>
   comentan los pisos, etc.
 
-* Cuentas públicas: si queremos que puedan crear <br>
+* **Cuentas públicas**: si queremos que puedan crear <br>
   web maps, storymaps, etc.
 
-* Proxy: si queremos que puedan hacer análisis <br>
+* **Proxy**: si queremos que puedan hacer análisis <br>
   usando servicios de ArcGIS Online.
 
 ---
