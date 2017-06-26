@@ -12,8 +12,8 @@ Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
 ### Agenda
 
-* Tirando un mito
-* Tipos de cuenta
+* Desmontando un mito
+* Tipos de cuentas
 * Qué se puede y qué no
 * oAuth & refresh_token
 * Casos prácticos
@@ -22,19 +22,27 @@ Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
 <!-- .slide: class="section" -->
 
-### Tirando un mito
+### Desmontando un mito
 
-> Si se var desarrollar una app usando ArcGIS y var a tener 1000, un millón, o los usuarios
+> Si se vas desarrollar una app usando ArcGIS y va a tener 1000, un millón, o los usuarios
 registrados que sea... `no implica necesariamente que haya que comprar ese número de usuarios nominales`.
 
+<img src="imgs/omg-really.png" alt="OMG Really" style="width:200px;border:2px solid #c99044">
+
+
+--
+
+<!-- .slide: class="white" -->
+
+![Jack el Destripador, vayamos por partes](imgs/JackRipper.jpg)
 
 ---
 
 <!-- .slide: class="section" -->
 
-### Tipos de cuenta
+### Tipos de cuentas
 
-|Tipos de cuenta|Coste|Propósito|Ámbito|
+|Tipo|Coste|Propósito|Ámbito|
 |---|---|---|---|
 |[Cuenta pública](https://www.arcgis.com/home/createaccount.html)|No|Personal|Cloud|
 |[Usuario de organización - Nivel 1](http://www.esri.com/arcgis/trial)|Sí|Profesional|Cloud & On-premise|
@@ -47,12 +55,12 @@ registrados que sea... `no implica necesariamente que haya que comprar ese núme
 
 |Puede|No puede|
 |---|---|
-|Crear Web Maps, Web Scenes, alojar fichero estáticos (CSV, KML,...) y crear notas de mapa|Hacer análisis, crear servicios
-|Crear storymaps y apps configurables|Usar apps configurables personalizadas
-|Crear grupos|Unirse a grupos creados por orgs
+|Crear Web Maps, Web Scenes, alojar ficheros estáticos (CSV, KML,...) y crear notas de mapa|Hacer análisis, crear servicios
+|Crear storymaps y apps configurables|Usar apps configurables personalizadas ni Web AppBuilder
+|Crear grupos|Unirse a grupos creados por organizaciones
 |Cargar sus contenidos y los de 3os en un mapa|Configurar geocodificador, etc.
 
-Ideal para modelos B2C ¿y B2G que incluyen al ciudadano? <- REST API
+Considerar para modelos B2C ¿y B2G que incluyen al ciudadano? <- REST API
 
 --
 
@@ -118,7 +126,7 @@ sin cuenta de ArcGIS puedan:
 Necesitaremos un usuario de organización (de pago) cuando necesitemos:
 * Limitar (por usuario) el acceso a información no pública (alojada en ArcGIS).
 * Que el usuario pueda formar parte de grupos (de ArcGIS)
-* Cuando necesitemos hacer uso de las apps (Collector, etc)
+* Que pueda hacer uso de las apps (Collector, Web AppBuilder, etc)
 * O queramos que este pueda crear servicios de: entidades, imágenes, etc.
 
 > Si el usuario no requiere de ninguna de estas funcionalidades podremos Usar
@@ -150,9 +158,11 @@ cuentas públicas de ArcGIS o un sistema de usuarios propio
 
 ## Caso: Portal Inmobiliario (B2C)
 
-> * Empleados gestionan los apartamentos, pedidos, etc.
-* los usuarios buscan pisos,
-hacen análisis espacial (ArcGIS Online), guardan favoritos, etc.
+> * **Empleados**: gestionan los apartamentos, pedidos, etc.
+* **Clientes**:
+  * Inquilinos y compradores: buscan pisos,
+hacen análisis espacial (ArcGIS Online), guardan favoritos, preferencias de búsqueda, etc.
+  * Propietarios: publican y gestionan sus viviendas, cambian la visibilidad de sus pisos, etc.
 
 --
 
@@ -172,14 +182,14 @@ hacen análisis espacial (ArcGIS Online), guardan favoritos, etc.
 
 --
 
-### Clientes:
+### Clientes
 
-* **Usuarios org. (L2)**: Si queremos que los propietarios<br>
-  de pisos puedan publicar directamente sus pisos en <br>
+* **Usuarios org. (L2)**: Si los propietarios<br>
+  de pisos puedan publicar directamente sus pisos en<br>
   ArcGIS y acceder a información geolocalizada restringida.
 
-* **Usuarios propios**: Guardan pisos como favoritos, <br>
-  comentan los pisos, etc.
+* **Usuarios propios**: buscar y guardan<br>
+  pisos como favoritos, comentan los pisos, etc.
 
 * **Cuentas públicas**: si queremos que puedan crear <br>
   web maps, storymaps, etc.
@@ -191,7 +201,15 @@ hacen análisis espacial (ArcGIS Online), guardan favoritos, etc.
 
 <!-- .slide: class="section" -->
 
-## Caso: Ipsilum (B2B)
+## Caso: App de Geomarketing (B2B)
+
+visor wab
+app móvil
+---
+
+<!-- .slide: class="section" -->
+
+## Caso: Planificador de vuelos (B2B)
 
 > Herramienta para la planificación de vuelos de drones dirigida a pilotos de
 drones, cartógrafos, etc
@@ -219,11 +237,11 @@ drones, cartógrafos, etc
 
 <!-- .slide: class="section centered" -->
 
-## Questions?
+## ¿Preguntas?
 
 * Raúl Jiménez Ortega: raul.jimenez@esri.es
 
-Slides: [bit.ly/DevSummit17-X](#)
+Transparencias: [bit.ly/DevSummit17-X](#)
 
 ---
 

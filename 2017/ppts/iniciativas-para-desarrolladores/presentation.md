@@ -111,13 +111,20 @@ Newsletter segmentada ("mensual")
 
 --
 
-### Idea: Cuenta de Twitter
+### Idea: 
 
-* **Cons**: Ya hay muchas -> @EsriDevSummit, @ArcPy,<br>
-@EsriGeoDev, @EsriStartups, @EsriMooc, etc.
+* Cuenta de Twitter
 
-* **Pros**: Unificar e incluir contenidos de Esri España
+  * **Cons**: Ya hay muchas -> @EsriDevSummit, @ArcPy,<br>
+  @EsriGeoDev, @EsriStartups, @EsriMooc, etc.
 
+  * **Pros**: Unificar e incluir contenidos de Esri España
+
+* Podcast
+  
+  * **Cons**: No se puede enseñar código
+
+  * **Pro**: es fácil de encontrar ratos muertos para escucharlos
 ---
 
 <!-- .slide: class="section" -->
@@ -167,7 +174,7 @@ Newsletter segmentada ("mensual")
 
 Raúl Jiménez Ortega: raul.jimenez@esri.es
 
-Slides: [bit.ly/DevSummit17-1](http://bit.ly/DevSummit17-1)
+Transparencias: [bit.ly/DevSummit17-1](http://bit.ly/DevSummit17-1)
 
 ---
 
