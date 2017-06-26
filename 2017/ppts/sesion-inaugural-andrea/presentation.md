@@ -120,25 +120,6 @@
 
 <!-- .slide: class="section" -->
 
-## Technology Spectrum
-
-![Technology Spectrum](images/TechSpectrum.PNG)
-
---
-
-<!-- .slide: class="section" -->
-
-## Prototype:
-### Passive Sensing
-
-Portland, Maine (EEUU)
-
-![Passive Sensing](images/PassiveSensing.PNG)
-
---
-
-<!-- .slide: class="section" -->
-
 ## Prototype:
 
 Melbourne, Australia
@@ -149,17 +130,19 @@ Melbourne, Australia
 
 <!-- .slide: class="section" -->
 
-![VirtualReality](images/VirtualReality.PNG)
+## Prototype:
+
+* Repositorio Git ESRI: [AuGeo - Augmented Reality for ArcGIS](https://github.com/Esri/AuGeo)
+
+[![Video Tutorial Augeo](https://img.youtube.com/vi/fy8AcuqTdQQ/0.jpg)](https://youtu.be/fy8AcuqTdQQ)
+
+
 
 --
 
 <!-- .slide: class="section" -->
 
-## Prototype:
-
-Washington D. C., EEUU
-
-![Washington](images/Engagement.PNG)
+![VirtualReality](images/VirtualReality.PNG)
 
 --
 
@@ -182,16 +165,6 @@ Sonar
 [![Sonar](https://img.youtube.com/vi/H_cdn2kVB-E/0.jpg)](https://youtu.be/H_cdn2kVB-E?t=5m17s)
 
 * Git Repository: [sonar Repo](https://github.com/Esri/sonar)
-
---
-
-<!-- .slide: class="section" -->
-
-## Demo:
-
-Kuwait Finder App
-
-[![Traffic problem](images/TrafficProblem.PNG)](https://youtu.be/H_cdn2kVB-E?t=9m57s)
 
 --
 
