@@ -115,6 +115,7 @@ Funcionalidades _Core Web GIS_
 ![ArcGIS-Analytics](imgs/analytics.png)
 
 ---
+
 <!-- .slide: class="section" -->
 
 ![ArcGIS-Extra](imgs/extra.png)
@@ -176,3 +177,6 @@ Funcionalidades _Core Web GIS_
 ![logos](imgs/logos2.png)
 
 ---
+
+
+<!-- .slide: class="end" -->
