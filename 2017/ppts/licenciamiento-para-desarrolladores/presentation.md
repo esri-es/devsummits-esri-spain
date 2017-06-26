@@ -30,7 +30,7 @@ Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
 ### Licencias para desarrollar
 
-\- 6 planes (paquetes de licencias) -
+\- 5 planes (paquetes de licencias) -
 
 --
 
