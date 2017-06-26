@@ -214,9 +214,130 @@ Documentación: [Generar Token](http://resources.arcgis.com/en/help/arcgis-rest-
 ## Ejercicios
 ### Ejercicio 4. Crear un nuevo ítem en ArcGIS Online
 
-- Documentación: [Añadir ítem](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#//02r30000008q000000)
+* Accedemos a Create ReadyToUse Configurable App/Add Item
 
 ![Add Item](images/ItemAdd.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 4. Crear un nuevo ítem en ArcGIS Online
+
+
+![Add Item](images/ItemAddBody.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 4. Crear un nuevo ítem en ArcGIS Online
+
+
+![Add Item](images/ItemAddTest.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 4. Crear un nuevo ítem en ArcGIS Online
+
+* Resultado obtenido
+
+![Add Item](images/ItemAddResult.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 4. Crear un nuevo ítem en ArcGIS Online
+
+* Comprobamos que el Ítem se ha creado correctamente dentro de nuestra organización de ArcGIS Online.
+
+![Add Item](images/ItemResult.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 8. Crear un nuevo servicio
+
+* Accedemos a Host Services (+4) / Create Feature Service
+* Observamos los parámetros necesarios que necesita la petición
+
+![Add Item](images/FeatureService.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 8. Crear un nuevo servicio
+
+* Creamos la variable de entorno “feature_service_name” en el ventana “Tests”, la cual recogerá el nombre del Feature Service que hemos creado
+
+![Add Item](images/FeatureServiceTests.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 8. Crear un nuevo servicio
+
+* Enviamos la petición y obtenemos la información en formato json del feature service que hemos creado.
+
+![Add Item](images/FeaServiceResult.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 8. Crear un nuevo servicio
+
+* Comprobamos que el Feature Service se ha creado correctamente dentro de nuestra organización de ArcGIS Online.
+
+![Add Item](images/FeaServiceAGOL.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 8.1. Comprobar que existe un Feature Service concreto
+* Accedemos a Managing your organization/Get private info
+* Para poder crear una servicio se requiere el identificador de tu cuenta como parámetro. Para poder obtenerlo ejecutamos como primer paso del ejercicio la petición “Get private user info”.
+
+![Add Item](images/GetUserInfo.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 8.1. Otra forma de Comprobar que el Feature Service se ha creado correctamente utilizando la API REST
+
+* Accedemos a Host Services (+4)/Check if feature service exist.
+
+![Add Item](images/CheckFS.PNG)
+
+--
+
+<!-- .slide: class="section" -->
+
+## Ejercicios
+### Ejercicio 8.1. Otra forma de Comprobar que el Feature Service se ha creado correctamente utilizando la API REST
+
+* Enviamos la petición y obtenemos la información de si existe o no el Feature Service.
+
+![Add Item](images/CheckFSResult.PNG)
+
 
 ---
 
