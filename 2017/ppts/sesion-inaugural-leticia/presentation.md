@@ -151,7 +151,7 @@ Funcionalidades _Core Web GIS_
 
 <!-- .slide: class="section" -->
 
-### [![Chef Cookbook](imgs/chef.PNG)](https://github.com/Esri/arcgis-cookbook)
+### [![Chef Cookbook](imgs/Chef.PNG)](https://github.com/Esri/arcgis-cookbook)
 
 ---
 
@@ -159,7 +159,7 @@ Funcionalidades _Core Web GIS_
 
 ## Demo
 
-[![Automating and Scripting](imgs/demo.png)](https://youtu.be/hQzNeJBtWHQ?t=3m24s)
+[![Automating and Scripting](imgs/demo.PNG)](https://youtu.be/hQzNeJBtWHQ?t=3m24s)
 
 
 ---
