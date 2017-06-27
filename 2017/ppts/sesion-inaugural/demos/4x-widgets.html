@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>ArcGIS 4x Widgets</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    html{
+      height: 100%;
+      position: relative;
+    }
+
+    body,
+    body > div,
+    .tab-pane{
+      height: 100%;
+    }
+    .nav.nav-tabs{
+      font-family: Arial;
+      font-size: 1.3rem;
+      position: relative;
+      z-index: 999;
+      background-color: #fff;;
+    }
+    .tab-content{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 38px;
+      right: 0;
+    }
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+    .nav-tabs>li>a{
+      border-radius: 0;
+    }
+    .strong{
+      color: yellow !important;
+      background-color: black !important;
+    }
+    .nav-tabs>li.active>a,
+    .nav-tabs>li>a:hover{
+      text-decoration: underline;
+    }
+    .nav-tabs>li.active>a,
+    .nav-tabs>li>a:hover,
+    .nav-tabs>li>a{
+      border: 0 !important;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#basemap-gallery" class="strong" aria-controls="basemap-gallery" role="tab" data-toggle="tab">BasemapGallery</a></li>
+    <li role="presentation"><a href="#scale-bar" class="strong" aria-controls="scale-bar" role="tab" data-toggle="tab">ScaleBar</a></li>
+    <li role="presentation"><a href="#expand" class="strong" aria-controls="expand" role="tab" data-toggle="tab">Expand</a></li>
+    <li role="presentation"><a href="#attribution" aria-controls="attribution" role="tab" data-toggle="tab">Attribution</a></li>
+    <li role="presentation"><a href="#basemap-toggle" aria-controls="basemap-toggle" role="tab" data-toggle="tab">BasemapToggle</a></li>
+    <li role="presentation"><a href="#compass" aria-controls="compass" role="tab" data-toggle="tab">Compass</a></li>
+    <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#locate" aria-controls="locate" role="tab" data-toggle="tab">Locate</a></li>
+    <li role="presentation"><a href="#navigation-toggle" aria-controls="navigation-toggle" role="tab" data-toggle="tab">NavigationToggle</a></li>
+    <li role="presentation"><a href="#track" aria-controls="track" role="tab" data-toggle="tab">Track</a></li>
+    <li role="presentation"><a href="#zoom" aria-controls="andalu4" role="tab" data-toggle="tab">Zoom</a></li>
+
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="basemap-gallery">
+      <iframe src="demo-widgets/widgets-basemapgallery.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="scale-bar">
+      <iframe src="demo-widgets/widgets-scalebar.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="expand">
+      <iframe src="demo-widgets/widgets-expand.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="attribution">
+      <iframe src="demo-widgets/widgets-attribution.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="compass">
+      <iframe src="demo-widgets/widgets-compass-2d.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="basemap-toggle">
+      <iframe src="demo-widgets/widgets-basemaptoggle.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="home">
+      <iframe src="demo-widgets/widgets-home.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="locate">
+      <iframe src="demo-widgets/widgets-locate.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="navigation-toggle">
+      <iframe src="demo-widgets/widgets-navigationtoggle.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="track">
+      <iframe src="demo-widgets/widgets-track.html"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="zoom">
+      <iframe src="demo-widgets/widgets-zoom.html"></iframe>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+<script type="text/JavaScript">
+  $(document).ready(function(){
+    $('#myTabs a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+  });
+</script>
+</body>
+</html>
