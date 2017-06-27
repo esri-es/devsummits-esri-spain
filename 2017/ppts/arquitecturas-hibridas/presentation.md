@@ -4,7 +4,7 @@
 
 Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
-[bit.ly/DevSummit17-X](#)
+[bit.ly/DevSummit17-4](http://bit.ly/DevSummit17-4)
 
 ---
 
@@ -16,7 +16,7 @@ Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 * Tipos de cuentas
 * Qué se puede y qué no
 * oAuth & refresh_token
-* Casos prácticos
+* Caso práctico
 
 ---
 
@@ -148,11 +148,11 @@ cuentas públicas de ArcGIS o un sistema de usuarios propio
 
 <!-- .slide: class="section" -->
 
-### Casos prácticos
+### Casos práctico
 
-\- de apps con modelos híbridos -
+\- una app con modelo híbrido -
 
----
+--
 
 <!-- .slide: class="section" -->
 
@@ -197,41 +197,6 @@ hacen análisis espacial (ArcGIS Online), guardan favoritos, preferencias de bú
 * **Proxy**: si queremos que puedan hacer análisis <br>
   usando servicios de ArcGIS Online.
 
----
-
-<!-- .slide: class="section" -->
-
-## Caso: App de Geomarketing (B2B)
-
-visor wab
-app móvil
----
-
-<!-- .slide: class="section" -->
-
-## Caso: Planificador de vuelos (B2B)
-
-> Herramienta para la planificación de vuelos de drones dirigida a pilotos de
-drones, cartógrafos, etc
-
---
-
-* Usuarios con registro propio (o social login)
-* Pobilidad de conectar tu usuario nominal (si dispones de él)
-
----
-
-<!-- .slide: class="section" -->
-
-## Caso: Ayto de Liliput (B2G)
-
-> Aplicación de participación ciudadana <- GeoHub?
-
---
-
-* Empleados: usuarios nominales
-* Ciudadanos: usuarios propios
-
 
 ---
 
@@ -241,7 +206,9 @@ drones, cartógrafos, etc
 
 * Raúl Jiménez Ortega: raul.jimenez@esri.es
 
-Transparencias: [bit.ly/DevSummit17-X](#)
+Feeback: [bit.ly/DevSummit17-FB](http://bit.ly/DevSummit17-FB)
+
+Transparencias: [bit.ly/DevSummit17-4](http://bit.ly/DevSummit17-4)
 
 ---
 

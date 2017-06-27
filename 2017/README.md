@@ -10,12 +10,12 @@ Detalles del evento:
 ## Programa y materiales
 Hora|Charla
 ---|---|
-09:15-09:45|[Iniciativas para desarrolladores](http://esri-es.github.io/devsummits-esri-spain/2017/ppts/iniciativas-para-desarrolladores)
+09:15-09:45|[Iniciativas para desarrolladores](http://bit.ly/DevSummit17-1)
 09:45-11:15|[Sesión inaugural](#)
 11:15-11:45|Descanso
 11:45-12:00|[Programa Experto de Esri España](#)
-12:00-12:45|[Arquitecturas híbridas](http://esri-es.github.io/devsummits-esri-spain/2017/ppts/arquitecturas-hibridas/#/)
-12:45-13:15|[GeoInformation model](#)
-13:15-13:45|[Licenciamiento para desarrolladores](#)
+12:00-12:45|[Arquitecturas híbridas](http://bit.ly/DevSummit17-4)
+12:45-13:15|[GeoInformation model](http://bit.ly/DevSummit17-5)
+13:15-13:45|[Licenciamiento para desarrolladores](http://bit.ly/DevSummit17-6)
 13:45-15:00|Descanso
-15:00-17:30|Talleres: <br>- [ArcGIS REST API](#)<br>- [KoopJS](#)<br>- [Aplicaciones configurables](#)<br>- [Web Performance](#)
+15:00-17:30|Talleres: <br>- [ArcGIS REST API](https://docs.google.com/document/d/1H3KIFBMjLgBU5AwIbD9O84apFDnr-ErPszOtMTqTop4/edit?usp=sharing)<br>- [ES6](https://docs.google.com/document/d/1hdxHBi_TSJV4S0p8ooGZojk6jgwEEfEg1JRr0ZMjNOQ/edit?usp=sharing)<br>- [Aplicaciones configurables](https://alejandropeq.github.io/Taller-aplicaciones-configurables/)<br>- [Web Performance](#)
