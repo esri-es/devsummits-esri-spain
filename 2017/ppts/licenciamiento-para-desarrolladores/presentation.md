@@ -190,6 +190,8 @@ GP local y editar GBDs.
 
 Raúl Jiménez Ortega: raul.jimenez@esri.es
 
+Feeback: [bit.ly/DevSummit17-FB](http://bit.ly/DevSummit17-FB)
+
 Transparencias: [bit.ly/DevSummit17-6](http://bit.ly/DevSummit17-6)
 
 Repositorio: [bit.ly/dev-licensing](http://bit.ly/dev-licensing)

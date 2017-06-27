@@ -175,6 +175,8 @@ Newsletter segmentada ("mensual")
 
 Raúl Jiménez Ortega: raul.jimenez@esri.es
 
+Feeback: [bit.ly/DevSummit17-FB](http://bit.ly/DevSummit17-FB)
+
 Transparencias: [bit.ly/DevSummit17-1](http://bit.ly/DevSummit17-1)
 
 ---
