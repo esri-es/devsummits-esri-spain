@@ -122,6 +122,12 @@ Funcionalidades _Core Web GIS_
 
 ---
 
+<!-- .slide: class="section" -->
+
+[![Awesome-list ArcGIS](imgs/awesome.PNG)](https://github.com/hhkaos/awesome-arcgis)
+
+---
+
 <!-- .slide: class="end" -->
 
 ---
@@ -134,9 +140,6 @@ Funcionalidades _Core Web GIS_
 
  slides: [bit.ly/DevSummit17-X](#)
 
----
-
-<!-- .slide: class="part" -->
 
 ---
 
@@ -154,9 +157,10 @@ Funcionalidades _Core Web GIS_
 
 <!-- .slide: class="section" -->
 
-## Ejemplo Chef
+## Demo
 
-<iframe width="700" height="530" src="https://www.youtube.com/embed/hQzNeJBtWHQ?t=3m23s" frameborder="0" allowfullscreen></iframe>
+[![Automating and Scripting](imgs/demo.png)](https://youtu.be/hQzNeJBtWHQ?t=3m24s)
+
 
 ---
 
