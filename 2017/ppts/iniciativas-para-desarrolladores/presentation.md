@@ -125,6 +125,7 @@ Newsletter segmentada ("mensual")
   * **Cons**: No se puede enseñar código
 
   * **Pro**: es fácil de encontrar ratos muertos para escucharlos
+
 ---
 
 <!-- .slide: class="section" -->
