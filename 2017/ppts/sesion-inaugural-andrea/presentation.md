@@ -32,15 +32,6 @@
 
   [![ArcGIS Guide](images/HelpArcade.PNG)](https://developers.arcgis.com/arcade/)
 
---
-
-<!-- .slide: class="section" -->
-
-## Resources
-
-* **Awesome List:**
-
-  [![Awesome List](images/awesomelist.PNG)](https://esri-es.github.io/awesome-arcgis/arcgis/arcade/)
 
 ---
 
@@ -152,7 +143,7 @@ Melbourne, Australia
 
 Washington D. C., EEUU
 
-![Washington](images/Services.PNG)
+![Washington](images/Engagement.PNG)
 
 --
 
