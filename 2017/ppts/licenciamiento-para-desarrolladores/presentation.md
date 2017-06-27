@@ -4,7 +4,7 @@
 
 Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
-[bit.ly/DevSummit17-X](#)
+[bit.ly/DevSummit17-6](http://bit.ly/DevSummit17-6)
 
 ---
 
@@ -18,22 +18,21 @@ Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
 ---
 
-<!-- .slide: class="warning centered" -->
+<!-- .slide: class="dessert centered" -->
 
-# **Aviso**
+## **Recuerda**
 
-#### Para entender el nuevo licenciamiento...<br>
-*mejor olvida "todo" lo que sabías*
+Que no estás sólo en esta travesía
 
----
+--
 
-<!-- .slide: class="section" -->
+<!-- .slide: class="dessert" -->
 
-### `licenciamiento-developers` en Github
+> Nuevo repo en Github
 
 [![Pantallazo al repo](imgs/github-repo.png)](https://github.com/esri-es/licenciamiento-developers)
 
-> Documentación en español, foro de preguntas, FAQ, etc.
+Documentación en español, foro de preguntas, FAQ, etc.
 
 ---
 
@@ -49,21 +48,16 @@ Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
 <!-- .slide: class="section" -->
 
-### Sinónimos
+### Antes de empezar
 
-Licencias para entornos de desarrollo 
-
-=
-
-ArcGIS Developer Plans 
-
-= 
-
-Developer Subscription plans
+Tres sinónimos:
+* Licencias para entornos de desarrollo 
+* ArcGIS Developer Plans 
+* Developer Subscription Plans
 
 --
 
-#### Plan: Essentials
+### Plan: Essentials
 
 * **SDKs y APIs**: 
   * [ArcGIS API for JS](https://developers.arcgis.com/javascript/) y [ArcGIS API for Python](https://developers.arcgis.com/python)
@@ -78,7 +72,7 @@ Developer Subscription plans
 
 --
 
-#### Plan: Builder
+### Plan: Builder
 
 * *Plan Essentials*
 
@@ -112,7 +106,7 @@ Developer Subscription plans
 
 --
 
-#### Plan: Premium
+### Plan: Premium
 
 * *Plan Proffesional*
 
@@ -123,7 +117,7 @@ Developer Subscription plans
 
 --
 
-#### Plan: Enterprise
+### Plan: Enterprise
 
 * *Plan Proffesional*
 
@@ -135,13 +129,6 @@ Developer Subscription plans
 
 
 > **Precio:** 5.375€/año + I.V.A. 
-
---
-
-## Conclusión
-
-> Los nuevos planes ofrecen más<br>
-  herramientas a un menor coste.
 
 ---
 
@@ -182,10 +169,12 @@ Cuando hayamos creado una app en la que necesitemos<br>
 
 ### Licenciar apps creadas usando una Runtime (Niveles)
 
-* Lite: read only, routing & place finding (free)
-* Basic: read-write & analysis services (L2 users | license key)
-* Standard<sup>1</sup>: datos locales, edit file gdb + GP basic (license key)
-* Advanced<sup>1</sup>: edit enterprise gdb + GP advance (license key)
+|Nivel|Capacidad|Cómo lic.|
+|---|---|---|
+|Lite|read only, routing & place finding|Free|
+|Basic|read/write mobile gbd, portals, services|L2 y lic. key|
+|Standard<sup>1</sup>|datos locales, editar file gdb + GP basic|license key|
+|Advanced<sup>1</sup>|editar enterprise gdb + GP advance|license key
 
 > **Nota<sup>1</sup>**: Runtimes de .Net (WPF), Java o Qt soportan el ArcGIS Runtime Local Server (ARLS) para 
 GP local y editar GBDs.
@@ -195,7 +184,18 @@ GP local y editar GBDs.
 
 <!-- .slide: class="section centered" -->
 
-# FAQ
+<!-- .slide: class="section centered" -->
+
+## ¿Preguntas? ¿o tiro del FAQ?
+
+Raúl Jiménez Ortega: raul.jimenez@esri.es
+
+Feeback: [bit.ly/DevSummit17-FB](http://bit.ly/DevSummit17-FB)
+
+Transparencias: [bit.ly/DevSummit17-6](http://bit.ly/DevSummit17-6)
+
+Repositorio: [bit.ly/dev-licensing](http://bit.ly/dev-licensing)
+      
 
 --
 
@@ -205,18 +205,43 @@ GP local y editar GBDs.
 |---|---|
 |EDN + Desktop Adv. Add-On|Enterprise Plan|
 |EDN + Desktop Std. Add-On|Premium Plan|
-|EDN sólo <br>O EDN + AppStudio Add-on y/o Desktop Basic Add-On|Professional Plan|
+|EDN sólo <br>EDN + AppStudio y/o Desktop Basic Add-On|Professional Plan|
 |AppStudio for ArcGIS|Builder Plan|
 
----
+--
 
-<!-- .slide: class="section centered" -->
+### ¿Y si compro un Plan y somos cinco miembros en el equipo de desarrollo?
 
-## ¿Preguntas?
+> Deberás enviar la invitación de los dos usuarios nominales a los miembros
+de tu equipo que se vayan a encargar de crear los servicios, generar los App IDs, etc.
+Una vez creados el AppID y el AppSecret el resto del equipo puede construir las apps.
 
-Raúl Jiménez Ortega: raul.jimenez@esri.es
+--
 
-Transparencias: [bit.ly/DevSummit17-X](#)
+### ¿Cuántos usuarios y créditos tiene la cuenta de ArcGIS Online de los Developer Plans?
+
+> Tienen 2 usuarios de nivel 2 con 500 créditos cada uno
+
+--
+
+### ¿Pueden usuarios no-nominales usar los servicios de análisis?
+
+> Sí, como desarrollador puedes hacer que los créditos consumidos por los análisis realizados por tus usuarios se carguen a tu cuenta.
+
+--
+
+### ¿Están limitadas las búsquedas de direcciones o la carga de mapas base?
+
+> Sí, a un millón al mes, pero puedes contactar para ampliar.
+
+--
+
+### ¿Puedo usar Runtime Lite + Cuentas Públicas?
+
+> Sí, puedes licenciar una app usando una **license key**
+de [developers.arcgis.com](http://developers.arcgis.com) y cuando el usuario acceda a
+la aplicación pedirle sus credenciales para poder 
+acceder a sus items privados.
 
 ---
 

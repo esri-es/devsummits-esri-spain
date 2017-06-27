@@ -125,6 +125,7 @@ Newsletter segmentada ("mensual")
   * **Cons**: No se puede enseñar código
 
   * **Pro**: es fácil de encontrar ratos muertos para escucharlos
+
 ---
 
 <!-- .slide: class="section" -->
@@ -173,6 +174,8 @@ Newsletter segmentada ("mensual")
 ## ¿Preguntas?
 
 Raúl Jiménez Ortega: raul.jimenez@esri.es
+
+Feeback: [bit.ly/DevSummit17-FB](http://bit.ly/DevSummit17-FB)
 
 Transparencias: [bit.ly/DevSummit17-1](http://bit.ly/DevSummit17-1)
 
