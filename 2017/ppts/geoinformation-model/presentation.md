@@ -2,6 +2,8 @@
 
 ## GeoInformation model
 
+Aitor Calero García ([@aitorcalero](//twitter.com/aitorcalero))
+
 Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
 [bit.ly/DevSummit17-5](http://bit.ly/DevSummit17-5)
@@ -12,9 +14,18 @@ Raúl Jiménez Ortega ([@hhkaos](//twitter.com/hhkaos))
 
 ### Agenda
 
+* ArcGIS Platform Whiteboarding
 * Items
 * Contenido en ArcGIS Online
 * Transformar capas alojadas
+
+---
+
+<!-- .slide: class="section" -->
+
+### ArcGIS Platform Whiteboarding
+
+[<img src="imgs/ArcGIS-Platform-Whiteboarding.jpg" style="width:60%">](ArcGIS Platform Whiteboarding.pptx)
 
 ---
 
@@ -195,6 +206,8 @@ servicio contenga capas de puntos, el resto pueden ser combinadas.
 <!-- .slide: class="section centered" -->
 
 ## ¿Preguntas?
+
+Aitor Calero García: aitor.calero@esri.es
 
 Raúl Jiménez Ortega: raul.jimenez@esri.es
 
