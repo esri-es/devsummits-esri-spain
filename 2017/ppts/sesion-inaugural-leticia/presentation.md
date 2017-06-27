@@ -45,7 +45,7 @@
 >|||
 |:--|:--|
 |ArcGIS Server| Motor|
-|Portal for ArcGIS| Despliegue|
+|Portal for ArcGIS| Interfaz|
 |ArcGIS Data Store| Almacén de datos|
 |ArcGIS Web Adaptor| Seguridad|
 
@@ -69,7 +69,7 @@
 >|ArcGIS Online| ArcGIS Enterprise|
 |:---|:---|
 |SaaS| Instalación de Software|
-|Alojado en servidores de ESRI| En tu propia infraestructura|
+|Alojado en servidores en la nube| En tu propia infraestructura|
 |Actualizaciones automáticas (ESRI)|Actualizaciones manuales|
 |Contenido Web| Servidores GIS específicos|
 
@@ -168,13 +168,19 @@ Funcionalidades _Core Web GIS_
 
 <!-- .slide: class="section centered" -->
 
-### [![ArcPy](imgs/arcpy.PNG)](http://desktop.arcgis.com/es/arcmap/10.3/analyze/arcpy/what-is-arcpy-.htm)
+[![ArcPy](imgs/arcpy.PNG)](http://desktop.arcgis.com/es/arcmap/10.3/analyze/arcpy/what-is-arcpy-.htm)
 
 ---
 
 <!-- .slide: class="section" -->
 
 ![logos](imgs/logos2.png)
+
+---
+
+<!-- .slide: class="section" -->
+
+[![R-Bridge](imgs/rbridge.PNG)](https://github.com/R-ArcGIS/r-bridge-install)
 
 ---
 
