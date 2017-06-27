@@ -1,0 +1,421 @@
+.textNotSelectable, #slideDeckContainer .Slidebar {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.textSelectable {
+  -webkit-touch-callout: initial;
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+
+#slideDeckContainer .Slidebar {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 68px;
+  display: block;
+  padding: 4px 50px 0 0px;
+}
+
+#slideDeckContainer .Slidebar.usePlayButton {
+  padding: 4px 50px 0 50px;
+}
+
+#slideDeckContainer .Slidebar ul.slideDeckInner {
+  padding: 0;
+  margin: 0;
+  pointer-events: all;
+  height: 64px;
+}
+
+#slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide {
+  height: 64px;
+  width: 116px;
+  display: inline-block;
+  margin: 1px 4px 0 4px;
+}
+
+#slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton {
+  background-color: black;
+  display: inline-block;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+  opacity: 0.9;
+  height: 62px;
+  width: 114px;
+}
+
+#slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton:hover {
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background 0.15s ease-out;
+  opacity: 1;
+  outline: 1px solid white;
+}
+
+#slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton:hover .smallTitle {
+  display: block;
+  z-index: 5;
+  width: 111px;
+}
+
+#slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .highlight.slideButton {
+  outline: 1px solid white;
+}
+
+#slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton img {
+  height: 62px;
+}
+
+#slideDeckContainer .Slidebar .playButton {
+  position: absolute;
+  bottom: 17px;
+  left: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 32px;
+  height: 32px;
+  padding-left: 2px;
+  padding-top: 2px;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+#slideDeckContainer .Slidebar .playButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#slideDeckContainer .Slidebar .playButton.playing .playIcon {
+  background: url(../images/play_pause.png) 15px 16px;
+}
+
+#slideDeckContainer .Slidebar .playButton .playIcon {
+  outline: none;
+  background: url(../images/play_pause.png) 32px 16px;
+  width: 16px;
+  height: 16px;
+  margin: 6px;
+}
+
+.slideDeck button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slideDeck ul.slideDeckInner {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slideDeck ul.slideDeckInner .slide .smallTitle {
+  position: absolute;
+  bottom: 1px;
+  margin: 0 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 140px;
+  text-align: left;
+  color: white;
+  text-shadow: 0px 0px 1px black, 0px 0px 2px black, 0px 0px 3px black;
+  display: none;
+}
+
+.slideDeck .slide .slideButton, .slideDeck #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton, #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slideDeck .slide .slideButton, .dndCover .slide .slideButton, .dndCover #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton, #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .dndCover .slide .slideButton {
+  position: relative;
+  width: 114px;
+  height: 61px;
+  cursor: pointer;
+}
+
+.slideDeck .slide img, .dndCover .slide img {
+  height: 61px;
+  opacity: 1;
+  border-style: none;
+  pointer-events: none;
+}
+
+.slideDeck .slide img.hidden, .dndCover .slide img.hidden {
+  opacity: 0;
+}
+
+#webscene-main #slideThumbnailAnimation {
+  width: 114px;
+  height: 62px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  left: 300px;
+  top: 0px;
+  background-color: red;
+  z-index: 100;
+}
+
+#webscene-main #slideThumbnailAnimation.outside {
+  left: 300px;
+}
+
+/* Editor */
+.slideDeckEditable .addSlide {
+  transition: background 0.15s ease-out;
+  width: 100%;
+  text-align: center;
+  padding: 6px;
+}
+
+.slideDeckEditable .addSlide .addChar {
+  margin: 0;
+}
+
+.slideDeckEditable .addSlide .slideButton, .slideDeckEditable .addSlide #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton, #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideDeckEditable .addSlide .slideButton {
+  width: 100%;
+  height: 35px;
+  -moz-user-select: none;
+  background: none repeat scroll 0 0 #5daddd;
+  transition: background 0.15s ease-out;
+  border: medium none;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+  line-height: 1.71429em;
+  padding: 0.3em 1.25em;
+  position: relative;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.125);
+  text-transform: uppercase;
+  transition: all 0.05s linear 0s;
+}
+
+.slideDeckEditable .addSlide .slideButton:hover, .slideDeckEditable .addSlide #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton:hover, #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideDeckEditable .addSlide .slideButton:hover, .slideDeckEditable .addSlide .slideButton:active, .slideDeckEditable .addSlide #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton:active, #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideDeckEditable .addSlide .slideButton:active {
+  background: none repeat scroll 0 0 #4997d2;
+  transition: background 0.15s ease-out;
+}
+
+.dijitInlineEditBoxDisplayModeHover {
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+
+.ellipsis, #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton:hover .smallTitle, .slideDeckEditable .Slidebar .slide .slideDetails .editTitle, .dndCover .slide .slideDetails .editTitle {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.slideDeckEditable .Slidebar .slide, .dndCover .slide {
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
+  box-sizing: border-box;
+  list-style: none;
+  margin: 10px 0;
+  display: table;
+  background-color: white;
+}
+
+.slideDeckEditable .Slidebar .slide .smallTitle, .dndCover .slide .smallTitle {
+  display: none;
+}
+
+.slideDeckEditable .Slidebar .slide .slideDetails, .dndCover .slide .slideDetails {
+  display: table-cell;
+  width: 100%;
+  position: relative;
+}
+
+.slideDeckEditable .Slidebar .slide .slideDetails .editTitle, .dndCover .slide .slideDetails .editTitle {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 180px;
+  height: 20px;
+}
+
+.slideDeckEditable .Slidebar .slide:hover, .dndCover .slide:hover {
+  box-shadow: 0px 0px 6px #b3b3b3;
+}
+
+.slideDeckEditable .Slidebar .slide:hover .OptionsMenu, .dndCover .slide:hover .OptionsMenu {
+  display: block;
+}
+
+.slideDeckEditable .Slidebar .slide .iconButtonContainer, .slideDeckEditable .Slidebar .slide .iconButtonContainer2, .dndCover .slide .iconButtonContainer, .dndCover .slideDeckEditable .Slidebar .slide .iconButtonContainer2, .slideDeckEditable .Slidebar .dndCover .slide .iconButtonContainer2, .dndCover .slide .iconButtonContainer2 {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+}
+
+.slideDeckEditable .Slidebar .slide .iconButtonContainer:hover .deleteSlide, .slideDeckEditable .Slidebar .slide .iconButtonContainer2:hover .deleteSlide, .slideDeckEditable .Slidebar .slide .iconButtonContainer:hover .updateSlide, .slideDeckEditable .Slidebar .slide .iconButtonContainer2:hover .updateSlide, .dndCover .slide .iconButtonContainer:hover .deleteSlide, .dndCover .slideDeckEditable .Slidebar .slide .iconButtonContainer2:hover .deleteSlide, .slideDeckEditable .Slidebar .dndCover .slide .iconButtonContainer2:hover .deleteSlide, .dndCover .slide .iconButtonContainer2:hover .deleteSlide, .dndCover .slide .iconButtonContainer:hover .updateSlide, .dndCover .slideDeckEditable .Slidebar .slide .iconButtonContainer2:hover .updateSlide, .slideDeckEditable .Slidebar .dndCover .slide .iconButtonContainer2:hover .updateSlide, .dndCover .slide .iconButtonContainer2:hover .updateSlide {
+  background-position: 0px -16px;
+}
+
+.slideDeckEditable .Slidebar .slide .iconButtonContainer .deleteSlide, .slideDeckEditable .Slidebar .slide .iconButtonContainer2 .deleteSlide, .dndCover .slide .iconButtonContainer .deleteSlide, .dndCover .slideDeckEditable .Slidebar .slide .iconButtonContainer2 .deleteSlide, .slideDeckEditable .Slidebar .dndCover .slide .iconButtonContainer2 .deleteSlide, .dndCover .slide .iconButtonContainer2 .deleteSlide {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/delete.png");
+  background-size: 16px 32px;
+  padding: 0;
+  float: right;
+}
+
+.slideDeckEditable .Slidebar .slide .iconButtonContainer .updateSlide, .slideDeckEditable .Slidebar .slide .iconButtonContainer2 .updateSlide, .dndCover .slide .iconButtonContainer .updateSlide, .dndCover .slideDeckEditable .Slidebar .slide .iconButtonContainer2 .updateSlide, .slideDeckEditable .Slidebar .dndCover .slide .iconButtonContainer2 .updateSlide, .dndCover .slide .iconButtonContainer2 .updateSlide {
+  width: 16px;
+  height: 16px;
+  background: url("../images/refresh.png") 0 0;
+  display: block;
+}
+
+.slideDeckEditable .Slidebar .slide .iconButtonContainer2, .dndCover .slide .iconButtonContainer2 {
+  top: auto;
+  right: auto;
+  position: inherit;
+  padding: 8px;
+}
+
+.slideDeckEditable .Slidebar .slide .editSlide, .dndCover .slide .editSlide {
+  position: absolute;
+  bottom: 0px;
+  right: -3px;
+}
+
+.slideDeckEditable .Slidebar .slide img, .dndCover .slide img {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.slideDeckEditable .Slidebar .slide .slideButton, .slideDeckEditable #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton, #slideDeckContainer .slideDeckEditable .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton, .dndCover .slide .slideButton, .dndCover #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton, #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .dndCover .slide .slideButton {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.slideDeckEditable .Slidebar .slide .dijitInputField, .dndCover .slide .dijitInputField {
+  border: dashed #ebebeb 1px;
+  padding-top: 2px;
+  height: 20px;
+  width: 180px;
+}
+
+.slideDeckEditable .Slidebar .slide .dijitTextBox, .dndCover .slide .dijitTextBox {
+  width: 180px;
+  padding: 0px;
+  border: 0px;
+  background-color: transparent;
+}
+
+.esriRtl #slideDeckContainer .Slidebar {
+  padding-right: 0px;
+  padding-left: 50px;
+}
+
+.esriRtl #slideDeckContainer .Slidebar.usePlayButton {
+  padding: 4px 50px 0 50px;
+}
+
+.esriRtl .slideDeckEditable .Slidebar .slide .iconButtonContainer, .esriRtl .slideDeckEditable .Slidebar .slide .iconButtonContainer2, .esriRtl .dndCover .slide .iconButtonContainer, .esriRtl .dndCover .slide .iconButtonContainer2 {
+  display: block;
+  top: 5px;
+  position: absolute;
+  right: auto;
+  left: 5px;
+}
+
+.esriRtl .slideDeckEditable .Slidebar .slide .iconButtonContainer2, .esriRtl .dndCover .slide .iconButtonContainer2 {
+  right: 5px;
+  left: auto;
+  top: 28px;
+}
+
+.esriRtl .slideDeckEditable .Slidebar .slide .editTitle, .esriRtl .dndCover .editTitle {
+  left: auto;
+  right: 5px;
+}
+
+.esriRtl .slideDeckEditable .Slidebar .slide .editSlide, .esriRtl .dndCover .editSlide {
+  right: auto;
+  left: -2px;
+}
+
+.esriRtl .slideDeckEditable .slideButton, .esriRtl .slideDeckEditable #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton, #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .esriRtl .slideDeckEditable .slideButton {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.esriRtl .slideDeckEditable .slideButton img, .esriRtl .slideDeckEditable #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton img, #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .esriRtl .slideDeckEditable .slideButton img {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.esriRtl #slideDeckContainer .slide .slideButton:hover .smallTitle, .esriRtl #slideDeckContainer .Slidebar ul.slideDeckInner.horizontalBar .slide .slideButton:hover .smallTitle {
+  right: 0px;
+  width: auto;
+}
+
+/* ---------------------- DND ---------------------------------------- */
+.dndCover {
+  background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1000px;
+  z-index: 9999;
+  cursor: move;
+}
+
+.dragNode {
+  z-index: 10000;
+  cursor: move;
+}
+
+.dragHandle {
+  cursor: move;
+}
+
+.dropIndicator {
+  box-sizing: border-box;
+  position: relative;
+  height: 60px;
+  border: 2px dashed #CCCCCC;
+  border-radius: 3px;
+  margin: 8px 0;
+}
+
+.dropIndicator > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.orange .dndCover2 {
+  z-index: 10001;
+}
