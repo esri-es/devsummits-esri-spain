@@ -208,20 +208,20 @@ Novedades
 
 <!--10-37-12:40-->
 
-<iframe src="demos/editing-applyedits.html" style="width:100%; height:600px"></iframe>
+<iframe src="demos/editing-applyedits.html" style="border:2px solid white;background-color:black;width:100%; height:600px"></iframe>
 
 --
 
 
 ## FeatureLayer "mode"
 
-<iframe src="demos/layers-featurelayer-improvements.html" style="width:100%; height:600px"></iframe>
+<iframe src="demos/layers-featurelayer-improvements.html" style="border:2px solid white;background-color:black;width:100%; height:600px"></iframe>
 
 --
 
 ### Widgets (3 nuevos)
 
-<iframe src="demos/4x-widgets.html" style="width:100%; height:600px"></iframe>
+<iframe src="demos/4x-widgets.html" style="width:100%; height:600px;border:2px solid white;background-color:black;"></iframe>
 
 --
 
@@ -245,7 +245,7 @@ Novedades
 --
 
 
-## DevSummit Palm Springs
+## Videos Palm Springs
 
 * [What's new on JS (2D)](https://youtu.be/gHhV44rdPBA?t=10m38s)
 * [What's new on JS (3D)](https://youtu.be/8ebDGwBZTUI?t=1m35s)
@@ -262,6 +262,22 @@ Novedades
 
 --
 
+<!-- .slide: class="stretch" -->
+
+## Mejora de la UX: Calcite
+
+[<img src="imgs/calcite-web.png" alt="Calcite web" height="100%">](https://esri.github.io/calcite-web/)
+
+[github.com/Esri?q=calcite](https://github.com/Esri?q=calcite)
+
+--
+
+## Switch accounts 
+
+[<img src="imgs/switch-accounts.png" style="width:45%">](https://www.arcgis.com/home/pages/Account/manage_accounts.html#)
+
+--
+
 ## Layer views (Hosted features)
 
 [<img src="imgs/Layer-views.png" style="width:65%">](http://hhkaos2.maps.arcgis.com/home/webmap/viewer.html?webmap=bd4ea062fbe045fab4bf7a43cf1bcd5a)
@@ -275,6 +291,21 @@ Layer: [Boda points](http://hhkaos2.maps.arcgis.com/home/item.html?id=1d44daa3df
 <!-- .slide: class="stretch" -->
 
 <img src="imgs/new-content-page.png" with="100%" height="100%">
+
+--
+
+## GeoHub
+
+<!-- .slide: class="stretch" -->
+
+<a href="https://www.esri.com/arcgis/products/arcgis-hub"><img src="imgs/hub-product-hero-wide.png" width="60%" height="100%;" style="border:0"></a>
+
+--
+
+## No más paquetes de usuarios
+
+![](imgs/package.png)
+
 
 ---
 
@@ -318,8 +349,10 @@ Layer: [Boda points](http://hhkaos2.maps.arcgis.com/home/item.html?id=1d44daa3df
 
 <!-- .slide: class="stretch black" -->
 
+### Novedades
+
 <a href="videos/ArcGIS-Pro-Runtime.mp4" target="_blank">
-  <img src="imgs/ArcGIS-Pro-Video.png" height="100%" width="100%">
+  <img src="imgs/ArcGIS-Pro-Video.png" height="80%" width="80%">
 </a>
 
 ---
