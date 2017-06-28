@@ -186,8 +186,6 @@ Novedades
 
 --
 
-<!-- .slide: class="section" -->
-
 #### Mejoras en rendimiento
 
 * [CDN + HTTP2](http://www.arcgis.com/home/webmap/viewer.html?webmap=019e2850894746fe9dafd929402a4a1a)
@@ -196,14 +194,15 @@ Novedades
 
 --
 
-<!-- .slide: class="section" -->
+## Rotar la simbología 
 
-## 3D Simbología & layer views - [Link](https://youtu.be/gHhV44rdPBA?t=4m44s) 04:44-06:45
+<!--[Link](https://youtu.be/gHhV44rdPBA?t=4m44s) 04:44-06:45-->
 
+[<img src="imgs/rotate-symbols.png" style="width:65%">](http://hhkaos2.maps.arcgis.com/home/webmap/viewer.html?webmap=3f22fe69a2d14ddab8a26961fa17f0ec)
+
+[JavaScript sample](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=visualization-vv-rotation)
 
 --
-
-<!-- .slide: class="section" -->
 
 ## Editar feature layers
 
@@ -213,7 +212,6 @@ Novedades
 
 --
 
-<!-- .slide: class="section" -->
 
 ## FeatureLayer "mode"
 
@@ -233,7 +231,7 @@ Novedades
 * Vector tiles, [3D Web Styles](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols/index.html) - [Demo](http://hhkaos2.maps.arcgis.com/home/webscene/viewer.html?webscene=bf1d0156125847a8982ca5a90bc52c84)
 * [Web Scene Spec](https://developers.arcgis.com/web-scene-specification/)
 
- <!-- 01:35-3:10 (1.5min)-->
+ <!-- 01:35-3:10 (1.5min) -->
 
 --
 
@@ -246,9 +244,8 @@ Novedades
 
 --
 
-<!-- .slide: class="section" -->
 
-## Recursos (en inglés)
+## DevSummit Palm Springs
 
 * [What's new on JS (2D)](https://youtu.be/gHhV44rdPBA?t=10m38s)
 * [What's new on JS (3D)](https://youtu.be/8ebDGwBZTUI?t=1m35s)
@@ -256,12 +253,56 @@ Novedades
 * [New rendering using the GPU](https://youtu.be/gHhV44rdPBA?t=12m56s)
 * [CDN + HTTP2](https://youtu.be/gHhV44rdPBA?t=3m01s)
 
+
+---
+
+<!-- .slide: class="section" -->
+
+## ArcGIS Online
+
+--
+
+## Layer views (Hosted features)
+
+[<img src="imgs/Layer-views.png" style="width:65%">](http://hhkaos2.maps.arcgis.com/home/webmap/viewer.html?webmap=bd4ea062fbe045fab4bf7a43cf1bcd5a)
+
+Layer: [Boda points](http://hhkaos2.maps.arcgis.com/home/item.html?id=1d44daa3dfcc41e493f69055b33ad59f#overview) | [Boda points READ ONLY](http://hhkaos2.maps.arcgis.com/home/item.html?id=3134f9125eb6406d8814d8886a7e767b#overview)
+
+--
+
+## Nueva página de contenidos
+
+<!-- .slide: class="stretch" -->
+
+<img src="imgs/new-content-page.png" with="100%" height="100%">
+
 ---
 
 <!-- .slide: class="section" -->
 
 ## Runtime SDKs
 
+--
+
+<!-- .slide: class="stretch black" -->
+
+### Novedades en 2D
+
+<a href="videos/DevSummit-Runtime-2D.mp4" target="_blank">
+  <img src="imgs/Runtime-2D-Video.png" height="80%">
+</a>
+
+<!-- 4min -->
+
+--
+
+<!-- .slide: class="stretch black" -->
+
+### Novedades 3D
+
+<a href="videos/DevSummit-Runtime-3D.mp4" target="_blank">
+  <img src="imgs/Runtime-3D-Video.png" height="80%">
+</a>
 
 ---
 
@@ -269,6 +310,17 @@ Novedades
 
 ## ArcGIS Pro SDK
 
+--
+
+<img src="imgs/ArcGIS-Pro.png" style="width:80%">
+
+--
+
+<!-- .slide: class="stretch black" -->
+
+<a href="videos/ArcGIS-Pro-Runtime.mp4" target="_blank">
+  <img src="imgs/ArcGIS-Pro-Video.png" height="100%" width="100%">
+</a>
 
 ---
 
