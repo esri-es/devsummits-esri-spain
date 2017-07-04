@@ -5,7 +5,7 @@ Detalles del evento:
 * **Fotografías**: *no disponibles aún*
 * **Página del evento**: [esri-es.github.io/devsummits-esri-spain/2017/](http://esri-es.github.io/devsummits-esri-spain/2017/)
 * **Crónica**:  *no disponibles aún*
-* **Storify**:  *no disponibles aún*
+* **Storify**:  [https://storify.com/aicelm/devsummitspain](https://storify.com/aicelm/devsummitspain)
 
 ## Programa y materiales
 Hora|Charla
