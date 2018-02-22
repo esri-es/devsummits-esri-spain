@@ -4,7 +4,7 @@ Ediciones:
 
 * [Developer Summit 2018](2018) - 16/05/2018 (**próxima edición**)
 * [Developer Summit 2017](2017) - 28/06/2017
-* [Developer Summit 2017](2016) - 31/05/2016
+* [Developer Summit 2016](2016) - 31/05/2016
 
 ## ¿Qué es el developer summit?
 
