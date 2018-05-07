@@ -2,7 +2,7 @@
 
 Ediciones:
 
-* [Developer Summit 2018](2018) - (**sin fecha**)
+* [Developer Summit 2018](2018) - (**sin fecha definitiva**)
 * [Developer Summit 2017](2017) - 28/06/2017
 * [Developer Summit 2016](2016) - 31/05/2016
 
