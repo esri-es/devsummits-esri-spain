@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
 <title>Geometry Engine Showcase</title>
-<link rel="stylesheet" href="http://js.arcgis.com/3.15/esri/css/esri.css">
+<link rel="stylesheet" href="//js.arcgis.com/3.15/esri/css/esri.css">
 <style>
 html, body, #map {
   height: 100%;
@@ -25,10 +25,10 @@ html, body, #map {
 }
 #networkCount{
   font-weight: bolder;
-}    
+}
 #title{
   top: 20px;
-  width: 50%; 
+  width: 50%;
   height: 50px;;
   padding-top: 5px;
   text-align: center;
@@ -45,14 +45,14 @@ html, body, #map {
 </style>
 
 <script>
-var dojoConfig = { 
+var dojoConfig = {
   paths: {
     data: location.pathname.replace(/\/[^/]+$/, "") + "/data"
   }
 };
 </script>
 
-<script src="http://js.arcgis.com/3.15/"></script>
+<script src="//js.arcgis.com/3.15/"></script>
 <script>
 var map, orchardLayer;
 require(["esri/map",
@@ -77,10 +77,10 @@ require(["esri/map",
          "dojo/dom",
          "dojo/domReady!"
 ], function(Map, Graphic, graphicsUtils, Extent, geometryEngine, Line, Point, SpatialReference, Draw, SimpleFillSymbol, SimpleLineSymbol, TextSymbol, Font, Color, SimpleRenderer, GraphicsLayer, orchards, on, array, dom) {
-    
+
   var initExtent = new Extent(-13056650, 6077558, -13055709, 6077938, new SpatialReference({wkid:3857}));
-    
-  //Instructions for using the app. Will update based on user behavior    
+
+  //Instructions for using the app. Will update based on user behavior
   var drawInstructions = "Click outside the selected feature to begin drawing cutting line. Double-click to finish line and make final cut.";
   var initInstructions = "Click to select a feature.";
   var mergeInstructions = "Select another polygon to merge into the selected feature.";
@@ -94,46 +94,46 @@ require(["esri/map",
     basemap: "satellite",
     extent: initExtent
   });
-    
-  //Layer symbology    
+
+  //Layer symbology
   var orchardSym = new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID, new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([175, 255, 155]), 2), new Color([175, 255, 155, 0.3]));
   var selectionSym = new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID, new SimpleLineSymbol(SimpleLineSymbol.STYLE_NULL, new Color("black"), 3), new Color([255, 255, 255, 0.25]));
   var offsetSym = new SimpleFillSymbol(SimpleFillSymbol.STYLE_NULL, new SimpleLineSymbol(SimpleLineSymbol.STYLE_DASH, new Color("#960AC4"), 2), new Color([96, 252, 219, 0.5]));
   var cutterSym = new SimpleLineSymbol(SimpleLineSymbol.STYLE_DASH, new Color("white"), 2);
   var renderer = new SimpleRenderer(orchardSym);
-    
+
   //Get FeatureLayer created from FeatureCollection stored on the client through data/orchards
-  orchardLayer = orchards;  
+  orchardLayer = orchards;
   orchardLayer.setRenderer(renderer);
-    
+
   //Create graphics layer for labeling
   var displayLabels = new GraphicsLayer();
-  var labelFont = new Font(14, Font.STYLE_NORMAL, Font.VARIANT_NORMAL, Font.WEIGHT_BOLD, "Verdana");    
+  var labelFont = new Font(14, Font.STYLE_NORMAL, Font.VARIANT_NORMAL, Font.WEIGHT_BOLD, "Verdana");
   var textSym = new TextSymbol("filler text", labelFont, new Color("white")).setHaloColor(new Color("#960AC4")).setHaloSize(2);
-    
+
   //Create selection layer to display selection symbol
   var selectionLayer = new GraphicsLayer();
   var originalGraphicSelection, selectedGraphic;
 
-  //Create GraphicsLayer for cutting line   
+  //Create GraphicsLayer for cutting line
   var cutGraphic1, cutGraphic2;
 
   map.addLayers([orchardLayer, selectionLayer, displayLabels]);
-    
+
   //Initialize Draw polygon tool
   var drawPolygon = new Draw(map, { showTooltips: true });
   drawPolygon.setFillSymbol(new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID, cutterSym, new Color([255, 255, 255, 0.25])));
 
   //Calculates the area of the input geometry using GeometryEngine.geodesicArea() and converts it to a string
   function calcArea(geom){
-    networkCount++;  
+    networkCount++;
     operationsList.innerHTML += "geodesicArea<br>";
     return (Math.round(geometryEngine.geodesicArea(geom, 109402)*100) / 100) + " acres"; //area in acres
   }
-    
+
   //Define cutting line object
   var cutter = null;
-    
+
   //Function for creating drawing line
   function drawLine(pt1, pt2){
     var pt1Cor = [pt1.x, pt1.y];
@@ -145,7 +145,7 @@ require(["esri/map",
     var polyLine = new Line(lineJSON);
     return polyLine;
   }
-  
+
   //Label areas based on input POLYGON geometries
   function labelAreas(geoms){
      displayLabels.clear();
@@ -156,24 +156,24 @@ require(["esri/map",
         displayLabels.add(new Graphic(center, textSym));
      });
   }
-    
+
   var isSelected = false;
-  
-  //Select features on click event    
+
+  //Select features on click event
   function selectFeature(evt){
     if(cutOpt.checked){
       disableMerge();
       disableAdd();
       disableDelete();
-      dom.byId("instructions").innerHTML = drawInstructions;    
+      dom.byId("instructions").innerHTML = drawInstructions;
       if(!disableDraw){
           return;
       }
-      selectionLayer.clear();    
+      selectionLayer.clear();
       originalGraphicSelection = evt.graphic;
       selectedGraphic = new Graphic(evt.graphic.geometry, selectionSym);
       selectionLayer.add(selectedGraphic);
-      isSelected = true;   
+      isSelected = true;
     }
     if(mergeOpt.checked){
       disableCut();
@@ -182,46 +182,46 @@ require(["esri/map",
       selectedGraphic = new Graphic(evt.graphic.geometry, selectionSym);
       selectionLayer.add(selectedGraphic);
       dom.byId("instructions").innerHTML = mergeInstructions;
-    }  
+    }
     return selectedGraphic;
   }
-  
-  //Manage map clicking for line drawing purposes    
+
+  //Manage map clicking for line drawing purposes
   var initClick;
   var clicks = 0;
-    
-  //cut and merge options    
+
+  //cut and merge options
   var cutOpt = dom.byId("cutOpt");
   var mergeOpt = dom.byId("mergeOpt");
-  var addOpt = dom.byId("addOpt");   
-  var deleteOpt = dom.byId("deleteOpt");    
-   
-  //click handler    
+  var addOpt = dom.byId("addOpt");
+  var deleteOpt = dom.byId("deleteOpt");
+
+  //click handler
   on(map, "click", mapClick);
 
   on(map, "layers-add-result", function(evt){
     var geoms = graphicsUtils.getGeometries(orchardLayer.graphics);
     labelAreas(geoms);
   });
-    
+
   function initCut(){
     cutter = null;  //reset cutter to null each time cut is intialized
     disableDraw = false;  //enable drawing
-    map.disableMapNavigation();  //disable map navigation while drawing  
+    map.disableMapNavigation();  //disable map navigation while drawing
   }
-  
-  //Starts drawing cutting line    
+
+  //Starts drawing cutting line
   function startCut(evt){
     if(clicks === 0){
-      initCut();  
+      initCut();
     }
 
-    clicks++;  //increment map clicking var for line construction purposes  
+    clicks++;  //increment map clicking var for line construction purposes
     if(clicks === 1){
         initClick = evt.mapPoint;  //set initial click to global var for testing purposes
         if(selectedGraphic){
            networkCount++;
-           operationsList.innerHTML += "disjoint<br>";    
+           operationsList.innerHTML += "disjoint<br>";
            var initClickOutsideSelection = geometryEngine.disjoint(selectedGraphic.geometry, initClick);
         }
         if(!initClickOutsideSelection){
@@ -239,14 +239,14 @@ require(["esri/map",
       //Add additional line paths for each click (can be "buggy" at times) don't click too fast
       cutter.geometry.addPath([cutter.geometry.paths[cutter.geometry.paths.length-1][1], evt.mapPoint]);
       map.graphics.redraw();
-    } 
-    return;   
+    }
+    return;
   }
-    
-  //Click handler    
+
+  //Click handler
   function mapClick(evt){
     if(cutOpt.checked){
-       activateCut(evt); 
+       activateCut(evt);
     }
     if(mergeOpt.checked){
        activateMerge(evt);
@@ -260,8 +260,8 @@ require(["esri/map",
        activateDelete(evt);
     }
   }
-    
-  //Delete features when clicked    
+
+  //Delete features when clicked
   function activateDelete(evt){
     var feature = evt.graphic.geometry;
     if(feature){
@@ -271,37 +271,37 @@ require(["esri/map",
         if(item && geometryEngine.equals(item.geometry, feature)){
           orchardLayer.remove(item);
           displayLabels.remove(displayLabels.graphics[i]);
-        }    
+        }
       });
     } else{
       alert("Select a feature to delete.");
     }
   }
-   
-  //Activate cutting tool    
+
+  //Activate cutting tool
   function activateCut(evt){
     if(evt.graphic && !isSelected){
       selectFeature(evt);
     } else if (!evt.graphic && !isSelected){
       alert("Please select a feature to cut first.");
       return;
-    } 
+    }
     else if (evt.graphic && isSelected && clicks < 1){
       networkCount++;
       operationsList.innerHTML += "equals<br>";
-      var sameGraphic = geometryEngine.equals(evt.graphic.geometry, selectedGraphic.geometry); 
-      if(!sameGraphic){     
-        startCut(evt); 
+      var sameGraphic = geometryEngine.equals(evt.graphic.geometry, selectedGraphic.geometry);
+      if(!sameGraphic){
+        startCut(evt);
       } else{
           alert("You must start drawing outside of the feature to cut it.");
       }
     }
     else{
       startCut(evt);
-    } 
-  }    
-    
- //For managing cleared selections   
+    }
+  }
+
+ //For managing cleared selections
  function clearSelectedFeatures(){
       selectionLayer.clear();
       isSelected = false;
@@ -309,8 +309,8 @@ require(["esri/map",
       cutter = null;
       selectedGraphic = null;
  }
-    
-  //After starting to draw a line, continue drawing with cursor movement    
+
+  //After starting to draw a line, continue drawing with cursor movement
   on(map, "mouse-move", function(evt){
     networkResults.innerHTML = networkCount;
     operationsList.innerHTML = "";
@@ -323,10 +323,10 @@ require(["esri/map",
         return;
     }
   });
-    
+
  var disableDraw = true;
-    
- //Finish drawing line on double-click event 
+
+ //Finish drawing line on double-click event
  on(map, "dbl-click", function(evt){
    networkResults.innerHTML = networkCount;
    if(cutOpt.checked){
@@ -353,9 +353,9 @@ require(["esri/map",
      drawPolygon.finishDrawing();
    }
    var orchardGeoms = graphicsUtils.getGeometries(orchardLayer.graphics);
-   labelAreas(orchardGeoms);     
+   labelAreas(orchardGeoms);
   });
-    
+
   //cut the polygon with the line drawn on map
   function cutGeoms(poly, cutLine, endPoint, lyr){
       networkCount++;
@@ -367,7 +367,7 @@ require(["esri/map",
       //Don't attempt cut if line doesn't properly cross selected geometry
       if(crossTest && disjointTest){
         networkCount++;
-        operationsList.innerHTML += "cut<br>";  
+        operationsList.innerHTML += "cut<br>";
         var cutPolys = geometryEngine.cut(poly, cutLine);
         if(lyr === selectionLayer){
             lyr.clear();
@@ -393,16 +393,16 @@ require(["esri/map",
           return false;
       }
   }
-    
-  var selections = [];    
+
+  var selections = [];
   var selection1, selection2;
-    
+
   function activateMerge(evt){
     if(orchardLayer.graphics.length < 2){
       alert("There must be more than one graphic available to perform a merge operation.");
     } else if(!evt.graphic){
       alert("You must select a feature to merge");
-    } else { 
+    } else {
       selections.push(selectFeature(evt));
       if(selections.length === 1){
         selection1 = evt.graphic;
@@ -413,13 +413,13 @@ require(["esri/map",
         selections = [];
       }
     }
-  }    
-  
-  //Merge polygon geometries    
+  }
+
+  //Merge polygon geometries
   function mergeGeoms(graphs){
     geom1 = graphs[0].geometry;
     geom2 = graphs[1].geometry;
-    networkCount++;  
+    networkCount++;
     operationsList.innerHTML += "union<br>";
     var mergedGeometry = geometryEngine.union([geom1, geom2]);
     selectionLayer.clear();
@@ -432,29 +432,29 @@ require(["esri/map",
     enableAdd();
     enableDelete();
   }
-    
+
   on(addOpt, "click", function(evt){
     if(addOpt.checked){
       activateAdd();
     }
     dom.byId("instructions").innerHTML = addInstructions;
   });
-    
+
   on(cutOpt, "click", function(evt){
     deactivateAdd();
-    dom.byId("instructions").innerHTML = initInstructions;  
+    dom.byId("instructions").innerHTML = initInstructions;
   });
-    
+
   on(mergeOpt, "click", function(evt){
     deactivateAdd();
     dom.byId("instructions").innerHTML = initInstructions;
   });
-    
+
   on(deleteOpt, "click", function(evt){
     deactivateAdd();
     dom.byId("instructions").innerHTML = deleteInstructions;
-  });    
-    
+  });
+
   on(drawPolygon, "draw-end", function(evt){
     enableCut();
     enableMerge();
@@ -465,8 +465,8 @@ require(["esri/map",
     if(geom.rings[0].length <= 3){
       alert("Polygon must have at least three vertices.");
       return;
-    }  
-    
+    }
+
     var topoTest = testTopology(geom);
     if(topoTest === "within"){
       alert("New feature must not be completely within existing features.");
@@ -475,23 +475,23 @@ require(["esri/map",
       orchardLayer.add(new Graphic(topoTest, orchardSym));
     }
   });
-    
+
   function testTopology(feature){
       var newfeature, combined;
       var allGeoms = graphicsUtils.getGeometries(orchardLayer.graphics);
     if(allGeoms.length > 0){
-      networkCount++;    
+      networkCount++;
       operationsList.innerHTML += "union<br>";
       combined = geometryEngine.union(allGeoms);
-      networkCount++;    
+      networkCount++;
       operationsList.innerHTML += "within<br>";
       if(geometryEngine.within(feature, combined)){
         return "within";
       }
-      networkCount++;    
+      networkCount++;
       operationsList.innerHTML += "intersects<br>";
       if(geometryEngine.intersects(combined, feature)){
-        networkCount++;  
+        networkCount++;
         operationsList.innerHTML += "difference<br>";
         newfeature = geometryEngine.difference(feature, combined);
       }
@@ -504,38 +504,38 @@ require(["esri/map",
     }
     return newfeature;
   }
-    
+
   function activateAdd(){
     drawPolygon.activate(Draw.POLYGON);
   }
-    
+
   function deactivateAdd(){
     drawPolygon.deactivate();
-  }    
+  }
 
-  //Function for offseting geometries by 10 feet    
+  //Function for offseting geometries by 10 feet
   function offsetGeoms(polys){
-    networkCount++;  
-    operationsList.innerHTML += "offset<br>";  
+    networkCount++;
+    operationsList.innerHTML += "offset<br>";
     return geometryEngine.offset(polys, 10, 9002, 0);
   }
-  
-  //Prevent user from changing tools mid-selection    
+
+  //Prevent user from changing tools mid-selection
   function disableMerge(){
     mergeOpt.disabled = true;
     dom.byId("mergeLabel").style.color = "gray";
   }
   function enableMerge(){
     mergeOpt.disabled = false;
-    dom.byId("mergeLabel").style.color = "black";  
-  } 
+    dom.byId("mergeLabel").style.color = "black";
+  }
   function disableCut(){
     cutOpt.disabled = true;
     dom.byId("cutLabel").style.color = "gray";
   }
   function enableCut(){
     cutOpt.disabled = false;
-    dom.byId("cutLabel").style.color = "black";  
+    dom.byId("cutLabel").style.color = "black";
   }
   function disableAdd(){
     addOpt.disabled = true;
@@ -543,16 +543,16 @@ require(["esri/map",
   }
   function enableAdd(){
     addOpt.disabled = false;
-    dom.byId("addLabel").style.color = "black";  
-  } 
+    dom.byId("addLabel").style.color = "black";
+  }
   function disableDelete(){
     deleteOpt.disabled = true;
     dom.byId("deleteLabel").style.color = "gray";
   }
   function enableDelete(){
     deleteOpt.disabled = false;
-    dom.byId("deleteLabel").style.color = "black";  
-  }         
+    dom.byId("deleteLabel").style.color = "black";
+  }
 });
 </script>
 </head>
@@ -564,11 +564,11 @@ require(["esri/map",
     <input type="radio" name="operation" id="cutOpt" checked><span id="cutLabel">Cut Features</span><br><br>
     <input type="radio" name="operation" id="mergeOpt"><span id="mergeLabel">Merge Features</span><br><br>
     <input type="radio" name="operation" id="addOpt"><span id="addLabel">Add Features</span><br><br>
-    <input type="radio" name="operation" id="deleteOpt"><span id="deleteLabel">Delete Features</span><br><br>     
+    <input type="radio" name="operation" id="deleteOpt"><span id="deleteLabel">Delete Features</span><br><br>
   </div>
       <div class="mainStyle" id="geomOpts">
       <span id="networkCount"></span> network requests avoided<br><br>
-      <b>Geometry operations in use:</b><br><span id="operations"></span></div>      
+      <b>Geometry operations in use:</b><br><span id="operations"></span></div>
 </div>
 </body>
 </html>
